@@ -16,12 +16,20 @@ async function buscarFilme() {
     const respostaDetalhes = await fetch(urlDetalhes);
     const detalhes = await respostaDetalhes.json();
 
+    // Busca a lista de gêneros
+    const urlGeneros = `https://api.themoviedb.org/3/genre/movie/list?api_key=${chaveAPI}&language=pt-BR`;
+    const respostaGeneros = await fetch(urlGeneros);
+    const generos = await respostaGeneros.json();
+
+    // Mapeia o ID da categoria para o nome correspondente
+    const categoria = generos.genres.find(genero => genero.id === filme.genre_ids[0]).name;
+
     // Formata a duração do filme
     const duracaoFormatada = detalhes.runtime !== null && detalhes.runtime !== undefined ? formatarDuracao(detalhes.runtime) : 'não disponível';
 
     return {
       nome: filme.title,
-      categoria: filme.genre_ids[0],
+      categoria: categoria,
       duracao: duracaoFormatada,
       pontuacaoIMDB: filme.vote_average,
       pontuacaoRottenTomatoes: '',
@@ -33,6 +41,7 @@ async function buscarFilme() {
     console.error(erro);
   }
 }
+
 
 // função para formatar a duração em minutos para "HH:mm"
 function formatarDuracao(duracaoMinutos) {
@@ -58,23 +67,26 @@ async function sugerirFilme() {
             <h2>${filme.nome}</h2>
           </div>
 
-          <div class="categoria-duracao-tabela">
+          <div class="informacoes-filme">
             <div class="categoria">
+              <span>Caegoria</span>
               <p>${filme.categoria}</p>
-              </div>
+            </div>
           
             <div class="duracao">
+              <span>Duração</span>
               <p>${filme.duracao}</p>
             </div>
-          </div>
 
-          <div class="pontuacao-imdb">
-            <p>${filme.pontuacaoIMDB}</p>
-            <span>IMDB</span>
+            <div class="pontuacao-imdb">
+              <span>IMDB</span>
+              <p>${filme.pontuacaoIMDB}</p>
+            </div>
           </div>
           
           <div class="sinopse">
-            <p>Sinopse: ${filme.sinopse}</p>
+            <span>Sinopse</span>
+            <p>${filme.sinopse}</p>
           </div>
       </div>
   `;
