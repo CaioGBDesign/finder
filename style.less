@@ -1,0 +1,111 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+
+    background: #0061BA;
+
+    font-family: 'Inter';
+
+    color: #FFFFFF;
+
+    .logo-finder
+    {
+        width: 100%;
+        height: 390px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg
+        {
+            width: 30%;
+        }
+    }
+
+    #filmes
+    {
+
+        .sugestao
+        {            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .folder-filme
+            {
+                border-radius: 50px;
+
+                overflow: hidden;
+
+                width: 80%;
+                
+                filter: drop-shadow(10px 10px 40px rgba(0, 0, 0, 0.5));
+
+                img
+                {
+                    width: 100%;
+                }
+            }
+
+            .titulo-filme
+            {
+                width: 100%;
+
+                h2
+                {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 29px;
+
+                    text-align: center;
+                }
+            }
+
+            .categoria-duracao-tabela
+            {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+
+                width: 100%;
+
+                .categoria, .duracao
+                {
+                    p
+                    {
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .pontuacao-imdb
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                width: 100%;
+
+                p
+                {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                }
+
+                span
+                {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
