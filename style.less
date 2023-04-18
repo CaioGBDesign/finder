@@ -9,6 +9,24 @@ body
 
     color: #FFFFFF;
 
+    position: relative;
+
+    &::before
+    {
+        content: '';
+
+        width: 100%;
+        height: 100vh;
+
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 97, 186, 0.4) 55.2%);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        z-index: -1;
+    }
+
     .logo-finder
     {
         width: 100%;
@@ -52,59 +70,147 @@ body
             .titulo-filme
             {
                 width: 100%;
+                height: 100px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                margin-top: 50px;
 
                 h2
                 {
                     font-style: normal;
                     font-weight: 600;
-                    font-size: 24px;
+                    font-size: 55px;
                     line-height: 29px;
 
                     text-align: center;
                 }
             }
 
-            .categoria-duracao-tabela
+            .informacoes-filme
             {
                 display: flex;
-                justify-content: center;
-                gap: 20px;
+                justify-content: space-between;
 
-                width: 100%;
+                width: 80%;
 
-                .categoria, .duracao
+                .categoria, .duracao, .pontuacao-imdb
                 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+    
+                    height: 400px;
+    
+                    span
+                    {
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 400;
+
+                        opacity: .5;
+                    }
+
                     p
                     {
-                        font-size: 20px;
+                        font-size: 40px;
                         font-style: normal;
                         font-weight: 400;
                     }
                 }
             }
 
-            .pontuacao-imdb
+            .sinopse
             {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                width: 80%;
 
-                width: 100%;
-
-                p
-                {
-                    font-size: 20px;
-                    font-style: normal;
-                    font-weight: 600;
-                }
+                margin-bottom: 300px;
 
                 span
                 {
-                    font-size: 20px;
                     font-style: normal;
                     font-weight: 400;
+                    font-size: 44px;
+                    line-height: 29px;
+
+                    color: #FFFFFF;
+
+                    opacity: 0.3;
                 }
+
+                p
+                {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 36px;
+                    line-height: 56px;
+
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    .cont-sugestao
+    {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 300px;
+
+        background: linear-gradient(180deg, rgba(0, 97, 186, 0) 0%, #0061BA 50.24%);
+
+        button
+        {
+            background: none;
+            border: none;
+
+            position: relative;
+            top: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            .cta-sugestao
+            {
+                width: 550px;
+                height: 120px;
+
+                border: 5px solid #FFFFFF;
+                border-radius: 100px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                span
+                {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 44px;
+                    line-height: 29px;
+
+                    text-align: center;
+
+                    color: #FFFFFF;
+                }
+            }
+
+            svg
+            {
+                width: 30px;
             }
         }
     }
