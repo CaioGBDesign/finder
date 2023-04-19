@@ -3,7 +3,7 @@ const chaveAPI = 'c95de8d6070dbf1b821185d759532f05';
 
 // função para buscar detalhes de um filme aleatório
 async function buscarFilme() {
-  const url = `https://api.themoviedb.org/3/discover/movie?api_key=${chaveAPI}&with_genres=35&include_adult=false&with_original_language=pt&sort_by=vote_average.desc&vote_count.gte=10`
+  const url = `https://api.themoviedb.org/3/movie/popular?api_key=${chaveAPI}`;
 
 
   try {
