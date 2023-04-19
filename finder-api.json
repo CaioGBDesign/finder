@@ -1,0 +1,115 @@
+[
+  {
+    "id": "FR-1",
+    "titulo": "Super Mario Bros",
+    "sinopse": "Dois encanadores de Nova York são jogados em um mundo paralelo estranho onde devem resgatar uma princesa sequestrada de um rei diabólico.",
+    "generos": ["Ação", "Aventura", "Comédia"],
+    "ano": 2023,
+    "duracao": "1h 50min",
+    "elenco": [
+      {
+        "nome": "Chris Pratt",
+        "foto": "https://www.imdb.com/name/nm0695435/mediaviewer/rm1096912129/",
+        "personagem": "Mario"
+      },
+      {
+        "nome": "Charlie Day",
+        "foto": "https://www.imdb.com/name/nm0206359/mediaviewer/rm805937408/",
+        "personagem": "Luigi"
+      },
+      {
+        "nome": "Anya Taylor-Joy",
+        "foto": "https://www.imdb.com/name/nm5896355/mediaviewer/rm2846791168/",
+        "personagem": "Peach"
+      },
+      {
+        "nome": "Jack Black",
+        "foto": "https://www.imdb.com/name/nm0085312/mediaviewer/rm1496500992/",
+        "personagem": "Bowser"
+      },
+      {
+        "nome": "Keegan-Michael Key",
+        "foto": "https://www.imdb.com/name/nm0453486/mediaviewer/rm4270537984/",
+        "personagem": "Toad"
+      }
+    ],
+    "pontuacao": {
+      "IMDB": 7.2,
+      "Letterboxd": 3.5,
+      "Metacritic": 61,
+      "Rotten Tomatoes": 69
+    },
+    "imagem": "https://image.tmdb.org/t/p/w500/aSQ1L0bwBcIVMXgMKM7QcY3PnI2.jpg",
+    "servicos": [
+      {
+        "nome": "Netflix",
+        "link": "https://www.netflix.com/title/12345"
+      },
+      {
+        "nome": "HBO Max",
+        "link": "https://www.hbomax.com/movie/12345"
+      },
+      {
+        "nome": "Prime Video",
+        "link": "https://www.amazon.com/dp/B09D8Q2XTG"
+      }
+    ]
+  },
+  
+  {
+    "id": "FR-2",
+    "titulo": "Homem-Formiga 3",
+    "sinopse": "Scott Lang tenta equilibrar sua vida pessoal e seus deveres como Homem-Formiga, quando é confrontado por um novo vilão que ameaça o mundo inteiro.",
+    "generos": ["Ação", "Aventura", "Ficção Científica"],
+    "ano": 2024,
+    "duracao": "2h 10min",
+    "elenco": [
+      {
+        "nome": "Paul Rudd",
+        "foto": "https://www.imdb.com/name/nm0748620/mediaviewer/rm2316564736/",
+        "personagem": "Scott Lang / Homem-Formiga"
+      },
+      {
+        "nome": "Evangeline Lilly",
+        "foto": "https://www.imdb.com/name/nm1431940/mediaviewer/rm3407916544/",
+        "personagem": "Hope van Dyne / Vespa"
+      },
+      {
+        "nome": "Michael Douglas",
+        "foto": "https://www.imdb.com/name/nm0001144/mediaviewer/rm1619525376/",
+        "personagem": "Hank Pym"
+      },
+      {
+        "nome": "Michelle Pfeiffer",
+        "foto": "https://www.imdb.com/name/nm0000201/mediaviewer/rm4180388096/",
+        "personagem": "Janet van Dyne"
+      },
+      {
+        "nome": "Jonathan Majors",
+        "foto": "https://www.imdb.com/name/nm3745712/mediaviewer/rm1626156032/",
+        "personagem": "Kang, o Conquistador"
+      }
+    ],
+    "pontuacao": {
+      "IMDB": 8.1,
+      "Letterboxd": 4.0,
+      "Metacritic": 78,
+      "Rotten Tomatoes": 85
+    },
+    "imagem": "https://image.tmdb.org/t/p/w500/qi3c0NL5p3S5eBdqYdZWRKzQMUQ.jpg",
+    "servicos": [
+      {
+        "nome": "Disney+",
+        "link": "https://www.disneyplus.com/title/12345"
+      },
+      {
+        "nome": "Prime Video",
+        "link": "https://www.amazon.com/dp/B09D8Q2XTG"
+      },
+      {
+        "nome": "Apple TV+",
+        "link": "https://tv.apple.com/movie/12345"
+      }
+    ]
+  }
+]
