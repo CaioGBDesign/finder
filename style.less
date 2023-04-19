@@ -166,7 +166,7 @@ body
         align-items: center;
 
         width: 100%;
-        height: 290px;
+        height: 200px;
 
         background: #20232A;
 
@@ -183,6 +183,13 @@ body
             justify-content: center;
             align-items: center;
             gap: 30px;
+
+            transition: .2s;
+
+            &:active
+            {
+                transform: translateY(5px);
+            }
 
             .cta-sugestao
             {
