@@ -5,7 +5,9 @@
     "sinopse": "Dois encanadores de Nova York são jogados em um mundo paralelo estranho onde devem resgatar uma princesa sequestrada de um rei diabólico.",
     "generos": ["Ação", "Aventura", "Comédia"],
     "ano": 2023,
-    "duracao": "1h 50min",
+    "duracao": "1h 50m",
+    "bilheteria": "73,3 milhões USD",
+    "direção": "Frank Darabont",
     "elenco": [
       {
         "nome": "Chris Pratt",
@@ -34,26 +36,13 @@
       }
     ],
     "pontuacao": {
-      "IMDB": 7.2,
-      "Letterboxd": 3.5,
-      "Metacritic": 61,
-      "Rotten Tomatoes": 69
+      "IMDB": 7.4,
+      "Rotten Tomatoes críticos": 58,
+      "Rotten Tomatoes público": 96,
+      "Metacritic": 48,
+      "Letterboxd": 3.8
     },
-    "imagem": "https://image.tmdb.org/t/p/w500/aSQ1L0bwBcIVMXgMKM7QcY3PnI2.jpg",
-    "servicos": [
-      {
-        "nome": "Netflix",
-        "link": "https://www.netflix.com/title/12345"
-      },
-      {
-        "nome": "HBO Max",
-        "link": "https://www.hbomax.com/movie/12345"
-      },
-      {
-        "nome": "Prime Video",
-        "link": "https://www.amazon.com/dp/B09D8Q2XTG"
-      }
-    ]
+    "imagem": "https://leiturafilmica.com.br/wp-content/uploads/2023/04/super-mario-bros-o-filme-poster.jpg"
   },
   
   {
@@ -62,7 +51,9 @@
     "sinopse": "Scott Lang tenta equilibrar sua vida pessoal e seus deveres como Homem-Formiga, quando é confrontado por um novo vilão que ameaça o mundo inteiro.",
     "generos": ["Ação", "Aventura", "Ficção Científica"],
     "ano": 2024,
-    "duracao": "2h 10min",
+    "duracao": "2h 10m",
+    "bilheteria": "73,3 milhões USD",
+    "direção": "Frank Darabont",
     "elenco": [
       {
         "nome": "Paul Rudd",
@@ -91,25 +82,320 @@
       }
     ],
     "pontuacao": {
-      "IMDB": 8.1,
-      "Letterboxd": 4.0,
-      "Metacritic": 78,
-      "Rotten Tomatoes": 85
+      "IMDB": 6.4,
+      "Rotten Tomatoes críticos": 47,
+      "Rotten Tomatoes público": 83,
+      "Metacritic": 50,
+      "Letterboxd": 2.7
     },
-    "imagem": "https://image.tmdb.org/t/p/w500/qi3c0NL5p3S5eBdqYdZWRKzQMUQ.jpg",
+    "imagem": "https://cinepop.com.br/wp-content/uploads/2023/01/homemformigaeavespa.jpeg"
+  },
+  
+  {
+    "id": "FR-3",
+    "titulo": "Um Sonho de Liberdade",
+    "sinopse": "Andy Dufresne é condenado a duas prisões perpétuas consecutivas pelas mortes de sua esposa e de seu amante. Porém, só Andy sabe que ele não cometeu os crimes. No presídio, durante dezenove anos, ele faz amizade com Red, sofre as brutalidades da vida na cadeia, se adapta, ajuda os carcereiros, etc.",
+    "generos": ["Drama", "Ficção policial"],
+    "ano": 1995,
+    "duracao": "2h 22m",
+    "bilheteria": "73,3 milhões USD",
+    "direção": "Frank Darabont",
+    "elenco": [
+      {
+        "nome": "Morgan Freeman",
+        "foto": "https://m.media-amazon.com/images/M/MV5BMTc0MDMyMzI2OF5BMl5BanBnXkFtZTcwMzM2OTk1MQ@@._V1_FMjpg_UX1000_.jpg",
+        "personagem": "Ellis Boyd Redding"
+      },
+      {
+        "nome": "Tim Robbins",
+        "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/TimRobbinsTIFFSept2012.jpg/640px-TimRobbinsTIFFSept2012.jpg",
+        "personagem": "Andy Dufresne"
+      },
+      {
+        "nome": "Clancy Brown",
+        "foto": "https://br.web.img3.acsta.net/pictures/17/10/11/11/46/0693330.jpg",
+        "personagem": "Capitão Hadley"
+      },
+      {
+        "nome": "Bob Gunton",
+        "foto": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imdb.com%2Fname%2Fnm0348409%2F&psig=AOvVaw2-fH6np81lUsf1AfmnyM3-&ust=1682027287447000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJCjw4n2tv4CFQAAAAAdAAAAABAE",
+        "personagem": "Warden Samuel"
+      },
+      {
+        "nome": "William Sadler",
+        "foto": "https://flxt.tmsimg.com/assets/105148_v9_bc.jpg",
+        "personagem": "Heywood"
+      }
+    ],
+    "pontuacao": {
+      "IMDB": 9.3,
+      "Rotten Tomatoes críticos": 90,
+      "Rotten Tomatoes público": 98,
+      "Metacritic": 80,
+      "Letterboxd": 4.6
+    },
+    "imagem": "https://leiturafilmica.com.br/wp-content/uploads/2022/04/um-sonho-de-liberdade-poster.jpg",
     "servicos": [
       {
-        "nome": "Disney+",
-        "link": "https://www.disneyplus.com/title/12345"
+        "nome": "Prime Video"
       },
       {
-        "nome": "Prime Video",
-        "link": "https://www.amazon.com/dp/B09D8Q2XTG"
+        "nome": "HBO Max"
       },
       {
-        "nome": "Apple TV+",
-        "link": "https://tv.apple.com/movie/12345"
+        "nome": "Apple TV"
+      },
+      {
+        "nome": "YouTube"
       }
     ]
-  }
+  },
+  
+  {
+    "id": "FR-4",
+    "titulo": "O Poderoso Chefão",
+    "sinopse": "O patriarca de uma poderosa família mafiosa transfere sua autoridade para o filho relutante em se envolver nos negócios sujos da família, levando a uma série de conflitos violentos e traições dentro da organização.",
+    "generos": ["Crime", "Drama"],
+    "ano": 1972,
+    "duracao": "2h 55m",
+    "bilheteria": "US$ 245 milhões",
+    "direção": "Francis Ford Coppola",
+    "elenco": [
+      {
+        "nome": "Marlon Brando",
+        "foto": "https://musicimage.xboxlive.com/catalog/video.contributor.b3040500-0200-11db-89ca-0019b92a3933/image?locale=pt-br&target=circle",
+        "personagem": "Vito Corleone"
+      },
+      {
+        "nome": "Al Pacino",
+        "foto": "https://upload.wikimedia.org/wikipedia/commons/9/98/Al_Pacino.jpg",
+        "personagem": "Michael Corleone"
+      },
+      {
+        "nome": "James Caan",
+        "foto": "https://br.web.img3.acsta.net/pictures/15/06/09/21/29/576102.jpg",
+        "personagem": "Sonny Corleone"
+      },
+      {
+        "nome": "Diane Keaton",
+        "foto": "https://br.web.img2.acsta.net/pictures/18/07/18/21/04/5918078.jpg",
+        "personagem": "Kay Adams"
+      },
+      {
+        "nome": "Talia Shire",
+        "foto": "https://m.media-amazon.com/images/M/MV5BMTkwMzc0NjQzNV5BMl5BanBnXkFtZTYwNzM0NTk3._V1_FMjpg_UX1000_.jpg",
+        "personagem": "Connie Corleone"
+      }
+    ],
+    "pontuacao": {
+      "IMDB": 9.2,
+      "Rotten Tomatoes críticos": 98,
+      "Rotten Tomatoes público": 98,
+      "Metacritic": 100,
+      "Letterboxd": 4.6
+    },
+    "imagem": "https://leiturafilmica.com.br/wp-content/uploads/2022/04/um-sonho-de-liberdade-poster.jpg",
+    "servicos": [
+      {
+        "nome": "Netflix"
+      },
+      {
+        "nome": "Prime Video"
+      },
+      {
+        "nome": "Apple TV"
+      },
+      {
+        "nome": "Paramount+"
+      },
+      {
+        "nome": "Telecine"
+      }
+    ]
+  },
+  
+  {
+    "id": "FR-5",
+    "titulo": "O Poderoso Chefão 2",
+    "sinopse": "Esta sequência mostra a ascensão de Vito Corleone ao poder na década de 1920, enquanto seu filho Michael tenta expandir o império da família nos anos 50 e lida com traições e inimigos.",
+    "generos": ["Crime", "Drama"],
+    "ano": 1974,
+    "duracao": "3h 22m",
+    "bilheteria": "US$ 193 milhões",
+    "direção": "Francis Ford Coppola",
+    "elenco": [
+      {
+        "nome": "Al Pacino",
+        "foto": "https://upload.wikimedia.org/wikipedia/commons/9/98/Al_Pacino.jpg",
+        "personagem": "Michael Corleone"
+      },
+      {
+        "nome": "Robert De Niro",
+        "foto": "https://www.mapadoceu.com.br/photo/astro/robert-de-niro.jpg",
+        "personagem": "Vito Corleone"
+      },
+      {
+        "nome": "Diane Keaton",
+        "foto": "https://br.web.img2.acsta.net/pictures/18/07/18/21/04/5918078.jpg",
+        "personagem": "Kay Adams"
+      },
+      {
+        "nome": "Talia Shire",
+        "foto": "https://m.media-amazon.com/images/M/MV5BMTkwMzc0NjQzNV5BMl5BanBnXkFtZTYwNzM0NTk3._V1_FMjpg_UX1000_.jpg",
+        "personagem": "Connie Corleone"
+      },
+      {
+        "nome": "James Caan",
+        "foto": "https://br.web.img3.acsta.net/pictures/15/06/09/21/29/576102.jpg",
+        "personagem": "Sonny Corleone"
+      }
+    ],
+    "pontuacao": {
+      "IMDB": 9.0,
+      "Rotten Tomatoes críticos": 97,
+      "Rotten Tomatoes público": 97,
+      "Metacritic": 90,
+      "Letterboxd": 4.5
+    },
+    "imagem": "https://leiturafilmica.com.br/wp-content/uploads/2022/04/um-sonho-de-liberdade-poster.jpg",
+    "servicos": [
+      {
+        "nome": "Netflix"
+      },
+      {
+        "nome": "Prime Video"
+      },
+      {
+        "nome": "Apple TV"
+      },
+      {
+        "nome": "Paramount+"
+      },
+      {
+        "nome": "Telecine"
+      }
+    ]
+  },
+  
+  {
+    "id": "FR-6",
+    "titulo": "O Poderoso Chefão 2",
+    "sinopse": "Esta sequência mostra a ascensão de Vito Corleone ao poder na década de 1920, enquanto seu filho Michael tenta expandir o império da família nos anos 50 e lida com traições e inimigos.",
+    "generos": ["Crime", "Drama"],
+    "ano": 1974,
+    "duracao": "3h 22m",
+    "bilheteria": "US$ 193 milhões",
+    "direção": "Francis Ford Coppola",
+    "elenco": [
+      {
+        "nome": "Al Pacino",
+        "foto": "https://upload.wikimedia.org/wikipedia/commons/9/98/Al_Pacino.jpg",
+        "personagem": "Michael Corleone"
+      },
+      {
+        "nome": "Robert De Niro",
+        "foto": "https://www.mapadoceu.com.br/photo/astro/robert-de-niro.jpg",
+        "personagem": "Vito Corleone"
+      },
+      {
+        "nome": "Diane Keaton",
+        "foto": "https://br.web.img2.acsta.net/pictures/18/07/18/21/04/5918078.jpg",
+        "personagem": "Kay Adams"
+      },
+      {
+        "nome": "Talia Shire",
+        "foto": "https://m.media-amazon.com/images/M/MV5BMTkwMzc0NjQzNV5BMl5BanBnXkFtZTYwNzM0NTk3._V1_FMjpg_UX1000_.jpg",
+        "personagem": "Connie Corleone"
+      },
+      {
+        "nome": "James Caan",
+        "foto": "https://br.web.img3.acsta.net/pictures/15/06/09/21/29/576102.jpg",
+        "personagem": "Sonny Corleone"
+      }
+    ],
+    "pontuacao": {
+      "IMDB": 9.0,
+      "Rotten Tomatoes críticos": 97,
+      "Rotten Tomatoes público": 97,
+      "Metacritic": 90,
+      "Letterboxd": 4.5
+    },
+    "imagem": "https://leiturafilmica.com.br/wp-content/uploads/2022/04/um-sonho-de-liberdade-poster.jpg",
+    "servicos": [
+      {
+        "nome": "Netflix"
+      },
+      {
+        "nome": "Prime Video"
+      },
+      {
+        "nome": "Apple TV"
+      },
+      {
+        "nome": "Paramount+"
+      },
+      {
+        "nome": "Telecine"
+      }
+    ]
+  },
+  {
+    "id": "FR-7",
+    "titulo":"Batman: O Cavaleiro das Trevas",
+    "sinopse":"Quando a cidade de Gotham é ameaçada pelo caos causado pelo Coringa, Batman precisa encontrar um meio de deter o criminoso antes que tudo saia do controle.",
+    "generos":["Ação","Crime","Drama"],
+    "ano":2008,
+    "duracao":"2h 32m",
+    "bilheteria":"US$ 1,005 bilhão",
+    "direção":"Christopher Nolan",
+    "elenco":[
+       {
+          "nome":"Christian Bale",
+          "foto":"https://br.web.img3.acsta.net/c_310_420/pictures/15/02/24/18/43/126776.jpg",
+          "personagem":"Bruce Wayne / Batman"
+       },
+       {
+          "nome":"Heath Ledger",
+          "foto":"https://static.wikia.nocookie.net/dublagem/images/4/4f/Heath_Ledger.jpg/revision/latest?cb=20220705225340&path-prefix=pt-br",
+          "personagem":"Coringa"
+       },
+       {
+          "nome":"Aaron Eckhart",
+          "foto":"https://deadline.com/wp-content/uploads/2023/02/aaron.jpg",
+          "personagem":"Harvey Dent / Duas-Caras"
+       },
+       {
+          "nome":"Gary Oldman",
+          "foto":"https://br.web.img2.acsta.net/pictures/16/03/18/16/03/398105.jpg",
+          "personagem":"Jim Gordon"
+       },
+       {
+          "nome":"Maggie Gyllenhaal",
+          "foto":"https://br.web.img3.acsta.net/pictures/15/10/21/10/48/401053.jpg",
+          "personagem":"Rachel Dawes"
+       }
+    ],
+    "pontuacao":{
+       "IMDB":9.0,
+       "Rotten Tomatoes críticos":94,
+       "Rotten Tomatoes público":94,
+       "Metacritic":84,
+       "Letterboxd":4.4
+    },
+    "imagem":"https://br.web.img2.acsta.net/medias/nmedia/18/87/55/22/19874478.jpg",
+    "servicos":[
+       {
+          "nome":"Netflix"
+       },
+       {
+          "nome":"Prime Video"
+       },
+       {
+          "nome":"HBO Max"
+       },
+       {
+          "nome":"Telecine"
+       }
+    ]
+ }
 ]
