@@ -3,7 +3,8 @@ const chaveAPI = 'c95de8d6070dbf1b821185d759532f05';
 
 // função para buscar detalhes de um filme aleatório
 async function buscarFilme() {
-  const url = `https://api.themoviedb.org/3/movie/popular?api_key=${chaveAPI}`;
+  const url = `https://api.themoviedb.org/3/discover/movie?api_key=${chaveAPI}&with_genres=35&include_adult=false&with_original_language=pt&sort_by=vote_average.desc&vote_count.gte=10`
+
 
   try {
     const resposta = await fetch(url);
@@ -51,9 +52,40 @@ function formatarDuracao(duracaoMinutos) {
 }
 
 // função para sugerir um novo filme
-async function sugerirFilme() {
+async function sugerirFilme(categoria = null) {
+  // definir a url da API de acordo com a categoria
+  let url = '';
+  if (categoria !== null) {
+    if (categoria === 'Netflix' || categoria === 'HBO-MAX' || categoria === 'Prime-Video' || categoria === 'Disney-Plys' || categoria === 'Star-Plus' || categoria === 'Apple-TV') {
+      switch (categoria) {
+        case 'Netflix':
+          url = `https://api.themoviedb.org/3/discover/tv?api_key=${chaveAPI}&sort_by=popularity.desc&with_networks=213`;
+          break;
+        case 'HBO-MAX':
+          url = `https://api.themoviedb.org/3/discover/tv?api_key=${chaveAPI}&sort_by=popularity.desc&with_networks=3185`;
+          break;
+        case 'Prime-Video':
+          url = `https://api.themoviedb.org/3/discover/tv?api_key=${chaveAPI}&sort_by=popularity.desc&with_networks=1024`;
+          break;
+        case 'Disney-Plys':
+          url = `https://api.themoviedb.org/3/discover/tv?api_key=${chaveAPI}&sort_by=popularity.desc&with_networks=2739`;
+          break;
+        case 'Star-Plus':
+          url = `https://api.themoviedb.org/3/discover/tv?api_key=${chaveAPI}&sort_by=popularity.desc&with_networks=3924`;
+          break;
+        case 'Apple-TV':
+          url = `https://api.themoviedb.org/3/discover/tv?api_key=${chaveAPI}&sort_by=popularity.desc&with_networks=2551`;
+          break;
+      }
+    } else {
+      url = `https://api.themoviedb.org/3/discover/movie?api_key=${chaveAPI}&with_genres=${categoria}&sort_by=popularity.desc`;
+    }
+  } else {
+    url = `https://api.themoviedb.org/3/discover/movie?api_key=${chaveAPI}&sort_by=popularity.desc`;
+  }
+
   // buscar um novo filme
-  const filme = await buscarFilme();
+  const filme = await buscarFilme(url);
 
   // atualizar a lista de filmes
   const filmesDiv = document.getElementById('filmes');
@@ -69,7 +101,7 @@ async function sugerirFilme() {
 
           <div class="informacoes-filme">
             <div class="categoria">
-              <span>Caegoria</span>
+              <span>Categoria</span>
               <p>${filme.categoria}</p>
             </div>
           
@@ -94,3 +126,10 @@ async function sugerirFilme() {
 
 // sugerir um filme inicial
 sugerirFilme();
+
+const filtrosDiv = document.querySelector('.filtros');
+const contSugestaoDiv = document.querySelector('.cont-sugestao');
+
+filtrosDiv.addEventListener('click', () => {
+  contSugestaoDiv.classList.toggle('aberto');
+});
