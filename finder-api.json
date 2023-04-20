@@ -228,9 +228,6 @@
           },
           {
              "nome":"HBO Max"
-          },
-          {
-             "nome":"Telecine"
           }
        ]
     },
@@ -293,9 +290,6 @@
           },
           {
              "nome":"Paramount+"
-          },
-          {
-             "nome":"Telecine"
           }
        ]
     },
@@ -545,9 +539,6 @@
              "nome":"Prime Video"
           },
           {
-             "nome":"Telecine"
-          },
-          {
              "nome":"Apple TV"
           },
           {
@@ -670,9 +661,6 @@
           },
           {
              "nome":"YouTube"
-          },
-          {
-             "nome":"Telecine"
           },
           {
              "nome":"Apple TV"
@@ -996,7 +984,7 @@
           },
           {
              "nome":"Tom Felton",
-             "foto":"https://upload.wikimedia.org/wikipedia/commons/a/a6/Tom_Felton_at_Fan_Expo_Canada_2015.jpg",
+             "foto":"https://upload.wikimedia.org/wikipedia/commons/f/fb/Tom_Felton_1.jpg",
              "personagem":"Draco Malfoy"
           },
           {
@@ -1068,7 +1056,7 @@
           },
           {
              "nome":"Tom Felton",
-             "foto":"https://upload.wikimedia.org/wikipedia/commons/a/a6/Tom_Felton_at_Fan_Expo_Canada_2015.jpg",
+             "foto":"https://upload.wikimedia.org/wikipedia/commons/f/fb/Tom_Felton_1.jpg",
              "personagem":"Draco Malfoy"
           },
           {
@@ -1145,7 +1133,7 @@
             },
             {
                "nome":"Tom Felton",
-               "foto":"https://upload.wikimedia.org/wikipedia/commons/a/a6/Tom_Felton_at_Fan_Expo_Canada_2015.jpg",
+               "foto":"https://upload.wikimedia.org/wikipedia/commons/f/fb/Tom_Felton_1.jpg",
                "personagem":"Draco Malfoy"
             },
             {
@@ -1294,9 +1282,6 @@
            },
            {
               "nome":"Apple TV"
-           },
-           {
-              "nome":"Telecine"
            },
            {
               "nome":"Paramount+"
