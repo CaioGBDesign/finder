@@ -4,9 +4,7 @@
       "titulo":"Super Mario Bros",
       "sinopse":"Dois encanadores de Nova York são jogados em um mundo paralelo estranho onde devem resgatar uma princesa sequestrada de um rei diabólico.",
       "generos":[
-         "Ação",
-         "Aventura",
-         "Comédia"
+         "Ação / Aventura / Comédia"
       ],
       "ano":2023,
       "duracao":"1h 50m",
@@ -63,9 +61,7 @@
       "titulo":"Homem-Formiga 3",
       "sinopse":"Scott Lang tenta equilibrar sua vida pessoal e seus deveres como Homem-Formiga, quando é confrontado por um novo vilão que ameaça o mundo inteiro.",
       "generos":[
-         "Ação",
-         "Aventura",
-         "Ficção Científica"
+         "Ação / Aventura / Ficção Científica"
       ],
       "ano":2024,
       "duracao":"2h 10m",
@@ -112,8 +108,7 @@
       "titulo":"Um Sonho de Liberdade",
       "sinopse":"Andy Dufresne é condenado a duas prisões perpétuas consecutivas pelas mortes de sua esposa e de seu amante. Porém, só Andy sabe que ele não cometeu os crimes. No presídio, durante dezenove anos, ele faz amizade com Red, sofre as brutalidades da vida na cadeia, se adapta, ajuda os carcereiros, etc.",
       "generos":[
-         "Drama",
-         "Ficção policial"
+         "Drama / Ficção policial"
       ],
       "ano":1995,
       "duracao":"2h 22m",
@@ -174,8 +169,7 @@
       "titulo":"O Poderoso Chefão",
       "sinopse":"Em 1945, Don Corleone, chefe da família mafiosa Corleone, tenta transferir seus negócios para negociações mais lucrativas de apostas, mas encontra resistência de outras gangues que querem o seu poder. Uma tentativa de assassinato leva a uma série de eventos violentos que ameaçam destruir a família Corleone.",
       "generos":[
-         "Crime",
-         "Drama"
+         "Crime / Drama"
       ],
       "ano":1972,
       "duracao":"2h 55m",
@@ -236,8 +230,7 @@
       "titulo":"O Poderoso Chefão 2",
       "sinopse":"Esta sequência mostra a ascensão de Vito Corleone ao poder na década de 1920, enquanto seu filho Michael tenta expandir o império da família nos anos 50 e lida com traições e inimigos.",
       "generos":[
-         "Crime",
-         "Drama"
+         "Crime / Drama"
       ],
       "ano":1974,
       "duracao":"3h 22m",
@@ -371,9 +364,7 @@
       "titulo":"Batman: O Cavaleiro das Trevas",
       "sinopse":"Quando a cidade de Gotham é ameaçada pelo caos causado pelo Coringa, Batman precisa encontrar um meio de deter o criminoso antes que tudo saia do controle.",
       "generos":[
-         "Ação",
-         "Crime",
-         "Drama"
+         "Ação / Crime / Drama"
       ],
       "ano":2008,
       "duracao":"2h 32m",
@@ -489,8 +480,7 @@
       "titulo":"A Lista de Schindler",
       "sinopse":"Durante a Segunda Guerra Mundial, um empresário alemão salva a vida de mais de mil judeus poloneses ao empregar trabalhadores em sua fábrica. O filme é baseado em fatos reais.",
       "generos":[
-         "Drama",
-         "Histórico"
+         "Drama / Histórico"
       ],
       "ano":1993,
       "duracao":"3h 17m",
@@ -551,8 +541,7 @@
       "titulo":"O Senhor dos Anéis: O Retorno do Rei",
       "sinopse":"Com a ajuda de seus amigos, Frodo e Sam, o hobbit arcano, deve destruir o Um Anel, para que Sauron, o Senhor das Trevas, não possa usá-lo para conquistar a Terra-média. Enquanto isso, Gandalf e os outros membros da sociedade do Anel se preparam para a grande batalha contra as forças do mal de Sauron.",
       "generos":[
-         "Fantasia",
-         "Aventura"
+         "Fantasia / Aventura"
       ],
       "ano":2003,
       "duracao":"3h 21m",
@@ -613,8 +602,7 @@
       "titulo":"Pulp Fiction: Tempo de Violência",
       "sinopse":"Um tributo ao cinema pulp dos anos 60 e 70, este filme narra várias histórias interligadas de criminosos e mafiosos em Los Angeles, mostrando suas vidas antes e depois de uma série de eventos violentos que afetam a todos.",
       "generos":[
-         "Crime",
-         "Drama"
+         "Crime / Drama"
       ],
       "ano":1994,
       "duracao":"2h 34m",
@@ -672,8 +660,7 @@
       "titulo":"Harry Potter e a Pedra Filosofal",
       "sinopse":"Harry Potter, um órfão que descobre ser um bruxo, começa seu primeiro ano na Escola de Magia e Bruxaria de Hogwarts e descobre segredos sombrios enquanto tenta impedir o retorno do maligno Lord Voldemort.",
       "generos":[
-         "Fantasia",
-         "Aventura"
+         "Fantasia / Aventura"
       ],
       "ano":2001,
       "duracao":"2h 32m",
@@ -749,8 +736,7 @@
       "titulo":"Harry Potter e o Prisioneiro de Azkaban",
       "sinopse":"Harry Potter, agora com 13 anos, volta para o terceiro ano em Hogwarts e encontra um novo professor de Defesa Contra as Artes das Trevas, Sirius Black, um fugitivo perigoso que supostamente traiu os pais de Harry e agora está atrás dele.",
       "generos":[
-         "Fantasia",
-         "Aventura"
+         "Fantasia / Aventura"
       ],
       "ano":2004,
       "duracao":"2h 22m",
@@ -897,8 +883,7 @@
       "titulo":"Harry Potter e o Cálice de Fogo",
       "sinopse":"Harry Potter volta para seu quarto ano na Escola de Magia e Bruxaria de Hogwarts, junto com seus amigos Ron e Hermione. Mas Hogwarts está se preparando para sediar o Torneio Tribruxo, onde três escolas de magia competem entre si em uma série de desafios perigosos. Enquanto isso, uma nova ameaça sombria se esconde nos corredores de Hogwarts, colocando a vida de Harry em perigo mais uma vez.",
       "generos":[
-         "Aventura",
-         "Fantasia"
+         "Aventura / Fantasia"
       ],
       "ano":2005,
       "duracao":"2h 37m",
@@ -959,8 +944,7 @@
       "titulo":"Harry Potter e o Enigma do Príncipe",
       "sinopse":"Com a ajuda do professor Dumbledore, Harry Potter começa a desvendar o passado de Lord Voldemort para encontrar uma maneira de derrotá-lo antes que seja tarde demais.",
       "generos":[
-         "Fantasia",
-         "Aventura"
+         "Fantasia / Aventura"
       ],
       "ano":2009,
       "duracao":"2h 33m",
@@ -1021,8 +1005,7 @@
       "titulo":"Harry Potter e as Relíquias da Morte: Parte 1",
       "sinopse":"Com a ajuda de seus amigos Ron e Hermione, Harry foge de Hogwarts para destruir as Horcruxes restantes de Voldemort. Enquanto isso, o Lorde das Trevas toma o controle do Ministério da Magia e de Hogwarts.",
       "generos":[
-         "Fantasia",
-         "Aventura"
+         "Fantasia / Aventura"
       ],
       "ano":2010,
       "duracao":"2h 26m",
@@ -1098,8 +1081,7 @@
        "titulo":"Harry Potter e as Relíquias da Morte: Parte 2",
        "sinopse":"Na segunda parte do final épico da série Harry Potter, a batalha entre as forças do bem e do mal no mundo da magia se intensifica. O poder de Voldemort está aumentando cada vez mais, e ele agora controla Hogwarts. Harry, Ron e Hermione decidem terminar o trabalho de Dumbledore e encontrar o resto das Horcruxes para derrotar o Lorde das Trevas. Mas a jornada perigosa leva-os a uma batalha final épica, onde as vidas deles e o futuro do mundo mágico estão em jogo.",
        "generos":[
-          "Aventura",
-          "Fantasia"
+          "Aventura / Fantasia"
        ],
        "ano":2011,
        "duracao":"2h 10m",
@@ -1175,8 +1157,7 @@
         "titulo":"Três Homens em Conflito",
         "sinopse":"Nos Estados Unidos, durante a Guerra de Secessão, um pistoleiro misterioso tenta trabalhar em conjunto com um bandido e um caçador de recompensas para encontrar um tesouro escondido. Os homens são obrigados a forjar uma difícil aliança visto que cada um conhece apenas uma parte da localização da fortuna. O problema é que nenhum deles tem a intenção de dividir a riqueza.",
         "generos":[
-           "faroeste",
-           "filme épico"
+           "faroeste / filme épico"
         ],
         "ano":2011,
         "duracao":"3h",
@@ -1234,8 +1215,7 @@
        "titulo":"Forrest Gump: O Contador de Histórias",
        "sinopse":"Forrest Gump é um homem simples com um coração enorme. Através de sua jornada de vida, ele experimenta alguns dos momentos mais importantes da história dos Estados Unidos. Apesar dos desafios e dificuldades que enfrenta, Forrest sempre mantém um otimismo e uma sabedoria que o ajudam a superar qualquer adversidade.",
        "generos":[
-          "Drama",
-          "Comédia"
+          "Drama / Comédia"
        ],
        "ano":1994,
        "duracao":"2h 22m",
