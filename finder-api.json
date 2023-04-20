@@ -9,7 +9,8 @@
       "ano":2023,
       "duracao":"1h 50m",
       "bilheteria":"73,3 milhões USD",
-      "direção":"Aaron Horvath , Michael Jelenic",      
+      "direção":"Aaron Horvath , Michael Jelenic",
+      "classificação": "Livre",
       "elenco":[          
         {
            "nome":"Jack Black",
@@ -67,6 +68,7 @@
       "duracao":"2h 10m",
       "bilheteria":"73,3 milhões USD",
       "direção":"Frank Darabont",
+      "classificação": "Livre",
       "elenco":[
          {
             "nome":"Paul Rudd",
@@ -114,6 +116,7 @@
       "duracao":"2h 22m",
       "bilheteria":"73,3 milhões USD",
       "direção":"Frank Darabont",
+      "classificação": "16 anos",
       "elenco":[
          {
             "nome":"Morgan Freeman",
@@ -175,6 +178,7 @@
       "duracao":"2h 55m",
       "bilheteria":"US$ 246 milhões",
       "direção":"Francis Ford Coppola",
+      "classificação": "14 anos",
       "elenco":[
          {
             "nome":"Marlon Brando",
@@ -236,6 +240,7 @@
       "duracao":"3h 22m",
       "bilheteria":"US$ 193 milhões",
       "direção":"Francis Ford Coppola",
+      "classificação": "14 anos",
       "elenco":[
          {
             "nome":"Al Pacino",
@@ -297,6 +302,7 @@
       "duracao":"2h 41m",
       "bilheteria":"$878,979,634",
       "direcao":"Chris Columbus",
+      "classificação": "Livre",
       "elenco":[
          {
             "nome":"Daniel Radcliffe",
@@ -370,6 +376,7 @@
       "duracao":"2h 32m",
       "bilheteria":"US$ 1,005 bilhão",
       "direção":"Christopher Nolan",
+      "classificação": "14 anos",
       "elenco":[
          {
             "nome":"Christian Bale",
@@ -431,6 +438,7 @@
       "duracao":"1h 36m",
       "bilheteria":"$ 2.2 milhões",
       "direcao":"Sidney Lumet",
+      "classificação": "Livre",
       "elenco":[
          {
             "nome":"Henry Fonda",
@@ -486,6 +494,7 @@
       "duracao":"3h 17m",
       "bilheteria":"US$ 321,2 milhões",
       "direção":"Steven Spielberg",
+      "classificação": "16 anos",
       "elenco":[
          {
             "nome":"Liam Neeson",
@@ -547,6 +556,7 @@
       "duracao":"3h 21m",
       "bilheteria":"US$ 1,142 bilhão",
       "direção":"Peter Jackson",
+      "classificação": "14 anos",
       "elenco":[
          {
             "nome":"Elijah Wood",
@@ -608,6 +618,7 @@
       "duracao":"2h 34m",
       "bilheteria":"US$ 213,9 milhões",
       "direção":"Quentin Tarantino",
+      "classificação": "18 anos",
       "elenco":[
          {
             "nome":"John Travolta",
@@ -666,6 +677,7 @@
       "duracao":"2h 32m",
       "bilheteria":"US$ 1,002 bilhão",
       "direcao":"Chris Columbus",
+      "classificação": "Livre",
       "elenco":[
          {
             "nome":"Daniel Radcliffe",
@@ -742,6 +754,7 @@
       "duracao":"2h 22m",
       "bilheteria":"US$ 796,7 milhões",
       "direcao":"Alfonso Cuarón",
+      "classificação": "Livre",
       "elenco":[
          {
             "nome":"Daniel Radcliffe",
@@ -813,6 +826,7 @@
       "duracao":"2h 18m",
       "bilheteria":"US$ 942,0 milhões",
       "direção":"David Yates",
+      "classificação": "Livre",
       "elenco":[
          {
             "nome":"Daniel Radcliffe",
@@ -889,6 +903,7 @@
       "duracao":"2h 37m",
       "bilheteria":"US$ 896 milhões",
       "direção":"Mike Newell",
+      "classificação": "Livre",
       "elenco":[
          {
             "nome":"Daniel Radcliffe",
@@ -950,6 +965,7 @@
       "duracao":"2h 33m",
       "bilheteria":"US$ 934,4 milhões",
       "direção":"David Yates",
+      "classificação": "Livre",
       "elenco":[
          {
             "nome":"Daniel Radcliffe",
@@ -1011,6 +1027,7 @@
       "duracao":"2h 26m",
       "bilheteria":"$ 977,5 milhões",
       "direcao":"David Yates",
+      "classificação": "Livre",
       "elenco":[
          {
             "nome":"Daniel Radcliffe",
@@ -1087,6 +1104,7 @@
        "duracao":"2h 10m",
        "bilheteria":"$1.342 bilhão",
        "direcao":"David Yates",
+       "classificação": "Livre",
        "elenco":[
            {
               "nome":"Daniel Radcliffe",
@@ -1163,6 +1181,7 @@
         "duracao":"3h",
         "bilheteria":"38,9 milhões USD",
         "direcao":"Sergio Leone",
+        "classificação": "14 anos",
         "elenco":[
             {
                "nome":"Clint Eastwood",
@@ -1221,6 +1240,7 @@
        "duracao":"2h 22m",
        "bilheteria":"US$ 677,9 milhões",
        "direção":"Robert Zemeckis",
+       "classificação": "14 anos",
        "elenco":[
           {
              "nome":"Tom Hanks",
