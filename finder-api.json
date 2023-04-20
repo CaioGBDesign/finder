@@ -1094,5 +1094,206 @@
              "nome":"YouTube"
           }
        ]
-    }
+    },
+    {
+        "id":"FR-18",
+        "titulo":"Harry Potter e as Relíquias da Morte: Parte 2",
+        "sinopse":"Na segunda parte do final épico da série Harry Potter, a batalha entre as forças do bem e do mal no mundo da magia se intensifica. O poder de Voldemort está aumentando cada vez mais, e ele agora controla Hogwarts. Harry, Ron e Hermione decidem terminar o trabalho de Dumbledore e encontrar o resto das Horcruxes para derrotar o Lorde das Trevas. Mas a jornada perigosa leva-os a uma batalha final épica, onde as vidas deles e o futuro do mundo mágico estão em jogo.",
+        "generos":[
+           "Aventura",
+           "Fantasia"
+        ],
+        "ano":2011,
+        "duracao":"2h 10m",
+        "bilheteria":"$1.342 bilhão",
+        "direcao":"David Yates",
+        "elenco":[
+            {
+               "nome":"Daniel Radcliffe",
+               "foto":"https://i.dailymail.co.uk/1s/2023/04/10/17/69673111-11957323-image-a-2_1681143814993.jpg",
+               "personagem":"Harry Potter"
+            },
+            {
+               "nome":"Emma Watson",
+               "foto":"https://static.wikia.nocookie.net/harrypotter/images/e/ee/Emma_Watson_010.jpg/revision/latest/thumbnail/width/360/height/360?cb=20160104214532&path-prefix=pt-br",
+               "personagem":"Hermione Granger"
+            },
+            {
+               "nome":"Rupert Grint",
+               "foto":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/RupertGrint2018.jpg/640px-RupertGrint2018.jpg",
+               "personagem":"Ron Weasley"
+            },
+            {
+               "nome":"Alan Rickman",
+               "foto":"https://m.media-amazon.com/images/M/MV5BMTUwNTc4MTg4Ml5BMl5BanBnXkFtZTcwNDY2MjkxOA@@._V1_FMjpg_UX1000_.jpg",
+               "personagem":"Severus Snape"
+            },
+            {
+               "nome":"Helena Bonham Carter",
+               "foto":"https://images.mubicdn.net/images/cast_member/10212/cache-2371-1627288994/image-w856.jpg",
+               "personagem":"Bellatrix Lestrange"
+            },
+            {
+               "nome":"Tom Felton",
+               "foto":"https://upload.wikimedia.org/wikipedia/commons/a/a6/Tom_Felton_at_Fan_Expo_Canada_2015.jpg",
+               "personagem":"Draco Malfoy"
+            },
+            {
+               "nome":"Ralph Fiennes",
+               "foto":"https://cdn.britannica.com/63/212163-050-A266B2D0/Ralph-Fiennes-English-actor-2016.jpg",
+               "personagem":"Lord Voldemort"
+            },
+            {
+               "nome":"Jason Isaacs",
+               "foto":"https://m.media-amazon.com/images/M/MV5BNGM3MWZmZWYtYjgxNi00NGU1LThlMjUtMWVkY2FmZGE5Y2VjXkEyXkFqcGdeQXVyMzE4ODAxMA@@._V1_FMjpg_UX1000_.jpg",
+               "personagem":"Lucio Malfoy"
+            }
+        ],
+        "pontuacao":{
+           "IMDB":8.1,
+           "Rotten Tomatoes críticos":96,
+           "Rotten Tomatoes público":89,
+           "Metacritic":87,
+           "Letterboxd":3.9
+        },
+        "imagem":"https://www.jagatreview.com/wp-content/uploads/2011/07/harry-potter-deathly-hallows-2-poster-406x600.jpg",
+        "servicos":[
+            {
+               "nome":"HBO Max"
+            },
+            {
+               "nome":"Amazon Prime Video"
+            },
+            {
+               "nome":"Apple TV"
+            },
+            {
+               "nome":"YouTube"
+            }
+        ]
+     },
+     {
+         "id":"FR-19",
+         "titulo":"Três Homens em Conflito",
+         "sinopse":"Nos Estados Unidos, durante a Guerra de Secessão, um pistoleiro misterioso tenta trabalhar em conjunto com um bandido e um caçador de recompensas para encontrar um tesouro escondido. Os homens são obrigados a forjar uma difícil aliança visto que cada um conhece apenas uma parte da localização da fortuna. O problema é que nenhum deles tem a intenção de dividir a riqueza.",
+         "generos":[
+            "faroeste",
+            "filme épico"
+         ],
+         "ano":2011,
+         "duracao":"3h",
+         "bilheteria":"38,9 milhões USD",
+         "direcao":"Sergio Leone",
+         "elenco":[
+             {
+                "nome":"Clint Eastwood",
+                "foto":"https://img.melhoresfilmes.com.br/unsafe/480x640/https%3A%2F%2Fwww.melhoresfilmes.com.br%2Fstorage%2Fimgs%2Fdirectors%2F136.jpg%3Ft%3D20221024232502",
+                "personagem":"Pistoleiro sem nome"
+             },
+             {
+                "nome":"Eli Wallach",
+                "foto":"https://m.media-amazon.com/images/M/MV5BNjk1NzcyZTItMjZkOC00MjM2LThiYWUtZDE5NGZlZDliYmViXkEyXkFqcGdeQXVyMDc2NTEzMw@@._V1_.jpg",
+                "personagem":"Tuco"
+             },
+             {
+                "nome":"Lee Van Cleef",
+                "foto":"https://upload.wikimedia.org/wikipedia/commons/e/e6/Lee_Van_Cleef_-_Death_Rides_A_Horse_%281%29.jpg",
+                "personagem":"Angel Eyes, Sentenza"
+             },
+             {
+                "nome":"Antonio Casale",
+                "foto":"https://upload.wikimedia.org/wikipedia/commons/d/d9/Antonio_Casale_in_%22The_Good%2C_the_Bad_and_the_Ugly%22%2C_1966.jpg",
+                "personagem":"Jackson"
+             },
+             {
+                "nome":"Rada Rassimov",
+                "foto":"https://br.web.img3.acsta.net/pictures/15/04/24/20/37/028789.jpg",
+                "personagem":"Maria"
+             }
+         ],
+         "pontuacao":{
+            "IMDB":8.1,
+            "Rotten Tomatoes críticos":96,
+            "Rotten Tomatoes público":89,
+            "Metacritic":87,
+            "Letterboxd":3.9
+         },
+         "imagem":"https://br.web.img2.acsta.net/medias/nmedia/18/97/53/07/20534288.jpg",
+         "servicos":[
+             {
+                "nome":"Amazon Prime Video"
+             },
+             {
+                "nome":"Apple TV"
+             },
+             {
+                "nome":"YouTube"
+             }
+         ]
+      },
+      {
+        "id":"FR-20",
+        "titulo":"Forrest Gump: O Contador de Histórias",
+        "sinopse":"Forrest Gump é um homem simples com um coração enorme. Através de sua jornada de vida, ele experimenta alguns dos momentos mais importantes da história dos Estados Unidos. Apesar dos desafios e dificuldades que enfrenta, Forrest sempre mantém um otimismo e uma sabedoria que o ajudam a superar qualquer adversidade.",
+        "generos":[
+           "Drama",
+           "Comédia"
+        ],
+        "ano":1994,
+        "duracao":"2h 22m",
+        "bilheteria":"US$ 677,9 milhões",
+        "direção":"Robert Zemeckis",
+        "elenco":[
+           {
+              "nome":"Tom Hanks",
+              "foto":"https://upload.wikimedia.org/wikipedia/commons/a/a9/Tom_Hanks_TIFF_2019.jpg",
+              "personagem":"Forrest Gump"
+           },
+           {
+              "nome":"Robin Wright",
+              "foto":"https://br.web.img3.acsta.net/pictures/19/11/05/01/50/2018682.jpg",
+              "personagem":"Jenny Curran"
+           },
+           {
+              "nome":"Gary Sinise",
+              "foto":"https://flxt.tmsimg.com/assets/22818_v9_bb.jpg",
+              "personagem":"Tenente Dan Taylor"
+           },
+           {
+              "nome":"Sally Field",
+              "foto":"https://br.web.img3.acsta.net/pictures/20/01/13/22/36/5812459.jpg",
+              "personagem":"Sra. Gump"
+           },
+           {
+              "nome":"Mykelti Williamson",
+              "foto":"https://flxt.tmsimg.com/assets/47337_v9_bc.jpg",
+              "personagem":"Bubba Blue"
+           }
+        ],
+        "pontuacao":{
+           "IMDB":8.8,
+           "Rotten Tomatoes críticos":72,
+           "Rotten Tomatoes público":95,
+           "Metacritic":82,
+           "Letterboxd":4.3
+        },
+        "imagem":"https://static.wikia.nocookie.net/dublagem/images/8/8c/Forrest_Gump.jpeg/revision/latest?cb=20220821001908&path-prefix=pt-br",
+        "servicos":[
+           {
+              "nome":"Prime Video"
+           },
+           {
+              "nome":"Apple TV"
+           },
+           {
+              "nome":"Telecine"
+           },
+           {
+              "nome":"Paramount+"
+           },
+           {
+              "nome":"YouTube"
+           }
+        ]
+     }
  ]
