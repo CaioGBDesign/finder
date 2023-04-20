@@ -1,70 +1,50 @@
-[
-    {
-       "id":"FR-1",
-       "titulo":"Super Mario Bros",
-       "sinopse":"Dois encanadores de Nova York são jogados em um mundo paralelo estranho onde devem resgatar uma princesa sequestrada de um rei diabólico.",
-       "generos":[
-          "Ação",
-          "Aventura",
-          "Comédia"
-       ],
-       "ano":2023,
-       "duracao":"1h 50m",
-       "bilheteria":"73,3 milhões USD",
-       "diretores":[
+,
+   {
+      "id":"FR-2",
+      "titulo":"Homem-Formiga 3",
+      "sinopse":"Scott Lang tenta equilibrar sua vida pessoal e seus deveres como Homem-Formiga, quando é confrontado por um novo vilão que ameaça o mundo inteiro.",
+      "generos":[
+         "Ação",
+         "Aventura",
+         "Ficção Científica"
+      ],
+      "ano":2024,
+      "duracao":"2h 10m",
+      "bilheteria":"73,3 milhões USD",
+      "direção":"Frank Darabont",
+      "elenco":[
          {
-            "nome":"Aaron Horvath",
-            "foto":"https://upload.wikimedia.org/wikipedia/commons/0/09/Aaron_Horvath_by_Gage_Skidmore.jpg"
+            "nome":"Paul Rudd",
+            "foto":"https://image.tmdb.org/t/p/w500/8eTtJ7XVXY0BnEeUaSiTAraTIXd.jpg",
+            "personagem":"Scott Lang / Homem-Formiga"
          },
          {
-            "nome":"Michael Jelenic",
-            "foto":"https://fr.web.img4.acsta.net/c_310_420/pictures/23/04/04/12/26/4235354.jpg"
+            "nome":"Evangeline Lilly",
+            "foto":"https://m.media-amazon.com/images/M/MV5BMTc2MDMzODU0OV5BMl5BanBnXkFtZTgwODIwOTAxMzI@._V1_FMjpg_UX1000_.jpg",
+            "personagem":"Hope van Dyne / Vespa"
+         },
+         {
+            "nome":"Michael Douglas",
+            "foto":"https://upload.wikimedia.org/wikipedia/commons/3/38/Michael_Douglas_C%C3%A9sar_2016_3.jpg",
+            "personagem":"Hank Pym"
+         },
+         {
+            "nome":"Michelle Pfeiffer",
+            "foto":"https://br.web.img3.acsta.net/c_310_420/pictures/18/07/05/00/58/3790755.jpg",
+            "personagem":"Janet van Dyne"
+         },
+         {
+            "nome":"Jonathan Majors",
+            "foto":"https://pyxis.nymag.com/v1/imgs/fe3/de3/0ec7780c460f61e98005943404f52989ab-jonathan-majors.1x.rsquare.w1400.jpg",
+            "personagem":"Kang, o Conquistador"
          }
       ],
-       "elenco":[          
-         {
-            "nome":"Jack Black",
-            "foto":"https://br.web.img2.acsta.net/pictures/18/09/04/21/08/2345092.jpg",
-            "personagem":"Bowser"
-         },
-         {
-             "nome":"Chris Pratt",
-             "foto":"https://flxt.tmsimg.com/assets/249381_v9_bb.jpg",
-             "personagem":"Mario"
-          },
-          {
-             "nome":"Charlie Day",
-             "foto":"https://upload.wikimedia.org/wikipedia/commons/f/fe/Charlie_Day_by_Gage_Skidmore.jpg",
-             "personagem":"Luigi"
-          },
-          {
-             "nome":"Anya Taylor-Joy",
-             "foto":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Anya_Taylor-Joy_by_Gage_Skidmore.jpg/1200px-Anya_Taylor-Joy_by_Gage_Skidmore.jpg",
-             "personagem":"Peach"
-          },
-          {
-             "nome":"Seth Rogen",
-             "foto":"https://upload.wikimedia.org/wikipedia/commons/1/19/Seth_Rogen_by_Gage_Skidmore_2.jpg",
-             "personagem":"Toad"
-          },
-          {
-             "nome":"Keegan-Michael Key",
-             "foto":"https://ntvb.tmsimg.com/assets/assets/298513_v9_bb.jpg",
-             "personagem":"Toad"
-          },
-          {
-             "nome":"Charles Martinet",
-             "foto":"https://static.jojowiki.com/images/2/2f/latest/20220127081216/Charles_Martinet_Infobox.png",
-             "personagem":"Giuseppe, Mario's Dad"
-          }
-       ],
-       "pontuacao":{
-          "IMDB":7.4,
-          "Rotten Tomatoes críticos":58,
-          "Rotten Tomatoes público":96,
-          "Metacritic":48,
-          "Letterboxd":3.8
-       },
-       "imagem":"https://leiturafilmica.com.br/wp-content/uploads/2023/04/super-mario-bros-o-filme-poster.jpg"
-    }
- ]
+      "pontuacao":{
+         "IMDB":6.4,
+         "Rotten Tomatoes críticos":47,
+         "Rotten Tomatoes público":83,
+         "Metacritic":50,
+         "Letterboxd":2.7
+      },
+      "imagem":"https://cinepop.com.br/wp-content/uploads/2023/01/homemformigaeavespa.jpeg"
+   }
