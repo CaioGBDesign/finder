@@ -12,31 +12,41 @@
        "duracao":"1h 50m",
        "bilheteria":"73,3 milhões USD",
        "direção":"Frank Darabont",
-       "elenco":[
-          {
+       "elenco":[          
+         {
+            "nome":"Jack Black",
+            "foto":"https://br.web.img2.acsta.net/pictures/18/09/04/21/08/2345092.jpg",
+            "personagem":"Bowser"
+         },
+         {
              "nome":"Chris Pratt",
-             "foto":"https://www.imdb.com/name/nm0695435/mediaviewer/rm1096912129/",
+             "foto":"https://flxt.tmsimg.com/assets/249381_v9_bb.jpg",
              "personagem":"Mario"
           },
           {
              "nome":"Charlie Day",
-             "foto":"https://www.imdb.com/name/nm0206359/mediaviewer/rm805937408/",
+             "foto":"https://upload.wikimedia.org/wikipedia/commons/f/fe/Charlie_Day_by_Gage_Skidmore.jpg",
              "personagem":"Luigi"
           },
           {
              "nome":"Anya Taylor-Joy",
-             "foto":"https://www.imdb.com/name/nm5896355/mediaviewer/rm2846791168/",
+             "foto":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Anya_Taylor-Joy_by_Gage_Skidmore.jpg/1200px-Anya_Taylor-Joy_by_Gage_Skidmore.jpg",
              "personagem":"Peach"
           },
           {
-             "nome":"Jack Black",
-             "foto":"https://www.imdb.com/name/nm0085312/mediaviewer/rm1496500992/",
-             "personagem":"Bowser"
+             "nome":"Seth Rogen",
+             "foto":"https://upload.wikimedia.org/wikipedia/commons/1/19/Seth_Rogen_by_Gage_Skidmore_2.jpg",
+             "personagem":"Toad"
           },
           {
              "nome":"Keegan-Michael Key",
-             "foto":"https://www.imdb.com/name/nm0453486/mediaviewer/rm4270537984/",
+             "foto":"https://ntvb.tmsimg.com/assets/assets/298513_v9_bb.jpg",
              "personagem":"Toad"
+          },
+          {
+             "nome":"Charles Martinet",
+             "foto":"https://static.jojowiki.com/images/2/2f/latest/20220127081216/Charles_Martinet_Infobox.png",
+             "personagem":"Giuseppe, Mario's Dad"
           }
        ],
        "pontuacao":{
@@ -64,27 +74,27 @@
        "elenco":[
           {
              "nome":"Paul Rudd",
-             "foto":"https://www.imdb.com/name/nm0748620/mediaviewer/rm2316564736/",
+             "foto":"https://image.tmdb.org/t/p/w500/8eTtJ7XVXY0BnEeUaSiTAraTIXd.jpg",
              "personagem":"Scott Lang / Homem-Formiga"
           },
           {
              "nome":"Evangeline Lilly",
-             "foto":"https://www.imdb.com/name/nm1431940/mediaviewer/rm3407916544/",
+             "foto":"https://m.media-amazon.com/images/M/MV5BMTc2MDMzODU0OV5BMl5BanBnXkFtZTgwODIwOTAxMzI@._V1_FMjpg_UX1000_.jpg",
              "personagem":"Hope van Dyne / Vespa"
           },
           {
              "nome":"Michael Douglas",
-             "foto":"https://www.imdb.com/name/nm0001144/mediaviewer/rm1619525376/",
+             "foto":"https://upload.wikimedia.org/wikipedia/commons/3/38/Michael_Douglas_C%C3%A9sar_2016_3.jpg",
              "personagem":"Hank Pym"
           },
           {
              "nome":"Michelle Pfeiffer",
-             "foto":"https://www.imdb.com/name/nm0000201/mediaviewer/rm4180388096/",
+             "foto":"https://br.web.img3.acsta.net/c_310_420/pictures/18/07/05/00/58/3790755.jpg",
              "personagem":"Janet van Dyne"
           },
           {
              "nome":"Jonathan Majors",
-             "foto":"https://www.imdb.com/name/nm3745712/mediaviewer/rm1626156032/",
+             "foto":"https://pyxis.nymag.com/v1/imgs/fe3/de3/0ec7780c460f61e98005943404f52989ab-jonathan-majors.1x.rsquare.w1400.jpg",
              "personagem":"Kang, o Conquistador"
           }
        ],
