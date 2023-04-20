@@ -28,9 +28,13 @@ form.addEventListener('submit', e => {
           const sinopse = document.createElement('p');
           sinopse.textContent = filme.sinopse;
 
+          const servicos = document.createElement('div');
+          servicos.textContent = filme.servicos;
+
           itemFilme.appendChild(titulo);
           itemFilme.appendChild(ano);
           itemFilme.appendChild(sinopse);
+          itemFilme.appendChild(servicos);
 
           results.appendChild(itemFilme);
         });
