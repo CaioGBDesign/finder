@@ -1,74 +1,132 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Filmes</title>
+  <head>
+    <title>Sugerir Filme Aleatório</title>
 
-	<link rel="stylesheet/less" type="text/css" href="style.less" />
+    <link rel="stylesheet/less" type="text/css" href="style.less" />
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div id="movie-info"></div>
+      
+      <div class="botao-sugestao">
+        <button id="btn-random-movie">Sugestão de Filme</button>
+        
+        <div class="filtros" onclick="abrirPopup()">
+          <img src="https://caiogbdesign.github.io/finder/filtros.svg" alt="">
+        </div>
+      </div>
+    </main>
+    
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <div class="popup">
+      <div class="close-popup" onclick="fecharPopup()">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+      </div>
+      <div class="popup-content">
+        <div class="popup-filtros">
 
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+          <div class="servicos-streaming">
+            <span>Streaming</span>
+              <div class="streaming">
+                <img src="Icons\netflix.svg" alt="netflix">
+                <img src="Icons\prime-video.svg" alt="Prime Vídeo">
+                <img src="Icons\hbo-max.svg" alt="HBO Max">
+                <img src="Icons\disney+.svg" alt="Disney +">
+                <img src="Icons\star+.svg" alt="Star +">
+                <img src="Icons\prime-video.svg" alt="Prime Vídeo">
+                <img src="Icons\youtube.svg" alt="YouTube">
+                <img src="Icons\apple-tv.svg" alt="Apple Tv">
+                <img src="Icons\paramount.svg" alt="Paramount">
+              </div>
+          </div>
+  
+          <div class="filtros-categoria">
+  
+            <span>Categoria</span>
+  
+            <div class="botao-categoria">
+              <span>Ação</span>
+            </div>
+            
+            <div class="botao-categoria">
+              <span>Comédia</span>
+            </div>
+            
+            <div class="botao-categoria">
+              <span>Drama</span>
+            </div>
+            
+            <div class="botao-categoria">
+              <span>Ficção científica</span>
+            </div>
+            
+            <div class="botao-categoria">
+              <span>Terror</span>
+            </div>
+            
+            <div class="botao-categoria">
+              <span>Romance</span>
+            </div>
+            
+            <div class="botao-categoria">
+              <span>Suspense</span>
+            </div>
+            
+            <div class="botao-categoria">
+              <span>Animação</span>
+            </div>
+            
+            <div class="botao-categoria">
+              <span>Musical</span>
+            </div>
+            
+            <div class="botao-categoria">
+              <span>Documentário</span>
+            </div>
+          </div>
+  
+          <div class="classificacao-indicativa">
+  
+            <span>Classificação indicativa</span>
+  
+            <div class="botao-classificacao">
+              <span>Livre</span>
+            </div>
+            
+            <div class="botao-classificacao">
+              <span>10 anos</span>
+            </div>
+            
+            <div class="botao-classificacao">
+              <span>12 anos</span>
+            </div>
+            
+            <div class="botao-classificacao">
+              <span>14 anos</span>
+            </div>
+            
+            <div class="botao-classificacao">
+              <span>16 anos</span>
+            </div>
+            
+            <div class="botao-classificacao">
+              <span>18 anos</span>
+            </div>
+          </div>
+  
+          <div class="botao-sugestao-filtros">
+            <button id="btn-random-movie-filtros">Aplicar filtros</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-</head>
-<body>
-
-	<div class="logo-finder">
-		<img src="finder-logo.svg" alt="">
-	</div>
-
-	<div id="filmes">
-		<!-- filmes sugeridos -->
-	</div>
-
-	<div class="cont-sugestao">
-		<div class="CTA-Filtros">
-			<button onclick="sugerirFilme()">
-				<div class="cta-sugestao">
-					<span>Sugerir filme</span>
-				</div>				
-			</button>
-	
-			<div class="filtros">
-				<img src="filtros.svg" alt="">
-			</div>
-		</div>
-
-		<div class="filtros-opcoes">
-			<div class="filtros-categorias">
-				<span>Categorias</span>
-
-				<div class="categorias">
-					<div class="botao" data-categoria="comedia" onclick="sugerirFilme('comedia')">Rir até o c* fazer bico</div>
-					<div class="botao" data-categoria="terror" onclick="sugerirFilme('terror')">Medinho</div>
-					<div class="botao" data-categoria="fantasia" onclick="sugerirFilme('fantasia')">Fantasia</div>
-					<div class="botao" data-categoria="drama" onclick="sugerirFilme('drama')">Pra chorar</div>
-					<div class="botao" data-categoria="romance" onclick="sugerirFilme('romance')">Maldito crush</div>
-					<div class="botao" data-categoria="comedia-romantica" onclick="sugerirFilme('comedia-romantica')">Comédia Romântica</div>
-				</div>
-				
-			</div>
-
-			<div class="filtros-categorias">
-				<span>Streaming</span>
-				
-				<div class="categorias">
-					<div class="botao" data-categoria="Netflix" onclick="sugerirFilme('Netflix')">Netflix</div>
-					<div class="botao" data-categoria="HBO-MAX" onclick="sugerirFilme('HBO-MAX')">HBO MAX</div>
-					<div class="botao" data-categoria="Prime-Video" onclick="sugerirFilme('Prime-Video')">Prime Vídeo</div>
-					<div class="botao" data-categoria="Disney-Plys" onclick="sugerirFilme('Disney-Plys')">Disney Plys</div>
-					<div class="botao" data-categoria="Star-Plus" onclick="sugerirFilme('Star-Plus')">Star Plus</div>
-					<div class="botao" data-categoria="Apple-TV" onclick="sugerirFilme('Apple-TV')">Apple TV</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<script src="script.js"></script>
+    <script src="script.js"></script>
     <!-- Less -->
     <script src="https://cdn.jsdelivr.net/npm/less" ></script>	
-
-</body>
+  </body>
 </html>
