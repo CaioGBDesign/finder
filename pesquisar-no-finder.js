@@ -63,7 +63,7 @@ form.addEventListener('submit', (e) => {
           classificacao.textContent = `Classificação: ${filme.classificação}`;
 
           const direcao = document.createElement('p');
-          direcao.textContent = `Direção: ${filme.direção}`;
+          direcao.textContent = `Direção: ${filme.direcao}`;
 
           const elenco = document.createElement('p');
           elenco.innerHTML = `<p>Elenco</p> ${filme.elenco.map(membroElenco => `
