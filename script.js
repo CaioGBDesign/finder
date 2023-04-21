@@ -179,11 +179,26 @@ document
   }
 
   function abrirPopup() {
-    var botao = document.querySelector('.botao-sugestao');
+    var popup = document.querySelector(".botao-sugestao");
+    var fecharFiltros = document.querySelector(".fechar-filtros");
+    var fecharFiltrosBotao = document.querySelector(".filtros");
+    var abrirFiltrosBotao = document.querySelector(".abrir-filtros");
+    var GrupoFiltrosBotoes = document.querySelector(".grupo-botoes");
+    
+    if (popup.classList.contains("aberto")) {
+      popup.classList.remove("aberto");
+      fecharFiltros.style.opacity = "0";
+      abrirFiltrosBotao.style.opacity = "1";
+      fecharFiltrosBotao.style.bottom = "0px";
+      fecharFiltrosBotao.style.background = "#FEDC33";
+      GrupoFiltrosBotoes.style.top = "0px";
 
-    if (botao.style.height === '1270px') {
-      botao.style.height = '200px';
     } else {
-      botao.style.height = '1270px';
+      popup.classList.add("aberto");
+      fecharFiltros.style.opacity = "1";
+      abrirFiltrosBotao.style.opacity = "0";
+      fecharFiltrosBotao.style.bottom = "20px";
+      fecharFiltrosBotao.style.background = "#ffffff";
+      GrupoFiltrosBotoes.style.top = "-100px";
     }
   }
