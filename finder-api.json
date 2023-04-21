@@ -8,8 +8,8 @@
       ],
       "ano":2023,
       "duracao":"1h 50m",
-      "bilheteria":"73,3 milhões USD",
-      "direção":"Aaron Horvath , Michael Jelenic",
+      "bilheteria":"377 milhões USD",
+      "direcao":"Aaron Horvath , Michael Jelenic",
       "classificacao": "Livre",
       "elenco":[          
         {
@@ -67,7 +67,7 @@
       "ano":2024,
       "duracao":"2h 10m",
       "bilheteria":"73,3 milhões USD",
-      "direção":"Frank Darabont",
+      "direcao":"Frank Darabont",
       "classificacao": "Livre",
       "elenco":[
          {
@@ -115,7 +115,7 @@
       "ano":1995,
       "duracao":"2h 22m",
       "bilheteria":"73,3 milhões USD",
-      "direção":"Frank Darabont",
+      "direcao":"Frank Darabont",
       "classificacao": "16 anos",
       "elenco":[
          {
@@ -177,7 +177,7 @@
       "ano":1972,
       "duracao":"2h 55m",
       "bilheteria":"US$ 246 milhões",
-      "direção":"Francis Ford Coppola",
+      "direcao":"Francis Ford Coppola",
       "classificacao": "14 anos",
       "elenco":[
          {
@@ -239,7 +239,7 @@
       "ano":1974,
       "duracao":"3h 22m",
       "bilheteria":"US$ 193 milhões",
-      "direção":"Francis Ford Coppola",
+      "direcao":"Francis Ford Coppola",
       "classificacao": "14 anos",
       "elenco":[
          {
@@ -375,7 +375,7 @@
       "ano":2008,
       "duracao":"2h 32m",
       "bilheteria":"US$ 1,005 bilhão",
-      "direção":"Christopher Nolan",
+      "direcao":"Christopher Nolan",
       "classificacao": "14 anos",
       "elenco":[
          {
@@ -493,7 +493,7 @@
       "ano":1993,
       "duracao":"3h 17m",
       "bilheteria":"US$ 321,2 milhões",
-      "direção":"Steven Spielberg",
+      "direcao":"Steven Spielberg",
       "classificacao": "16 anos",
       "elenco":[
          {
@@ -555,7 +555,7 @@
       "ano":2003,
       "duracao":"3h 21m",
       "bilheteria":"US$ 1,142 bilhão",
-      "direção":"Peter Jackson",
+      "direcao":"Peter Jackson",
       "classificacao": "14 anos",
       "elenco":[
          {
@@ -617,7 +617,7 @@
       "ano":1994,
       "duracao":"2h 34m",
       "bilheteria":"US$ 213,9 milhões",
-      "direção":"Quentin Tarantino",
+      "direcao":"Quentin Tarantino",
       "classificacao": "18 anos",
       "elenco":[
          {
@@ -825,7 +825,7 @@
       "ano":2007,
       "duracao":"2h 18m",
       "bilheteria":"US$ 942,0 milhões",
-      "direção":"David Yates",
+      "direcao":"David Yates",
       "classificacao": "Livre",
       "elenco":[
          {
@@ -902,7 +902,7 @@
       "ano":2005,
       "duracao":"2h 37m",
       "bilheteria":"US$ 896 milhões",
-      "direção":"Mike Newell",
+      "direcao":"Mike Newell",
       "classificacao": "Livre",
       "elenco":[
          {
@@ -964,7 +964,7 @@
       "ano":2009,
       "duracao":"2h 33m",
       "bilheteria":"US$ 934,4 milhões",
-      "direção":"David Yates",
+      "direcao":"David Yates",
       "classificacao": "Livre",
       "elenco":[
          {
@@ -974,12 +974,12 @@
          },
          {
             "nome":"Rupert Grint",
-            "foto":"https://upload.wikimedia.org/wikipedia/commons/4/4d/Rupert_Grint_2019_by_Glenn_Francis.jpg",
+            "foto":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/RupertGrint2018.jpg/640px-RupertGrint2018.jpg",
             "personagem":"Ron Weasley"
          },
          {
             "nome":"Emma Watson",
-            "foto":"https://upload.wikimedia.org/wikipedia/commons/0/0a/Emma_Watson_2013_2.jpg",
+            "foto":"https://images.mubicdn.net/images/cast_member/23751/cache-2603-1627313155/image-w856.jpg",
             "personagem":"Hermione Granger"
          },
          {
@@ -989,7 +989,7 @@
          },
          {
             "nome":"Alan Rickman",
-            "foto":"https://upload.wikimedia.org/wikipedia/commons/4/49/Alan_Rickman_TIFF_2011.jpg",
+            "foto":"https://m.media-amazon.com/images/M/MV5BMTUwNTc4MTg4Ml5BMl5BanBnXkFtZTcwNDY2MjkxOA@@._V1_FMjpg_UX1000_.jpg",
             "personagem":"Severo Snape"
          }
       ],
@@ -1239,7 +1239,7 @@
        "ano":1994,
        "duracao":"2h 22m",
        "bilheteria":"US$ 677,9 milhões",
-       "direção":"Robert Zemeckis",
+       "direcao":"Robert Zemeckis",
        "classificacao": "14 anos",
        "elenco":[
           {
