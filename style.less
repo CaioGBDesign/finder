@@ -384,6 +384,89 @@ body
                     }
                 }
 
+                .classificacao
+                {
+                    width: 90%;
+                    
+                    margin-top: 50px;
+
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+
+                    span
+                    {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 50px;
+                        line-height: 50px;
+
+                        color: #FFFFFF;
+
+                        opacity: 0.3;
+
+                        width: 100%;
+                    }
+
+                    .botao-clssificacao
+                    {
+                        background: #ffffff05;
+                        border-radius: 10px;
+
+                        padding: 30px;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        width: fit-content;
+
+                        transition: 0.5s;
+
+                        p
+                        {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 34px;
+
+                            margin: 0px;
+    
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+
+                .bilheteria
+                {
+                    width: 90%;
+                    
+                    margin-top: 80px;
+
+                    span
+                    {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 50px;
+                        line-height: 50px;
+
+                        color: #FFFFFF;
+
+                        opacity: 0.3;
+
+                        width: 100%;
+                    }
+
+                    p
+                    {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 34px;
+                        line-height: 34px;
+
+                        color: #FFFFFF;
+                    }
+                }
+
                 .sinopse
                 {
                     width: 90%;
@@ -426,275 +509,278 @@ body
         .botao-sugestao
         {
             position: fixed;
+            left: 0px;
+            bottom: 0px;
 
             width: 100%;
             height: 200px;
-            left: 0px;
-            bottom: 0px;
 
             background: #20232A;
             border-top: 1px solid #FFFFFF;
 
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: end;
             align-items: center;
-            gap: 45px;
-            
-            button
-            {
-                width: 550px;
-                height: 100px;
-                left: 0px;
-                top: 0px;
 
-                background: #FEDC33;
-                border-radius: 20px;
-                border: none;
+            overflow: hidden;
 
-                font-style: normal;
-                font-weight: 600;
-                font-size: 45px;
-                line-height: 45px;
-                text-align: center;
+            transition: .5s;
 
-                color: #20232A;
-
-                &:active
-                {
-                    transform: translateY(2px);
-                }
-            }
-
-            .filtros
-            {
-                width: 100px;
-                height: 100px;
-
-                background: #FEDC33;
-                border-radius: 20px;
-
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                img
-                {
-                    width: 60%;
-                }
-
-                &:active
-                {
-                    transform: translateY(2px);
-                }
-            }
-        }
-    }
-    
-    .popup
-    {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-
-        z-index: 1;
-
-        width: 100%;
-        height: 100vh;
-
-        display: none;
-
-        .close-popup
-        {
-            width: 100%;
-            height: 40vh;
-
-            position: absolute;
-            top: 0px;
-            left: 0px;
-
-            background: #00000050;
-        }
-
-        .popup-content
-        {
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-
-            width: 100%;
-            height: 60vh;
-
-            background: #20232A;
-
-            border-top: #FEDC33 solid 1px;
-
-            display: flex;
-            justify-content: center;
-
-            padding: 50px 0px;
-
-            overflow-y: scroll;
-                        
-            &::-webkit-scrollbar
-            {
-                width: 0px;
-            }
-            
-            &::-webkit-scrollbar-track
-            {
-                background: none; 
-            }
-            
-            &::-webkit-scrollbar-thumb
-            {
-                background: none; 
-            }
-
-            &::-webkit-scrollbar-thumb:hover
-            {
-                background: none; 
-            }
-
-            .popup-filtros
+            .cont-botao-filtros
             {
                 width: 90%;
+                height: 1070px;
 
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 30px;
-
-                .servicos-streaming
+                overflow-y: scroll;
+                        
+                &::-webkit-scrollbar
                 {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 30px;
-
-                    span
-                    {
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 18px;
-                        line-height: 22px;
-
-                        color: #FFFFFF;
-
-                        opacity: 0.5;
-
-                        width: 100%;
-                    }
-
-                    .streaming
-                    {
-                        display: flex;
-                        flex-wrap: wrap;
-
-                        gap: 10px;
-
-                        img
-                        {
-                            width: 64px;
-                            height: 64px;
-                        }
-                    }
+                    width: 0px;
+                }
+                
+                &::-webkit-scrollbar-track
+                {
+                    background: none; 
+                }
+                
+                &::-webkit-scrollbar-thumb
+                {
+                    background: none; 
                 }
 
-                .filtros-categoria, .classificacao-indicativa
+                &::-webkit-scrollbar-thumb:hover
                 {
+                    background: none; 
+                }
+
+
+                .scroll-filtros
+                {
+                    width: 100%;
+                    height: 1670px;
+
                     display: flex;
-                    flex-wrap: wrap;
-                    gap: 10px;                    
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 80px;
 
-                    span
+                    .servicos-streaming
                     {
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 18px;
-                        line-height: 22px;
-
-                        color: #FFFFFF;
-
-                        opacity: 0.5;
-
                         width: 100%;
 
-                        margin-bottom: 30px;
-                    }
-
-                    .botao-categoria, .botao-classificacao
-                    {
-                        background: #ffffff05;
-                        border-radius: 10px;
-
-                        padding: 20px;
-
                         display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        flex-direction: column;
+                        gap: 10px;
 
-                        width: fit-content;
-
-                        transition: .5s;
+                        margin-top: 100px;
 
                         span
                         {
                             font-style: normal;
                             font-weight: 400;
-                            font-size: 18px;
-                            line-height: 22px;
-
+                            font-size: 50px;
+                            line-height: 50px;
                             color: #FFFFFF;
 
-                            opacity: 1;
+                            opacity: 0.3;
 
-                            width: auto;
+                            width: 100%;
 
-                            margin-bottom: 0px;
-
-                            transition: .5s;
+                            margin-bottom: 50px;
                         }
 
-                        &:hover
+                        .streaming
                         {
-                            background: #FEDC33;
-                            border-bottom: 0px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 30px;
 
-                            transform: translateY(5px);
+                            img
+                            {
+                                width: 150px;
+                            }
+                        }
+                    }
+
+                    .filtros-categoria
+                    {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 30px;
+
+                        width: 100%;
+
+                        span
+                        {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 50px;
+                            line-height: 50px;
+                            color: #FFFFFF;
+
+                            opacity: 0.3;
+
+                            width: 100%;
+
+                            margin-bottom: 50px;
+                        }
+
+                        .botao-categoria
+                        {
+                            background: #ffffff05;
+                            border-radius: 10px;
+
+                            padding: 30px;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            width: fit-content;
+                            
+                            transition: 0.5s;
 
                             span
                             {
-                                color: #20232A;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 34px;
+
+                                margin: 0px;
+
+                                color: #FFFFFF;
+
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    .classificacao
+                    {
+                        width: 100%;
+                        
+                        margin-top: 50px;
+
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 30px;
+
+                        margin-bottom: 70px;
+
+                        span
+                        {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 50px;
+                            line-height: 50px;
+
+                            color: #FFFFFF;
+
+                            opacity: 0.3;
+
+                            width: 100%;
+
+                            margin-bottom: 50px;
+                        }
+
+                        .botao-clssificacao
+                        {
+                            background: #ffffff05;
+                            border-radius: 10px;
+
+                            padding: 30px;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            width: fit-content;
+                            
+                            transition: 0.5s;
+
+                            p
+                            {
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 34px;
+
+                                margin: 0px;
+
+                                color: #FFFFFF;
+
+                                opacity: 1;
                             }
                         }
                     }
                 }
+            }
+                
+            .cta-sugestoes
+            {
+                width: 100%;
+                height: 200px;
 
-                .botao-sugestao-filtros
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                .ctas
                 {
+                    width: 100%;
+                    height: 200px;
+
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
-                    width: 100%;
-
+                    gap: 45px;
+                    
                     button
                     {
-                        width: 100%;
-                        height: 46px;
+                        width: 75%;
+                        height: 100px;
+                        left: 0px;
+                        top: 0px;
 
                         background: #FEDC33;
-                        border-radius: 10px;
+                        border-radius: 20px;
                         border: none;
 
                         font-style: normal;
                         font-weight: 600;
-                        font-size: 20px;
-                        line-height: 24px;
+                        font-size: 45px;
+                        line-height: 45px;
                         text-align: center;
 
                         color: #20232A;
 
-                        margin-bottom: 34px;
+                        &:active
+                        {
+                            transform: translateY(2px);
+                        }
+                    }
+
+                    .filtros
+                    {
+                        width: 100px;
+                        height: 100px;
+
+                        background: #FEDC33;
+                        border-radius: 20px;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img
+                        {
+                            width: 60%;
+                        }
+
+                        &:active
+                        {
+                            transform: translateY(2px);
+                        }
                     }
                 }
             }
