@@ -60,7 +60,7 @@ form.addEventListener('submit', (e) => {
           });          
 
           const classificacao = document.createElement('p');
-          classificacao.textContent = `Classificação: ${filme.classificação}`;
+          classificacao.textContent = `Classificação: ${filme.classificacao}`;
 
           const direcao = document.createElement('p');
           direcao.textContent = `Direção: ${filme.direcao}`;
