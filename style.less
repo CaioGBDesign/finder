@@ -506,6 +506,11 @@ body
             }
         }
 
+        .aberto
+        {
+            height: 1270px !important;
+        }
+
         .botao-sugestao
         {
             position: fixed;
@@ -734,25 +739,68 @@ body
                     justify-content: center;
                     align-items: center;
                     gap: 45px;
-                    
-                    button
+
+                    .botao-sugerir-filme
                     {
                         width: 75%;
                         height: 100px;
-                        left: 0px;
-                        top: 0px;
-
-                        background: #FEDC33;
                         border-radius: 20px;
-                        border: none;
 
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 45px;
-                        line-height: 45px;
-                        text-align: center;
+                        overflow: hidden;
 
-                        color: #20232A;
+                        position: relative;
+
+                        .grupo-botoes
+                        {
+                            width: 100%;
+                            height: 200px;
+
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+
+                            transition: .5s;
+
+                            button
+                            {
+                                background: none;
+                                border: none;
+                            }
+                        
+                            #btn-random-movie
+                            {
+                                width: 100%;
+                                height: 100px;
+    
+                                background: #FEDC33;
+                                border: none;
+    
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 45px;
+                                line-height: 45px;
+                                text-align: center;
+    
+                                color: #20232A;
+                            }
+    
+                            #btn-aplicar-filtros
+                            {
+                                width: 100%;
+                                height: 100px;
+    
+                                background: #FEDC33;
+                                border: none;
+    
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 45px;
+                                line-height: 45px;
+                                text-align: center;
+    
+                                color: #20232A;
+                            }
+                        }
 
                         &:active
                         {
@@ -772,9 +820,48 @@ body
                         justify-content: center;
                         align-items: center;
 
-                        img
+                        position: relative;
+                        bottom: 0px;
+
+                        transition: .5s;
+
+                        .fechar-filtros
                         {
-                            width: 60%;
+                            position: absolute;
+
+                            z-index: 1;
+
+                            width: 100%;
+
+                            top: 21px;
+                            left: 0px;
+
+                            opacity: 0;
+
+                            transition: .5s;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img
+                            {
+                                width: 60%;
+                            }
+                        }
+
+                        .abrir-filtros
+                        {
+                            width: 100%;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img
+                            {
+                                width: 60%;
+                            }
                         }
 
                         &:active
