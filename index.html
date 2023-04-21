@@ -35,45 +35,45 @@
     
               <span>Categoria</span>
     
-              <div class="botao-categoria">
+              <button data-categoria="Ação" class="botao-categoria">
                 <span>Ação</span>
-              </div>
+              </button>
               
-              <div class="botao-categoria">
+              <button data-categoria="Comédia" class="botao-categoria">
                 <span>Comédia</span>
-              </div>
+              </button>
               
-              <div class="botao-categoria">
+              <button data-categoria="Drama" class="botao-categoria">
                 <span>Drama</span>
-              </div>
+              </button>
               
-              <div class="botao-categoria">
+              <button data-categoria="Ficção científica" class="botao-categoria">
                 <span>Ficção científica</span>
-              </div>
+              </button>
               
-              <div class="botao-categoria">
+              <button data-categoria="Terror" class="botao-categoria">
                 <span>Terror</span>
-              </div>
+              </button>
               
-              <div class="botao-categoria">
+              <button data-categoria="Romance" class="botao-categoria">
                 <span>Romance</span>
-              </div>
+              </button>
               
-              <div class="botao-categoria">
+              <button data-categoria="Suspense" class="botao-categoria">
                 <span>Suspense</span>
-              </div>
+              </button>
               
-              <div class="botao-categoria">
+              <button data-categoria="Animação" class="botao-categoria">
                 <span>Animação</span>
-              </div>
+              </button>
               
-              <div class="botao-categoria">
+              <button data-categoria="Musical" class="botao-categoria">
                 <span>Musical</span>
-              </div>
+              </button>
               
-              <div class="botao-categoria">
+              <button data-categoria="Documentário" class="botao-categoria">
                 <span>Documentário</span>
-              </div>
+              </button>
             </div>
 
             <div class="classificacao">
@@ -110,10 +110,22 @@
   
         <div class="cta-sugestoes">
           <div class="ctas">
-            <button id="btn-random-movie">Sugestão de Filme</button>
+            <div class="botao-sugerir-filme">
+              <div class="grupo-botoes">
+                <button id="btn-random-movie">Sugerir filme</button>
+                <button id="btn-aplicar-filtros">Aplicar filtros</button>
+              </div>
+            </div>
         
             <div class="filtros" onclick="abrirPopup()">
-              <img src="https://caiogbdesign.github.io/finder/filtros.svg" alt="">
+              <div class="fechar-filtros">
+                <img src="Icons\fechar-filtros.svg">
+              </div>
+              
+              <div class="abrir-filtros">
+                <img src="https://caiogbdesign.github.io/finder/filtros.svg" alt="">
+              </div>
+
             </div>
           </div>
           
@@ -124,6 +136,6 @@
 
     <script src="script.js"></script>
     <!-- Less -->
-    <script src="https://cdn.jsdelivr.net/npm/less" ></script>	
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
   </body>
 </html>
