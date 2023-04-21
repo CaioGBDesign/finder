@@ -55,7 +55,12 @@
          "Metacritic":48,
          "Letterboxd":3.8
       },
-      "imagem":"https://leiturafilmica.com.br/wp-content/uploads/2023/04/super-mario-bros-o-filme-poster.jpg"
+      "imagem":"https://leiturafilmica.com.br/wp-content/uploads/2023/04/super-mario-bros-o-filme-poster.jpg",
+      "servicos":[
+         {
+            "nome":"Somente nos cinemas"
+         }
+      ]
    },
    {
       "id":"FR-2",
@@ -103,7 +108,12 @@
          "Metacritic":50,
          "Letterboxd":2.7
       },
-      "imagem":"https://cinepop.com.br/wp-content/uploads/2023/01/homemformigaeavespa.jpeg"
+      "imagem":"https://cinepop.com.br/wp-content/uploads/2023/01/homemformigaeavespa.jpeg",
+      "servicos":[
+         {
+            "nome":"Indisponível para streaming"
+         }
+      ]
    },
    {
       "id":"FR-3",
