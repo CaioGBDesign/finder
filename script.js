@@ -112,7 +112,19 @@ function exibirFilme(randomMovie) {
 
     <div class="direcao">
       <span>Direção</span>
-      <p>${randomMovie.direção}</p>
+      <p>${randomMovie.direcao}</p>
+    </div>
+
+    <div class="classificacao">
+      <span>Classificação</span>
+      <div class="botao-clssificacao">
+        <p>${randomMovie.classificacao}</p>
+      </div>
+    </div>
+
+    <div class="bilheteria">
+      <span>Bilheteria</span>
+      <p>${randomMovie.bilheteria}</p>
     </div>
 
     <div class="sinopse">
@@ -123,6 +135,7 @@ function exibirFilme(randomMovie) {
 
   document.getElementById("movie-info").appendChild(movieDiv);
 }
+
 
 function sugerirFilme() {
   fetch("https://caiogbdesign.github.io/finder/finder-api.json")
@@ -165,29 +178,12 @@ document
     return serviceName;
   }
 
-// Filtros
-function abrirPopup() {
-  var popup = document.querySelector(".popup");
-  popup.style.display = "block";
-}
+  function abrirPopup() {
+    var botao = document.querySelector('.botao-sugestao');
 
-function fecharPopup() {
-  var popup = document.querySelector(".popup");
-  popup.style.display = "none";
-}
-
-document.addEventListener("click", function(event) {
-  var popupContent = document.querySelector(".popup-content");
-  var popup = document.querySelector(".popup");
-
-  // Verifica se o clique foi fora da popup-content
-  if (!popupContent.contains(event.target)) {
-    // Se sim, esconde o popup
-    fecharPopup();
+    if (botao.style.height === '1270px') {
+      botao.style.height = '200px';
+    } else {
+      botao.style.height = '1270px';
+    }
   }
-});
-
-var closeButton = document.querySelector(".close-popup");
-closeButton.addEventListener("click", function(event) {
-  fecharPopup();
-});
