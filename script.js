@@ -1,135 +1,193 @@
-// chave da API
-const chaveAPI = 'c95de8d6070dbf1b821185d759532f05';
+let filmes;
 
-// função para buscar detalhes de um filme aleatório
-async function buscarFilme() {
-  const url = `https://api.themoviedb.org/3/movie/popular?api_key=${chaveAPI}`;
+document.addEventListener("DOMContentLoaded", function () {
+  fetch(
+    "https://caiogbdesign.github.io/finder/finder-api.json"
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      filmes = data;
+      exibirFilme(filmes[Math.floor(Math.random() * filmes.length)]);
 
+      document
+        .getElementById("btn-random-movie")
+        .addEventListener("click", function () {
+          atualizarFilme();
+        });
 
-  try {
-    const resposta = await fetch(url);
-    const dados = await resposta.json();
-    const indice = Math.floor(Math.random() * dados.results.length);
-    const filme = dados.results[indice];
+      document
+        .getElementById("btn-suggest-movie")
+        .addEventListener("click", function () {
+          sugerirFilme();
+        });
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+});
 
-    // Busca a sinopse do filme
-    const urlDetalhes = `https://api.themoviedb.org/3/movie/${filme.id}?api_key=${chaveAPI}&language=pt-BR`;
-    const respostaDetalhes = await fetch(urlDetalhes);
-    const detalhes = await respostaDetalhes.json();
-
-    // Busca a lista de gêneros
-    const urlGeneros = `https://api.themoviedb.org/3/genre/movie/list?api_key=${chaveAPI}&language=pt-BR`;
-    const respostaGeneros = await fetch(urlGeneros);
-    const generos = await respostaGeneros.json();
-
-    // Mapeia o ID da categoria para o nome correspondente
-    const categoria = generos.genres.find(genero => genero.id === filme.genre_ids[0]).name;
-
-    // Formata a duração do filme
-    const duracaoFormatada = detalhes.runtime !== null && detalhes.runtime !== undefined ? formatarDuracao(detalhes.runtime) : 'não disponível';
-
-    return {
-      nome: filme.title,
-      categoria: categoria,
-      duracao: duracaoFormatada,
-      pontuacaoIMDB: filme.vote_average,
-      pontuacaoRottenTomatoes: '',
-      pontuacaoMetacritic: '',
-      sinopse: detalhes.overview,
-      poster: filme.poster_path
-    };
-  } catch (erro) {
-    console.error(erro);
-  }
-}
-
-
-// função para formatar a duração em minutos para "HH:mm"
-function formatarDuracao(duracaoMinutos) {
-  const horas = Math.floor(duracaoMinutos / 60);
-  const minutos = duracaoMinutos % 60;
-  return `${horas.toString().padStart(2, '0')}:${minutos.toString().padStart(2, '0')}`;
-}
-
-// função para sugerir um novo filme
-async function sugerirFilme(categoria = null) {
-  // definir a url da API de acordo com a categoria
-  let url = '';
-  if (categoria !== null) {
-    if (categoria === 'Netflix' || categoria === 'HBO-MAX' || categoria === 'Prime-Video' || categoria === 'Disney-Plys' || categoria === 'Star-Plus' || categoria === 'Apple-TV') {
-      switch (categoria) {
-        case 'Netflix':
-          url = `https://api.themoviedb.org/3/discover/tv?api_key=${chaveAPI}&sort_by=popularity.desc&with_networks=213`;
-          break;
-        case 'HBO-MAX':
-          url = `https://api.themoviedb.org/3/discover/tv?api_key=${chaveAPI}&sort_by=popularity.desc&with_networks=3185`;
-          break;
-        case 'Prime-Video':
-          url = `https://api.themoviedb.org/3/discover/tv?api_key=${chaveAPI}&sort_by=popularity.desc&with_networks=1024`;
-          break;
-        case 'Disney-Plys':
-          url = `https://api.themoviedb.org/3/discover/tv?api_key=${chaveAPI}&sort_by=popularity.desc&with_networks=2739`;
-          break;
-        case 'Star-Plus':
-          url = `https://api.themoviedb.org/3/discover/tv?api_key=${chaveAPI}&sort_by=popularity.desc&with_networks=3924`;
-          break;
-        case 'Apple-TV':
-          url = `https://api.themoviedb.org/3/discover/tv?api_key=${chaveAPI}&sort_by=popularity.desc&with_networks=2551`;
-          break;
-      }
-    } else {
-      url = `https://api.themoviedb.org/3/discover/movie?api_key=${chaveAPI}&with_genres=${categoria}&sort_by=popularity.desc`;
-    }
-  } else {
-    url = `https://api.themoviedb.org/3/discover/movie?api_key=${chaveAPI}&sort_by=popularity.desc`;
+function exibirFilme(randomMovie) {
+  // Remove o filme anterior da página
+  const movieInfo = document.getElementById("movie-info");
+  while (movieInfo.firstChild) {
+    movieInfo.removeChild(movieInfo.firstChild);
   }
 
-  // buscar um novo filme
-  const filme = await buscarFilme(url);
+  const movieDiv = document.createElement("div");
+  movieDiv.classList.add("sugestao");
+  movieDiv.innerHTML = ` 
 
-  // atualizar a lista de filmes
-  const filmesDiv = document.getElementById('filmes');
-  filmesDiv.innerHTML = `
-      <div class="sugestao">
-          <div class="folder-filme">
-            <img src="https://image.tmdb.org/t/p/w500${filme.poster}" alt="${filme.nome}">
-          </div>
-          
-          <div class="titulo-filme">
-            <h2>${filme.nome}</h2>
-          </div>
+    <div class="folder-filme">
+      <img src="${randomMovie.imagem}" alt="${randomMovie.titulo}">
+    </div>
 
-          <div class="informacoes-filme">
-            <div class="categoria">
-              <span>Categoria</span>
-              <p>${filme.categoria}</p>
-            </div>
-          
-            <div class="duracao">
-              <span>Duração</span>
-              <p>${filme.duracao}</p>
-            </div>
-
-            <div class="pontuacao-imdb">
-              <span>IMDB</span>
-              <p>${filme.pontuacaoIMDB}</p>
-            </div>
-          </div>
-          
-          <div class="sinopse">
-            <span>Sinopse</span>
-            <p>${filme.sinopse}</p>
-          </div>
+    <div class="titulo-filme">
+      <h2>${randomMovie.titulo}</h2>
+    </div>
+    
+    <div class="informacoes-filme">
+      <div class="categoria">
+        <p>${randomMovie.generos}</p>
       </div>
+      <div class="duracao">
+        <p>${randomMovie.duracao}</p>
+      </div>
+    </div>
+    
+    <div class="pontuacao">
+      <div class="imdb">
+      <p>${randomMovie.pontuacao.IMDB}</p>
+        <span>IMDB</span>
+      </div>
+
+      <div class="rottenCriticos">
+        <div class="percentual">
+          <p>${randomMovie.pontuacao["Rotten Tomatoes críticos"]}</p>
+          <span>%</span>
+        </div>
+        <span>Rotten Tomato</span>
+      </div>
+
+      <div class="metacritic">
+        <div class="percentual">
+          <p>${randomMovie.pontuacao.Metacritic}</p>
+          <span>%</span>
+        </div>
+        <span>Metacritic</span>
+      </div>
+
+      <div class="letterboxd">
+        <p>${randomMovie.pontuacao.Letterboxd}</p>
+        <span>Letterboxd</span>
+      </div>
+    </div>
+
+    <div class="servicos">
+      <span>Serviços</span>
+      ${
+        randomMovie.servicos.map(servico => {
+          return `
+            <div class="servico">
+              ${getServiceImage(servico.nome)}
+            </div>
+          `;
+        }).join("")
+      }
+    </div>
+
+    <div class="elenco">
+      <span>Elenco</span>
+      <div class="cont-artistas">
+        ${randomMovie.elenco.map(personagem => `
+        <div class="artista">
+          <div class="img-elenco">
+            <img src="${personagem.foto}" alt="${personagem.nome}">
+          </div>
+          <p>${personagem.nome}</p>
+          <p>${personagem.personagem}</p>
+        </div>
+      `).join('')}
+      </div>
+    </div>
+
+    <div class="direcao">
+      <span>Direção</span>
+      <p>${randomMovie.direção}</p>
+    </div>
+
+    <div class="sinopse">
+      <span>Sinopse</span>
+      <p>${randomMovie.sinopse}</p>
+    </div>
   `;
+
+  document.getElementById("movie-info").appendChild(movieDiv);
 }
 
-// sugerir um filme inicial
-sugerirFilme();
+function sugerirFilme() {
+  fetch("https://caiogbdesign.github.io/finder/finder-api.json")
+    .then(response => response.json())
+    .then(data => {
+      const randomMovie = data[Math.floor(Math.random() * data.length)];
+      exibirFilme(randomMovie);
+    })
+    .catch(error => {
+      console.error(error);
+    });
+}
 
-const filtrosDiv = document.querySelector('.filtros');
-const contSugestaoDiv = document.querySelector('.cont-sugestao');
+document
+  .getElementById("btn-suggest-movie")
+  .addEventListener("click", function () {
+    sugerirFilme();
+  });
 
-filtrosDiv.addEventListener('click', () => {
-  contSugestaoDiv.classList.toggle('aberto');
+  function atualizarFilme() {
+    sugerirFilme();
+  }
+  
+  function getServiceImage(serviceName) {
+    const serviceImages = {
+      "HBO Max": "https://caiogbdesign.github.io/finder/hbo-max.svg",
+      "Prime Video": "https://caiogbdesign.github.io/finder/prime-video.svg",
+      "Apple TV": "https://caiogbdesign.github.io/finder/apple-tv.svg",
+      "YouTube": "https://caiogbdesign.github.io/finder/youtube.svg",
+      "Netflix": "https://caiogbdesign.github.io/finder/netflix.svg",
+      "Star+": "https://caiogbdesign.github.io/finder/star+.svg",
+      "Disney+": "https://caiogbdesign.github.io/finder/disney+.svg",
+      "Paramount+": "https://caiogbdesign.github.io/finder/paramount.svg"
+    };
+  
+    if (serviceImages.hasOwnProperty(serviceName)) {
+      return `<img src="${serviceImages[serviceName]}" alt="${serviceName}">`;
+    }
+  
+    return serviceName;
+  }
+
+// Filtros
+function abrirPopup() {
+  var popup = document.querySelector(".popup");
+  popup.style.display = "block";
+}
+
+function fecharPopup() {
+  var popup = document.querySelector(".popup");
+  popup.style.display = "none";
+}
+
+document.addEventListener("click", function(event) {
+  var popupContent = document.querySelector(".popup-content");
+  var popup = document.querySelector(".popup");
+
+  // Verifica se o clique foi fora da popup-content
+  if (!popupContent.contains(event.target)) {
+    // Se sim, esconde o popup
+    fecharPopup();
+  }
+});
+
+var closeButton = document.querySelector(".close-popup");
+closeButton.addEventListener("click", function(event) {
+  fecharPopup();
 });
