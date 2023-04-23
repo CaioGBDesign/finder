@@ -147,7 +147,7 @@
       "duracao":"2h 22m",
       "bilheteria":"73,3 milhões USD",
       "direcao":"Frank Darabont",
-      "classificacao":"16 anos",
+      "classificacao":"16-anos",
       "elenco":[
          {
             "nome":"Morgan Freeman",
@@ -185,16 +185,16 @@
       "imagem":"https://leiturafilmica.com.br/wp-content/uploads/2022/04/um-sonho-de-liberdade-poster.jpg",
       "servicos":[
          {
-            "nome":"Prime Video"
+            "nome":"prime-video"
          },
          {
-            "nome":"HBO Max"
+            "nome":"hbo-max"
          },
          {
-            "nome":"Apple TV"
+            "nome":"apple-tv"
          },
          {
-            "nome":"YouTube"
+            "nome":"youtube"
          }
       ]
    },
@@ -214,7 +214,7 @@
       "duracao":"2h 55m",
       "bilheteria":"US$ 246 milhões",
       "direcao":"Francis Ford Coppola",
-      "classificacao":"14 anos",
+      "classificacao":"14-anos",
       "elenco":[
          {
             "nome":"Marlon Brando",
@@ -252,16 +252,16 @@
       "imagem":"https://lumiere-a.akamaihd.net/v1/images/the_godfather_99f377a2.jpeg",
       "servicos":[
          {
-            "nome":"Netflix"
+            "nome":"netflix"
          },
          {
-            "nome":"Prime Video"
+            "nome":"prime-video"
          },
          {
-            "nome":"Apple TV"
+            "nome":"apple-tv"
          },
          {
-            "nome":"HBO Max"
+            "nome":"hbo-max"
          }
       ]
    },
@@ -281,7 +281,7 @@
       "duracao":"3h 22m",
       "bilheteria":"US$ 193 milhões",
       "direcao":"Francis Ford Coppola",
-      "classificacao":"14 anos",
+      "classificacao":"14-anos",
       "elenco":[
          {
             "nome":"Al Pacino",
@@ -319,13 +319,13 @@
       "imagem":"https://vortexcultural.com.br/images/2020/01/poderoso-chefao-2.jpg",
       "servicos":[
          {
-            "nome":"Netflix"
+            "nome":"netflix"
          },
          {
-            "nome":"Prime Video"
+            "nome":"prime-video"
          },
          {
-            "nome":"Apple TV"
+            "nome":"apple-tv"
          },
          {
             "nome":"Paramount+"
@@ -401,13 +401,13 @@
       "imagem":"https://br.web.img3.acsta.net/medias/nmedia/18/93/01/50/20230712.jpg",
       "servicos":[
          {
-            "nome":"Prime Video"
+            "nome":"prime-video"
          },
          {
-            "nome":"HBO Max"
+            "nome":"hbo-max"
          },
          {
-            "nome":"YouTube"
+            "nome":"youtube"
          }
       ]
    },
@@ -430,7 +430,7 @@
       "duracao":"2h 32m",
       "bilheteria":"US$ 1,005 bilhão",
       "direcao":"Christopher Nolan",
-      "classificacao":"14 anos",
+      "classificacao":"14-anos",
       "elenco":[
          {
             "nome":"Christian Bale",
@@ -468,16 +468,16 @@
       "imagem":"https://br.web.img3.acsta.net/medias/nmedia/18/90/57/96/20121842.jpg",
       "servicos":[
          {
-            "nome":"Prime Video"
+            "nome":"prime-video"
          },
          {
-            "nome":"Apple TV"
+            "nome":"apple-tv"
          },
          {
-            "nome":"HBO Max"
+            "nome":"hbo-max"
          },
          {
-            "nome":"YouTube"
+            "nome":"youtube"
          }
       ]
    },
@@ -532,10 +532,10 @@
       "imagem":"https://vertentesdocinema.com/wp-content/uploads/2020/09/12-homens-e-uma-sentenca-poster.jpg",
       "servicos":[
          {
-            "nome":"Prime Video"
+            "nome":"prime-video"
          },
          {
-            "nome":"Apple TV"
+            "nome":"apple-tv"
          }
       ]
    },
@@ -555,7 +555,7 @@
       "duracao":"3h 17m",
       "bilheteria":"US$ 321,2 milhões",
       "direcao":"Steven Spielberg",
-      "classificacao":"16 anos",
+      "classificacao":"16-anos",
       "elenco":[
          {
             "nome":"Liam Neeson",
@@ -593,16 +593,16 @@
       "imagem":"https://m.media-amazon.com/images/I/81PvO5Zf3yL.jpg",
       "servicos":[
          {
-            "nome":"Netflix"
+            "nome":"netflix"
          },
          {
-            "nome":"Prime Video"
+            "nome":"prime-video"
          },
          {
-            "nome":"Apple TV"
+            "nome":"apple-tv"
          },
          {
-            "nome":"YouTube"
+            "nome":"youtube"
          }
       ]
    },
@@ -622,7 +622,7 @@
       "duracao":"3h 21m",
       "bilheteria":"US$ 1,142 bilhão",
       "direcao":"Peter Jackson",
-      "classificacao":"14 anos",
+      "classificacao":"14-anos",
       "elenco":[
          {
             "nome":"Elijah Wood",
@@ -660,16 +660,16 @@
       "imagem":"https://upload.wikimedia.org/wikipedia/pt/0/0d/EsdlaIII.jpg",
       "servicos":[
          {
-            "nome":"Prime Video"
+            "nome":"prime-video"
          },
          {
-            "nome":"HBO Max"
+            "nome":"hbo-max"
          },
          {
-            "nome":"Apple TV"
+            "nome":"apple-tv"
          },
          {
-            "nome":"YouTube"
+            "nome":"youtube"
          }
       ]
    },
@@ -689,7 +689,7 @@
       "duracao":"2h 34m",
       "bilheteria":"US$ 213,9 milhões",
       "direcao":"Quentin Tarantino",
-      "classificacao":"18 anos",
+      "classificacao":"18-anos",
       "elenco":[
          {
             "nome":"John Travolta",
@@ -727,13 +727,13 @@
       "imagem":"https://m.media-amazon.com/images/I/81UTs3sC5hL._AC_SL1500_.jpg",
       "servicos":[
          {
-            "nome":"Prime Video"
+            "nome":"prime-video"
          },
          {
-            "nome":"YouTube"
+            "nome":"youtube"
          },
          {
-            "nome":"Apple TV"
+            "nome":"apple-tv"
          }
       ]
    },
@@ -806,16 +806,16 @@
       "imagem":"https://br.web.img3.acsta.net/medias/nmedia/18/95/59/60/20417256.jpg",
       "servicos":[
          {
-            "nome":"HBO Max"
+            "nome":"hbo-max"
          },
          {
-            "nome":"Prime Video"
+            "nome":"prime-video"
          },
          {
-            "nome":"Apple TV"
+            "nome":"apple-tv"
          },
          {
-            "nome":"YouTube"
+            "nome":"youtube"
          }
       ]
    },
@@ -883,16 +883,16 @@
       "imagem":"https://br.web.img2.acsta.net/medias/nmedia/18/93/88/04/20282944.jpg",
       "servicos":[
          {
-            "nome":"HBO Max"
+            "nome":"hbo-max"
          },
          {
-            "nome":"Prime Video"
+            "nome":"prime-video"
          },
          {
-            "nome":"Apple TV"
+            "nome":"apple-tv"
          },
          {
-            "nome":"YouTube"
+            "nome":"youtube"
          }
       ]
    },
@@ -965,16 +965,16 @@
       "imagem":"https://br.web.img3.acsta.net/medias/nmedia/18/90/67/58/20107766.jpg",
       "servicos":[
          {
-            "nome":"HBO Max"
+            "nome":"hbo-max"
          },
          {
-            "nome":"Prime Video"
+            "nome":"prime-video"
          },
          {
-            "nome":"Apple TV"
+            "nome":"apple-tv"
          },
          {
-            "nome":"YouTube"
+            "nome":"youtube"
          }
       ]
    },
@@ -1032,16 +1032,16 @@
       "imagem":"https://img.elo7.com.br/product/original/265774E/big-poster-harry-potter-e-o-calice-de-fogo-lo02-90x60-cm-geek.jpg",
       "servicos":[
          {
-            "nome":"HBO Max"
+            "nome":"hbo-max"
          },
          {
-            "nome":"Prime Video"
+            "nome":"prime-video"
          },
          {
-            "nome":"Apple TV"
+            "nome":"apple-tv"
          },
          {
-            "nome":"YouTube"
+            "nome":"youtube"
          }
       ]
    },
@@ -1099,16 +1099,16 @@
       "imagem":"https://img.elo7.com.br/product/original/265780F/big-poster-harry-potter-e-o-enigma-do-principe-lo04-90x60-cm-harry-potter.jpg",
       "servicos":[
          {
-            "nome":"HBO Max"
+            "nome":"hbo-max"
          },
          {
-            "nome":"Prime Video"
+            "nome":"prime-video"
          },
          {
-            "nome":"Apple TV"
+            "nome":"apple-tv"
          },
          {
-            "nome":"YouTube"
+            "nome":"youtube"
          }
       ]
    },
@@ -1181,16 +1181,16 @@
       "imagem":"https://m.media-amazon.com/images/I/51-zuZSKWjL.jpg",
       "servicos":[
          {
-            "nome":"HBO Max"
+            "nome":"hbo-max"
          },
          {
-            "nome":"Prime Video"
+            "nome":"prime-video"
          },
          {
-            "nome":"Apple TV"
+            "nome":"apple-tv"
          },
          {
-            "nome":"YouTube"
+            "nome":"youtube"
          }
       ]
    },
@@ -1263,16 +1263,16 @@
       "imagem":"https://www.jagatreview.com/wp-content/uploads/2011/07/harry-potter-deathly-hallows-2-poster-406x600.jpg",
       "servicos":[
          {
-            "nome":"HBO Max"
+            "nome":"hbo-max"
          },
          {
-            "nome":"Prime Video"
+            "nome":"prime-video"
          },
          {
-            "nome":"Apple TV"
+            "nome":"apple-tv"
          },
          {
-            "nome":"YouTube"
+            "nome":"youtube"
          }
       ]
    },
@@ -1292,7 +1292,7 @@
       "duracao":"3h",
       "bilheteria":"38,9 milhões USD",
       "direcao":"Sergio Leone",
-      "classificacao":"14 anos",
+      "classificacao":"14-anos",
       "elenco":[
          {
             "nome":"Clint Eastwood",
@@ -1330,13 +1330,13 @@
       "imagem":"https://br.web.img2.acsta.net/medias/nmedia/18/97/53/07/20534288.jpg",
       "servicos":[
          {
-            "nome":"Prime Video"
+            "nome":"prime-video"
          },
          {
-            "nome":"Apple TV"
+            "nome":"apple-tv"
          },
          {
-            "nome":"YouTube"
+            "nome":"youtube"
          }
       ]
    },
@@ -1356,7 +1356,7 @@
       "duracao":"2h 22m",
       "bilheteria":"US$ 677,9 milhões",
       "direcao":"Robert Zemeckis",
-      "classificacao":"14 anos",
+      "classificacao":"14-anos",
       "elenco":[
          {
             "nome":"Tom Hanks",
@@ -1394,16 +1394,16 @@
       "imagem":"https://i.ytimg.com/vi/hf_lCA-T99c/movieposter_en.jpg",
       "servicos":[
          {
-            "nome":"Prime Video"
+            "nome":"prime-video"
          },
          {
-            "nome":"Apple TV"
+            "nome":"apple-tv"
          },
          {
             "nome":"Paramount+"
          },
          {
-            "nome":"YouTube"
+            "nome":"youtube"
          }
       ]
    }
