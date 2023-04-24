@@ -5,13 +5,13 @@
       "sinopse":"Dois encanadores de Nova York são jogados em um mundo paralelo estranho onde devem resgatar uma princesa sequestrada de um rei diabólico.",
       "generos":[
          {
-            "nome":"1"
+            "nome":"g1"
          },
          {
-            "nome":"2"
+            "nome":"g2"
          },
          {
-            "nome":"3"
+            "nome":"g3"
          }
       ],
       "ano":2023,
@@ -67,12 +67,12 @@
          {
             "especialista":"Denis Silva",
             "foto":"https://br.web.img2.acsta.net/pictures/18/09/04/21/08/2345092.jpg",
-            "avaliacao":"3"
+            "avaliacao":"G3"
          },
          {
             "especialista":"Caio Goulart",
             "foto":"https://br.web.img2.acsta.net/pictures/18/09/04/21/08/2345092.jpg",
-            "avaliacao":"3"
+            "avaliacao":"G3"
          }
       ]
       ,
@@ -92,13 +92,13 @@
       "sinopse":"Scott Lang tenta equilibrar sua vida pessoal e seus deveres como Homem-Formiga, quando é confrontado por um novo vilão que ameaça o mundo inteiro.",
       "generos":[
          {
-            "nome":"1"
+            "nome":"g1"
          },
          {
-            "nome":"2"
+            "nome":"g2"
          },
          {
-            "nome":"4"
+            "nome":"g4"
          }
       ],
       "ano":2024,
@@ -156,10 +156,10 @@
       "sinopse":"Andy Dufresne é condenado a duas prisões perpétuas consecutivas pelas mortes de sua esposa e de seu amante. Porém, só Andy sabe que ele não cometeu os crimes. No presídio, durante dezenove anos, ele faz amizade com Red, sofre as brutalidades da vida na cadeia, se adapta, ajuda os carcereiros, etc.",
       "generos":[
          {
-            "nome":"5"
+            "nome":"g5"
          },
          {
-            "nome":"6"
+            "nome":"g6"
          }
       ],
       "ano":1995,
@@ -223,10 +223,10 @@
       "sinopse":"Em 1945, Don Corleone, chefe da família mafiosa Corleone, tenta transferir seus negócios para negociações mais lucrativas de apostas, mas encontra resistência de outras gangues que querem o seu poder. Uma tentativa de assassinato leva a uma série de eventos violentos que ameaçam destruir a família Corleone.",
       "generos":[
          {
-            "nome":"5"
+            "nome":"g5"
          },
          {
-            "nome":"7"
+            "nome":"g7"
          }
       ],
       "ano":1972,
@@ -290,10 +290,10 @@
       "sinopse":"Esta sequência mostra a ascensão de Vito Corleone ao poder na década de 1920, enquanto seu filho Michael tenta expandir o império da família nos anos 50 e lida com traições e inimigos.",
       "generos":[
          {
-            "nome":"5"
+            "nome":"g5"
          },
          {
-            "nome":"7"
+            "nome":"g7"
          }
       ],
       "ano":1974,
@@ -357,10 +357,10 @@
       "sinopse":"Harry Potter volta à Escola de Magia e Bruxaria de Hogwarts para seu segundo ano letivo. Lá, descobre que uma estranha força está atacando os alunos e ameaçando a paz da escola.",
       "generos":[
          {
-            "nome":"8"
+            "nome":"g8"
          },
          {
-            "nome":"2"
+            "nome":"g2"
          }
       ],
       "ano":2002,
@@ -436,13 +436,13 @@
       "sinopse":"Quando a cidade de Gotham é ameaçada pelo caos causado pelo Coringa, Batman precisa encontrar um meio de deter o criminoso antes que tudo saia do controle.",
       "generos":[
          {
-            "nome":"1"
+            "nome":"g1"
          },
          {
-            "nome":"7"
+            "nome":"g7"
          },
          {
-            "nome":"5"
+            "nome":"g5"
          }
       ],
       "ano":2008,
@@ -467,7 +467,7 @@
             "personagem":"Harvey Dent / Duas-Caras"
          },
          {
-            "nome":"Gary Oldman",
+            "nome":"gary Oldman",
             "foto":"https://br.web.img2.acsta.net/pictures/16/03/18/16/03/398105.jpg",
             "personagem":"Jim Gordon"
          },
@@ -506,7 +506,7 @@
       "sinopse":"Um júri composto por doze homens deve decidir o destino de um jovem acusado de assassinato. Enquanto alguns são prontos para votar pela condenação, um homem acredita na inocência do réu e faz um esforço para convencer os outros membros do júri a reconsiderar a sua decisão.",
       "generos":[
          {
-            "nome":"5"
+            "nome":"g5"
          }
       ],
       "ano":1957,
@@ -564,10 +564,10 @@
       "sinopse":"Durante a Segunda Guerra Mundial, um empresário alemão salva a vida de mais de mil judeus poloneses ao empregar trabalhadores em sua fábrica. O filme é baseado em fatos reais.",
       "generos":[
          {
-            "nome":"5"
+            "nome":"g5"
          },
          {
-            "nome":"9"
+            "nome":"g9"
          }
       ],
       "ano":1993,
@@ -631,10 +631,10 @@
       "sinopse":"Com a ajuda de seus amigos, Frodo e Sam, o hobbit arcano, deve destruir o Um Anel, para que Sauron, o Senhor das Trevas, não possa usá-lo para conquistar a Terra-média. Enquanto isso, Gandalf e os outros membros da sociedade do Anel se preparam para a grande batalha contra as forças do mal de Sauron.",
       "generos":[
          {
-            "nome":"8"
+            "nome":"g8"
          },
          {
-            "nome":"2"
+            "nome":"g2"
          }
       ],
       "ano":2003,
@@ -698,10 +698,10 @@
       "sinopse":"Um tributo ao cinema pulp dos anos 60 e 70, este filme narra várias histórias interligadas de criminosos e mafiosos em Los Angeles, mostrando suas vidas antes e depois de uma série de eventos violentos que afetam a todos.",
       "generos":[
          {
-            "nome":"7"
+            "nome":"g7"
          },
          {
-            "nome":"5"
+            "nome":"g5"
          }
       ],
       "ano":1994,
@@ -762,10 +762,10 @@
       "sinopse":"Harry Potter, um órfão que descobre ser um bruxo, começa seu primeiro ano na Escola de Magia e Bruxaria de Hogwarts e descobre segredos sombrios enquanto tenta impedir o retorno do maligno Lord Voldemort.",
       "generos":[
          {
-            "nome":"8"
+            "nome":"g8"
          },
          {
-            "nome":"2"
+            "nome":"g2"
          }
       ],
       "ano":2001,
@@ -844,10 +844,10 @@
       "sinopse":"Harry Potter, agora com 13 anos, volta para o terceiro ano em Hogwarts e encontra um novo professor de Defesa Contra as Artes das Trevas, Sirius Black, um fugitivo perigoso que supostamente traiu os pais de Harry e agora está atrás dele.",
       "generos":[
          {
-            "nome":"8"
+            "nome":"g8"
          },
          {
-            "nome":"2"
+            "nome":"g2"
          }
       ],
       "ano":2004,
@@ -877,7 +877,7 @@
             "personagem":"Severo Snape"
          },
          {
-            "nome":"Gary Oldman",
+            "nome":"gary Oldman",
             "foto":"https://br.web.img2.acsta.net/pictures/16/03/18/16/03/398105.jpg",
             "personagem":"Sirius Black"
          },
@@ -921,10 +921,10 @@
       "sinopse":"Harry Potter retorna a Hogwarts para o quinto ano de estudos e descobre que muitos dos seus colegas e até mesmo alguns professores não acreditam em suas alegações sobre o retorno de Voldemort. Enquanto isso, Dolores Umbridge é nomeada como nova professora de Defesa Contra as Artes das Trevas, impondo um regime opressivo na escola.",
       "generos":[
          {
-            "nome":"8"
+            "nome":"g8"
          },
          {
-            "nome":"2"
+            "nome":"g2"
          }
       ],
       "ano":2007,
@@ -959,7 +959,7 @@
             "personagem":"Dolores Umbridge"
          },
          {
-            "nome":"Gary Oldman",
+            "nome":"gary Oldman",
             "foto":"https://br.web.img2.acsta.net/pictures/16/03/18/16/03/398105.jpg",
             "personagem":"Sirius Black"
          },
@@ -1003,10 +1003,10 @@
       "sinopse":"Harry Potter volta para seu quarto ano na Escola de Magia e Bruxaria de Hogwarts, junto com seus amigos Ron e Hermione. Mas Hogwarts está se preparando para sediar o Torneio Tribruxo, onde três escolas de magia competem entre si em uma série de desafios perigosos. Enquanto isso, uma nova ameaça sombria se esconde nos corredores de Hogwarts, colocando a vida de Harry em perigo mais uma vez.",
       "generos":[
          {
-            "nome":"8"
+            "nome":"g8"
          },
          {
-            "nome":"2"
+            "nome":"g2"
          }
       ],
       "ano":2005,
@@ -1070,10 +1070,10 @@
       "sinopse":"Com a ajuda do professor Dumbledore, Harry Potter começa a desvendar o passado de Lord Voldemort para encontrar uma maneira de derrotá-lo antes que seja tarde demais.",
       "generos":[
          {
-            "nome":"8"
+            "nome":"g8"
          },
          {
-            "nome":"2"
+            "nome":"g2"
          }
       ],
       "ano":2009,
@@ -1137,10 +1137,10 @@
       "sinopse":"Com a ajuda de seus amigos Ron e Hermione, Harry foge de Hogwarts para destruir as Horcruxes restantes de Voldemort. Enquanto isso, o Lorde das Trevas toma o controle do Ministério da Magia e de Hogwarts.",
       "generos":[
          {
-            "nome":"8"
+            "nome":"g8"
          },
          {
-            "nome":"2"
+            "nome":"g2"
          }
       ],
       "ano":2010,
@@ -1219,10 +1219,10 @@
       "sinopse":"Na segunda parte do final épico da série Harry Potter, a batalha entre as forças do bem e do mal no mundo da magia se intensifica. O poder de Voldemort está aumentando cada vez mais, e ele agora controla Hogwarts. Harry, Ron e Hermione decidem terminar o trabalho de Dumbledore e encontrar o resto das Horcruxes para derrotar o Lorde das Trevas. Mas a jornada perigosa leva-os a uma batalha final épica, onde as vidas deles e o futuro do mundo mágico estão em jogo.",
       "generos":[
          {
-            "nome":"8"
+            "nome":"g8"
          },
          {
-            "nome":"2"
+            "nome":"g2"
          }
       ],
       "ano":2011,
@@ -1301,10 +1301,10 @@
       "sinopse":"Nos Estados Unidos, durante a Guerra de Secessão, um pistoleiro misterioso tenta trabalhar em conjunto com um bandido e um caçador de recompensas para encontrar um tesouro escondido. Os homens são obrigados a forjar uma difícil aliança visto que cada um conhece apenas uma parte da localização da fortuna. O problema é que nenhum deles tem a intenção de dividir a riqueza.",
       "generos":[
          {
-            "nome":"10"
+            "nome":"g10"
          },
          {
-            "nome":"11"
+            "nome":"g11"
          }
       ],
       "ano":2011,
@@ -1365,10 +1365,10 @@
       "sinopse":"Forrest Gump é um homem simples com um coração enorme. Através de sua jornada de vida, ele experimenta alguns dos momentos mais importantes da história dos Estados Unidos. Apesar dos desafios e dificuldades que enfrenta, Forrest sempre mantém um otimismo e uma sabedoria que o ajudam a superar qualquer adversidade.",
       "generos":[
          {
-            "nome":"5"
+            "nome":"g5"
          },
          {
-            "nome":"3"
+            "nome":"g3"
          }
       ],
       "ano":1994,
@@ -1388,7 +1388,7 @@
             "personagem":"Jenny Curran"
          },
          {
-            "nome":"Gary Sinise",
+            "nome":"gary Sinise",
             "foto":"https://flxt.tmsimg.com/assets/22818_v9_bb.jpg",
             "personagem":"Tenente Dan Taylor"
          },
