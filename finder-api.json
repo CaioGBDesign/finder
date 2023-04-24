@@ -63,6 +63,19 @@
          "Metacritic":48,
          "Letterboxd":3.8
       },
+      "finder":[
+         {
+            "especialista":"Denis Silva",
+            "foto":"https://br.web.img2.acsta.net/pictures/18/09/04/21/08/2345092.jpg",
+            "avaliacao":"3"
+         },
+         {
+            "especialista":"Caio Goulart",
+            "foto":"https://br.web.img2.acsta.net/pictures/18/09/04/21/08/2345092.jpg",
+            "avaliacao":"3"
+         }
+      ]
+      ,
       "imagem":"https://leiturafilmica.com.br/wp-content/uploads/2023/04/super-mario-bros-o-filme-poster.jpg",
       "servicos":[
          {
