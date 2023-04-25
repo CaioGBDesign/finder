@@ -58,8 +58,8 @@
       ],
       "pontuacao":{
          "IMDB":7.4,
-         "Rotten Tomatoes críticos":58,
-         "Rotten Tomatoes público":96,
+         "RottenCriticos":58,
+         "RottenPublico":96,
          "Metacritic":48,
          "Letterboxd":3.8
       },
@@ -141,8 +141,8 @@
       ],
       "pontuacao":{
          "IMDB":6.4,
-         "Rotten Tomatoes críticos":47,
-         "Rotten Tomatoes público":83,
+         "RottenCriticos":47,
+         "RottenPublico":83,
          "Metacritic":50,
          "Letterboxd":2.7
       },
@@ -214,8 +214,8 @@
       ],
       "pontuacao":{
          "IMDB":9.3,
-         "Rotten Tomatoes críticos":90,
-         "Rotten Tomatoes público":98,
+         "RottenCriticos":90,
+         "RottenPublico":98,
          "Metacritic":80,
          "Letterboxd":4.6
       },
@@ -281,8 +281,8 @@
       ],
       "pontuacao":{
          "IMDB":9.2,
-         "Rotten Tomatoes críticos":98,
-         "Rotten Tomatoes público":98,
+         "RottenCriticos":98,
+         "RottenPublico":98,
          "Metacritic":100,
          "Letterboxd":4.6
       },
@@ -348,8 +348,8 @@
       ],
       "pontuacao":{
          "IMDB":9.0,
-         "Rotten Tomatoes críticos":97,
-         "Rotten Tomatoes público":97,
+         "RottenCriticos":97,
+         "RottenPublico":97,
          "Metacritic":90,
          "Letterboxd":4.5
       },
@@ -430,8 +430,8 @@
       ],
       "pontuacao":{
          "IMDb":7.4,
-         "Rotten Tomatoes críticos":82,
-         "Rotten Tomatoes público":78,
+         "RottenCriticos":82,
+         "RottenPublico":78,
          "Metacritic":63,
          "Letterboxd":3.7
       },
@@ -497,8 +497,8 @@
       ],
       "pontuacao":{
          "IMDB":9.0,
-         "Rotten Tomatoes críticos":94,
-         "Rotten Tomatoes público":94,
+         "RottenCriticos":94,
+         "RottenPublico":94,
          "Metacritic":84,
          "Letterboxd":4.4
       },
@@ -561,8 +561,8 @@
       ],
       "pontuacao":{
          "IMDB":8.9,
-         "Rotten Tomatoes críticos":100,
-         "Rotten Tomatoes público":97,
+         "RottenCriticos":100,
+         "RottenPublico":97,
          "Metacritic":96,
          "Letterboxd":4.5
       },
@@ -622,8 +622,8 @@
       ],
       "pontuacao":{
          "IMDB":8.9,
-         "Rotten Tomatoes críticos":97,
-         "Rotten Tomatoes público":97,
+         "RottenCriticos":97,
+         "RottenPublico":97,
          "Metacritic":94,
          "Letterboxd":4.5
       },
@@ -689,8 +689,8 @@
       ],
       "pontuacao":{
          "IMDB":8.9,
-         "Rotten Tomatoes críticos":94,
-         "Rotten Tomatoes público":86,
+         "RottenCriticos":94,
+         "RottenPublico":86,
          "Metacritic":94,
          "Letterboxd":4.5
       },
@@ -756,8 +756,8 @@
       ],
       "pontuacao":{
          "IMDB":8.9,
-         "Rotten Tomatoes críticos":92,
-         "Rotten Tomatoes público":94,
+         "RottenCriticos":92,
+         "RottenPublico":94,
          "Metacritic":94,
          "Letterboxd":4.4
       },
@@ -835,8 +835,8 @@
       ],
       "pontuacao":{
          "IMDB":7.6,
-         "Rotten Tomatoes críticos":81,
-         "Rotten Tomatoes público":82,
+         "RottenCriticos":81,
+         "RottenPublico":82,
          "Metacritic":64,
          "Letterboxd":3.9
       },
@@ -912,8 +912,8 @@
       ],
       "pontuacao":{
          "IMDB":7.9,
-         "Rotten Tomatoes críticos":91,
-         "Rotten Tomatoes público":86,
+         "RottenCriticos":91,
+         "RottenPublico":86,
          "Metacritic":82,
          "Letterboxd":4.0
       },
@@ -994,8 +994,8 @@
       ],
       "pontuacao":{
          "IMDB":7.5,
-         "Rotten Tomatoes críticos":77,
-         "Rotten Tomatoes público":81,
+         "RottenCriticos":77,
+         "RottenPublico":81,
          "Metacritic":71,
          "Letterboxd":3.5
       },
@@ -1061,8 +1061,8 @@
       ],
       "pontuacao":{
          "IMDB":7.7,
-         "Rotten Tomatoes críticos":88,
-         "Rotten Tomatoes público":74,
+         "RottenCriticos":88,
+         "RottenPublico":74,
          "Metacritic":81,
          "Letterboxd":3.8
       },
@@ -1128,8 +1128,8 @@
       ],
       "pontuacao":{
          "IMDB":7.6,
-         "Rotten Tomatoes críticos":84,
-         "Rotten Tomatoes público":75,
+         "RottenCriticos":84,
+         "RottenPublico":75,
          "Metacritic":78,
          "Letterboxd":3.5
       },
@@ -1210,8 +1210,8 @@
       ],
       "pontuacao":{
          "IMDB":7.7,
-         "Rotten Tomatoes críticos":77,
-         "Rotten Tomatoes público":83,
+         "RottenCriticos":77,
+         "RottenPublico":83,
          "Metacritic":65,
          "Letterboxd":3.8
       },
@@ -1292,8 +1292,8 @@
       ],
       "pontuacao":{
          "IMDB":8.1,
-         "Rotten Tomatoes críticos":96,
-         "Rotten Tomatoes público":89,
+         "RottenCriticos":96,
+         "RottenPublico":89,
          "Metacritic":87,
          "Letterboxd":3.9
       },
@@ -1359,8 +1359,8 @@
       ],
       "pontuacao":{
          "IMDB":8.1,
-         "Rotten Tomatoes críticos":96,
-         "Rotten Tomatoes público":89,
+         "RottenCriticos":96,
+         "RottenPublico":89,
          "Metacritic":87,
          "Letterboxd":3.9
       },
@@ -1423,8 +1423,8 @@
       ],
       "pontuacao":{
          "IMDB":8.8,
-         "Rotten Tomatoes críticos":72,
-         "Rotten Tomatoes público":95,
+         "RottenCriticos":72,
+         "RottenPublico":95,
          "Metacritic":82,
          "Letterboxd":4.3
       },
