@@ -67,12 +67,12 @@
          {
             "especialista":"Denis Silva",
             "foto":"https://br.web.img2.acsta.net/pictures/18/09/04/21/08/2345092.jpg",
-            "avaliacao":"G3"
+            "avaliacao":"3"
          },
          {
             "especialista":"Caio Goulart",
-            "foto":"https://br.web.img2.acsta.net/pictures/18/09/04/21/08/2345092.jpg",
-            "avaliacao":"G3"
+            "foto":"https://caiogbdesign.github.io/finder/caio-goulart-finder.jpg",
+            "avaliacao":"3"
          }
       ]
       ,
@@ -140,6 +140,18 @@
          "Metacritic":50,
          "Letterboxd":2.7
       },
+      "finder":[
+         {
+            "especialista":"Denis Silva",
+            "foto":"https://caiogbdesign.github.io/finder/denis-silva-finder.jpg",
+            "avaliacao":"4"
+         },
+         {
+            "especialista":"Caio Goulart",
+            "foto":"https://caiogbdesign.github.io/finder/caio-goulart-finder.jpg",
+            "avaliacao":"2"
+         }
+      ],
       "imagem":"https://cinepop.com.br/wp-content/uploads/2023/01/homemformigaeavespa.jpeg",
       "servicos":[
          {
