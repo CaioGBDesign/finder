@@ -1,141 +1,289 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
-    <title>Sugerir Filme Aleatório</title>
-
-    <link rel="stylesheet/less" type="text/css" href="style.less" />
+    <meta charset="UTF-8">  
     
+    <title>Flick</title> 
+
+    <link rel="stylesheet/less" type="text/css" href="style.less" /> 
+	
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   </head>
   <body>
-    <main>
-      <div id="movie-info"></div>
-      
-      <div class="botao-sugestao">
-        <div class="cont-botao-filtros">
-          
-          <div class="scroll-filtros">
-            <div class="servicos-streaming">
-              <span>Streaming</span>
-                <div class="streaming">
-                  <img src="https://caiogbdesign.github.io/finder/netflix.svg" alt="netflix">
-                  <img src="https://caiogbdesign.github.io/finder/prime-video.svg" alt="Prime Vídeo">
-                  <img src="https://caiogbdesign.github.io/finder/hbo-max.svg" alt="HBO Max">
-                  <img src="https://caiogbdesign.github.io/finder/disney+.svg" alt="Disney +">
-                  <img src="https://caiogbdesign.github.io/finder/star+.svg" alt="Star +">
-                  <img src="https://caiogbdesign.github.io/finder/prime-video.svg" alt="Prime Vídeo">
-                  <img src="https://caiogbdesign.github.io/finder/youtube.svg" alt="YouTube">
-                  <img src="https://caiogbdesign.github.io/finder/apple-tv.svg" alt="Apple Tv">
-                  <img src="https://caiogbdesign.github.io/finder/paramount.svg" alt="Paramount">
-                </div>
-            </div>
-  
-            <div class="filtros-categoria">
-    
-              <span>Categoria</span>
-    
-              <button data-categoria="Ação" class="botao-categoria">
-                <span>Ação</span>
-              </button>
-              
-              <button data-categoria="Comédia" class="botao-categoria">
-                <span>Comédia</span>
-              </button>
-              
-              <button data-categoria="Drama" class="botao-categoria">
-                <span>Drama</span>
-              </button>
-              
-              <button data-categoria="Ficção científica" class="botao-categoria">
-                <span>Ficção científica</span>
-              </button>
-              
-              <button data-categoria="Terror" class="botao-categoria">
-                <span>Terror</span>
-              </button>
-              
-              <button data-categoria="Romance" class="botao-categoria">
-                <span>Romance</span>
-              </button>
-              
-              <button data-categoria="Suspense" class="botao-categoria">
-                <span>Suspense</span>
-              </button>
-              
-              <button data-categoria="Animação" class="botao-categoria">
-                <span>Animação</span>
-              </button>
-              
-              <button data-categoria="Musical" class="botao-categoria">
-                <span>Musical</span>
-              </button>
-              
-              <button data-categoria="Documentário" class="botao-categoria">
-                <span>Documentário</span>
-              </button>
-            </div>
-
-            <div class="classificacao">
-  
-              <span>Classificação indicativa</span>
-    
-              <div class="botao-clssificacao">
-                <p>Livre</p>
-              </div>
-              
-              <div class="botao-clssificacao">
-                <p>10 anos</p>
-              </div>
-              
-              <div class="botao-clssificacao">
-                <p>12 anos</p>
-              </div>
-              
-              <div class="botao-clssificacao">
-                <p>14 anos</p>
-              </div>
-              
-              <div class="botao-clssificacao">
-                <p>16 anos</p>
-              </div>
-              
-              <div class="botao-clssificacao">
-                <p>18 anos</p>
-              </div>
-            </div>
-
-          </div>
-        </div>        
-  
-        <div class="cta-sugestoes">
-          <div class="ctas">
-            <div class="botao-sugerir-filme">
-              <div class="grupo-botoes">
-                <button id="btn-random-movie">Sugerir filme</button>
-                <button id="btn-aplicar-filtros">Aplicar filtros</button>
-              </div>
-            </div>
-        
-            <div class="filtros" onclick="abrirPopup()">
-              <div class="fechar-filtros">
-                <img src="https://caiogbdesign.github.io/finder/fechar-filtros.svg">
-              </div>
-              
-              <div class="abrir-filtros">
-                <img src="https://caiogbdesign.github.io/finder/filtros.svg" alt="">
-              </div>
-
-            </div>
-          </div>
-          
-        </div>
+    <div class="sugestao-completa">
+      <div id="filme-sugerido">        
 
       </div>
-    </main>
+    </div>
 
+    <div class="container-filtros">
+      <div id="meu-popup">
+
+        <div class="todos-os-filtros">
+          <div class="scroll-filtros">
+  
+            <!-- Notas Flick -->
+            <div class="notas-flick">
+              <div class="titulo-filtro">
+                <label for="notas">Notas Flick</label>
+              </div>
+              
+              <div class="botao">
+                <input type="radio" id="todas-notas" name="notas" value="" checked>
+                <label for="todas-notas">Todas</label>
+              </div>
+      
+              <div class="botao">
+                <input type="radio" id="notas-sim" name="notas" value="notaSim">
+                <label for="notas-sim">Com notas Flick</label>
+              </div>
+            </div>
+            <!-- /Notas Flick -->
+      
+            <!-- Opiniçoes Flick -->
+            <div class="opinioes-flick">
+              <div class="titulo-filtro">
+                <label for="opinioes">Avaliações Flick</label>
+              </div>
+
+              <div class="botao">
+                <input type="radio" id="todas-opinioes" name="opinioes" value="" checked>
+                <label for="todas-opinioes">Todas</label>
+              </div>
+      
+              <div class="botao">
+                <input type="radio" id="opinioes-sim" name="opinioes" value="opiniaoSim">
+                <label for="opinioes-sim">Com opiniões Flick</label>
+              </div>
+            </div>
+            <!-- /Opiniçoes Flick -->
+      
+            <!-- Streaming -->
+            <div class="streaming">
+              <div class="titulo-filtro">
+                <label for="servicos">Onde assistir</label>
+              </div>
+
+              <div class="botao">
+                <input type="radio" id="todos-streaming" name="servicos" value="" checked>
+                <label for="todos-streaming">Todos</label>
+              </div>
+                
+              <div class="botao">
+                <input type="radio" id="netflix" name="servicos" value="s1">
+                <label for="netflix">
+                  <img src="https://caiogbdesign.github.io/flick/netflix.svg" alt="Netflix">
+                </label>
+              </div>
+              
+              <div class="botao">
+                <input type="radio" id="PrimeVideo" name="servicos" value="s2">
+                <label for="PrimeVideo">
+                  <img src="https://caiogbdesign.github.io/flick/prime-video.svg" alt="Prime Vídeo">
+                </label>
+              </div>
+      
+              <div class="botao">
+                <input type="radio" id="HboMax" name="servicos" value="s3">
+                <label for="HboMax">
+                  <img src="https://caiogbdesign.github.io/flick/hbo-max.svg" alt="HBO MAX">
+                </label>
+              </div>
+      
+              <div class="botao">
+                <input type="radio" id="disney" name="servicos" value="s4">
+                <label for="disney">
+                  <img src="https://caiogbdesign.github.io/flick/disney+.svg" alt="Disney+">
+                </label>
+              </div>
+      
+              <div class="botao">
+                <input type="radio" id="star" name="servicos" value="s5">
+                <label for="star">
+                  <img src="https://caiogbdesign.github.io/flick/star+.svg" alt="Star+">
+                </label>
+              </div>
+      
+              <div class="botao">
+                <input type="radio" id="youtube" name="servicos" value="s6">
+                <label for="youtube">
+                  <img src="https://caiogbdesign.github.io/flick/youtube.svg" alt="Youtube">
+                </label>
+              </div>
+      
+              <div class="botao">
+                <input type="radio" id="AppleTV" name="servicos" value="s7">
+                <label for="AppleTV">
+                  <img src="https://caiogbdesign.github.io/flick/apple-tv.svg" alt="Apple tv+">
+                </label>
+              </div>
+            </div>
+            <!-- /Streaming -->
+      
+            <!-- Disponível no cinema -->
+            <div class="disponivel-cinema">
+              <div class="titulo-filtro">
+                <label for="cinema">Disponível nos cinemas</label>
+              </div>
+
+              <div class="botao">
+                <input type="radio" id="todas-cinema" name="cinema" value="" checked>
+                <label for="todas-cinema">Todas</label>
+              </div>
+      
+              <div class="botao">
+                <input type="radio" id="cinema-sim" name="cinema" value="cinemaSim">
+                <label for="cinema-sim">Assistir nos cinemas</label>
+              </div>
+            </div>
+            <!-- /Disponível no cinema -->
+      
+            <!-- Gênero -->
+            <div class="genero-filtros">
+              <div class="titulo-filtro">
+                <label for="genero">Gênero</label>
+              </div>
+
+              <div class="botao">
+                <input type="radio" id="todos-genero" name="generos" value="" checked>
+                <label for="todos-genero">Todos</label>
+              </div>
+      
+              <div class="botao">
+                <input type="radio" id="acao" name="generos" value="g1">
+                <label for="acao">Ação</label>
+              </div>
+      
+              <div class="botao">
+                <input type="radio" id="aventura" name="generos" value="g2">
+                <label for="aventura">Aventura</label>
+              </div>
+      
+              <div class="botao">
+                <input type="radio" id="comedia" name="generos" value="g3">
+                <label for="comedia">Comédia</label>
+              </div>
+      
+              <div class="botao">
+                <input type="radio" id="drama" name="generos" value="g5">
+                <label for="drama">Drama</label>
+              </div>
+      
+              <div class="botao">
+                <input type="radio" id="FiccaoPolicial" name="generos" value="g6">
+                <label for="FiccaoPolicial">Ficção policial</label>
+              </div>
+      
+              <div class="botao">
+                <input type="radio" id="crime" name="generos" value="g7">
+                <label for="crime">Crime</label>
+              </div>
+      
+              <div class="botao">
+                <input type="radio" id="Fantasia" name="generos" value="g8">
+                <label for="Fantasia">Fantasia</label>
+              </div>
+      
+              <div class="botao">
+                <input type="radio" id="Historico" name="generos" value="g9">
+                <label for="Historico">Histórico</label>
+              </div>
+      
+              <div class="botao">
+                <input type="radio" id="Faroeste" name="generos" value="g10">
+                <label for="Faroeste">Faroeste</label>
+              </div>
+      
+              <div class="botao">
+                <input type="radio" id="FilmeEpico" name="generos" value="g11">
+                <label for="FilmeEpico">Filme épico</label>
+              </div>
+            </div>
+            <!-- Gênero -->
+      
+            <!-- Classificação -->
+            <div class="classificacao-filtros">
+              <div class="titulo-filtro">
+                <label for="classificacao">Classificação</label>
+              </div>
+
+              <div class="botao">
+                <input type="radio" id="todas-classificacoes" name="classificacao" value="" checked>
+                <label for="todas-classificacoes">Todas</label>
+              </div>
+
+              <div class="botao">
+                <input type="radio" id="livre" name="classificacao" value="Livre">
+                <label for="livre" class="livre">Livre</label>
+              </div>
+
+              <div class="botao">
+                <input type="radio" id="10-anos" name="classificacao" value="10-anos">
+                <label for="10-anos" class="DezAnos">10 anos</label>
+              </div>
+
+              <div class="botao">
+                <input type="radio" id="12-anos" name="classificacao" value="12-anos">
+                <label for="12-anos" class="DozeAnos">12 anos</label>
+              </div>
+
+              <div class="botao">
+                <input type="radio" id="14-anos" name="classificacao" value="14-anos">
+                <label for="14-anos" class="QuatorzeAnos">14 anos</label>
+              </div>
+
+              <div class="botao">
+                <input type="radio" id="16-anos" name="classificacao" value="16-anos">
+                <label for="16-anos" class="DezesseisAnos">16 anos</label>
+              </div>
+
+              <div class="botao">
+                <input type="radio" id="18-anos" name="classificacao" value="18-anos">
+                <label for="18-anos" class="DezoitoAnos">18 anos</label>
+              </div>
+            </div>
+            <!-- Classificação -->
+          </div>
+        </div>
+
+        <div class="CTA-Aplicar-Filtros">
+          <div class="aplicar-filtros">
+            <button id="aplicar-filtros">Aplicar filtros</button>
+          </div>
+          
+          <div class="botao-fechar">
+            <button id="fechar-popup">
+              <svg viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 15.5L31 30.5" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                <path d="M31 15.5L15 30.5" stroke="white" stroke-width="3" stroke-linecap="round"/>
+              </svg>                
+            </button>
+          </div>
+        </div>
+        
+      </div>
+  
+      <div class="CTAs">
+        <div class="cont-sugestao">
+          <div class="botoes-sugestoes">
+            <button id="sugerir-filme">Sugerir filme</button>
+          </div>
+        </div>
+  
+        <div class="cont-filtros">
+          <div class="botoes-filtros">
+            <button id="btn-filtros">Filtros</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <script src="script.js"></script>
     <!-- Less -->
-    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>	
+
   </body>
 </html>
