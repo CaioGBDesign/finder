@@ -1,204 +1,391 @@
-let filmes;
-
-document.addEventListener("DOMContentLoaded", function () {
-  fetch(
-    "https://caiogbdesign.github.io/finder/finder-api.json"
-  )
-    .then((response) => response.json())
-    .then((data) => {
-      filmes = data;
-      exibirFilme(filmes[Math.floor(Math.random() * filmes.length)]);
-
-      document
-        .getElementById("btn-random-movie")
-        .addEventListener("click", function () {
-          atualizarFilme();
-        });
-
-      document
-        .getElementById("btn-suggest-movie")
-        .addEventListener("click", function () {
-          sugerirFilme();
-        });
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-});
-
-function exibirFilme(randomMovie) {
-  // Remove o filme anterior da página
-  const movieInfo = document.getElementById("movie-info");
-  while (movieInfo.firstChild) {
-    movieInfo.removeChild(movieInfo.firstChild);
+function converterGenero(genero) {
+  switch(genero) {
+    case "g1":
+      return "Ação";
+    case "g2":
+      return "Aventura";
+    case "g3":
+      return "Comédia";
+    case "g4":
+      return "Ficção Científica";
+    case "g5":
+      return "Drama";
+    case "g6":
+      return "Ficção policial";
+    case "g7":
+      return "Crime";
+    case "g8":
+      return "Fantasia";
+    case "g9":
+      return "Histórico";
+    case "g10":
+      return "Faroeste";
+    case "g11":
+      return "Filme épico";
+    default:
+      return genero;
   }
-
-  const movieDiv = document.createElement("div");
-  movieDiv.classList.add("sugestao");
-  movieDiv.innerHTML = ` 
-
-    <div class="folder-filme">
-      <img src="${randomMovie.imagem}" alt="${randomMovie.titulo}">
-    </div>
-
-    <div class="titulo-filme">
-      <h2>${randomMovie.titulo}</h2>
-    </div>
-    
-    <div class="informacoes-filme">
-      <div class="categoria">
-        <p>${randomMovie.generos}</p>
-      </div>
-      <div class="duracao">
-        <p>${randomMovie.duracao}</p>
-      </div>
-    </div>
-    
-    <div class="pontuacao">
-      <div class="imdb">
-      <p>${randomMovie.pontuacao.IMDB}</p>
-        <span>IMDB</span>
-      </div>
-
-      <div class="rottenCriticos">
-        <div class="percentual">
-          <p>${randomMovie.pontuacao["Rotten Tomatoes críticos"]}</p>
-          <span>%</span>
-        </div>
-        <span>Rotten Tomato</span>
-      </div>
-
-      <div class="metacritic">
-        <div class="percentual">
-          <p>${randomMovie.pontuacao.Metacritic}</p>
-          <span>%</span>
-        </div>
-        <span>Metacritic</span>
-      </div>
-
-      <div class="letterboxd">
-        <p>${randomMovie.pontuacao.Letterboxd}</p>
-        <span>Letterboxd</span>
-      </div>
-    </div>
-
-    <div class="servicos">
-      <span>Serviços</span>
-      ${
-        randomMovie.servicos.map(servico => {
-          return `
-            <div class="servico">
-              ${getServiceImage(servico.nome)}
-            </div>
-          `;
-        }).join("")
-      }
-    </div>
-
-    <div class="elenco">
-      <span>Elenco</span>
-      <div class="cont-artistas">
-        ${randomMovie.elenco.map(personagem => `
-        <div class="artista">
-          <div class="img-elenco">
-            <img src="${personagem.foto}" alt="${personagem.nome}">
-          </div>
-          <p>${personagem.nome}</p>
-          <p>${personagem.personagem}</p>
-        </div>
-      `).join('')}
-      </div>
-    </div>
-
-    <div class="direcao">
-      <span>Direção</span>
-      <p>${randomMovie.direcao}</p>
-    </div>
-
-    <div class="classificacao">
-      <span>Classificação</span>
-      <div class="botao-clssificacao">
-        <p>${randomMovie.classificacao}</p>
-      </div>
-    </div>
-
-    <div class="bilheteria">
-      <span>Bilheteria</span>
-      <p>${randomMovie.bilheteria}</p>
-    </div>
-
-    <div class="sinopse">
-      <span>Sinopse</span>
-      <p>${randomMovie.sinopse}</p>
-    </div>
-  `;
-
-  document.getElementById("movie-info").appendChild(movieDiv);
 }
 
+function converterServicoStreaming(servico) {
+  switch (servico) {
+    case "s1":
+      return '<img src="https://caiogbdesign.github.io/flick/netflix.svg" alt="Netflix">';
+    case "s2":
+      return '<img src="https://caiogbdesign.github.io/flick/prime-video.svg" alt="Prime Vídeo">';
+    case "s3":
+      return '<img src="https://caiogbdesign.github.io/flick/hbo-max.svg" alt="HBO MAX">';
+    case "s4":
+      return '<img src="https://caiogbdesign.github.io/flick/disney+.svg" alt="Disney+">';
+    case "s5":
+      return '<img src="https://caiogbdesign.github.io/flick/star+.svg" alt="Star+">';
+    case "s6":
+      return '<img src="https://caiogbdesign.github.io/flick/youtube.svg" alt="Youtube">';
+    case "s7":
+      return '<img src="https://caiogbdesign.github.io/flick/apple-tv.svg" alt="Apple TV">';
+    case "s8":
+      return '<img src="https://caiogbdesign.github.io/flick/paramount.svg" alt="Paramount">';
+    case "s9":
+      return "Somente nos cinemas";
+    case "s10":
+      return "Indisponível para streaming";
+    default:
+      return servico;
+  }
+}
 
-function sugerirFilme() {
-  fetch("https://caiogbdesign.github.io/finder/finder-api.json")
+function converterClassificacao(idade) {
+  switch (idade) {
+    case "Livre":
+      return '"livre"><span>Livre</span>';
+    case "10-anos":
+      return '"DezAnos"><span>10 anos</span>';
+    case "12-anos":
+      return '"DozeAnos"><span>12 anos</span>';
+    case "14-anos":
+      return '"QuatorzeAnos"><span>14 anos</span>';
+    case "16-anos":
+      return '"DezesseisAnos"><span>16 anos</span>';
+    case "18-anos":
+      return '"DezoitoAnos"><span>18 anos</span>';
+    default:
+      return idade;
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttonSugerir = document.getElementById("sugerir-filme");
+  const buttonFiltrar = document.getElementById("aplicar-filtros");
+  const filmeSugerido = document.getElementById("filme-sugerido");
+  let ultimoFilmeSugerido;
+
+  const sugerirFilme = (filmes) => {
+    const filmeAleatorio = filmes[Math.floor(Math.random() * filmes.length)];
+    ultimoFilmeSugerido = filmeAleatorio;
+
+    const generos = filmeAleatorio.generos ? filmeAleatorio.generos.map(genero => converterGenero(genero.nome)) : [];
+
+    filmeSugerido.innerHTML = `
+      
+      <div class="sugestao">
+          <div class="folder-filme">
+            <img src="${filmeAleatorio.imagem}" alt="${filmeAleatorio.titulo}">
+          </div>
+
+          <div class="titulo-filme">
+            <h2>${filmeAleatorio.titulo}</h2>
+          </div>
+
+          <div class="genero-duracao">
+            <p>${generos.join(' /  ')}</p>
+            <p>${filmeAleatorio.duracao}</p>
+          </div>
+
+          <div class="pontuacoes">
+            <div class="imdb">
+              <p>${filmeAleatorio.pontuacao.IMDB}</p>
+              <span>IMDB</span>
+            </div>
+
+            <div class="rottenCriticos">
+              <p>${filmeAleatorio.pontuacao.RottenCriticos}<span>%</span></p>
+              <span>Rotten Tomato</span>
+            </div>
+            
+            <div class="metacritic">
+              <p>${filmeAleatorio.pontuacao.Metacritic}<span>%</span></p>
+              <span>Metacritic</span>
+            </div>
+            
+            <div class="letterboxd">
+              <p>${filmeAleatorio.pontuacao.Letterboxd}</p>
+              <span>Letterboxd</span>
+            </div>
+          </div>
+              
+          ${filmeAleatorio.Flick ?
+            ` <div class="avaliacoes">
+                <span>Notas Flick</span>
+                ${filmeAleatorio.Flick.map(avaliador => `
+                    <div class="avaliador">
+                      <div class="avaliador-foto">
+                        <img src="${avaliador.foto}" alt="${avaliador.especialista}">
+                      </div>
+                      <p>${avaliador.especialista}</p>
+                      <p>${avaliador.avaliacao}/<span>5</span></p>
+                    </div>
+                `).join('')}
+              </div>` : ''}
+
+          <div class="servicos">
+            <span>Onde assistir</span>
+            <p>${filmeAleatorio.servicos.map(servico => converterServicoStreaming(servico.streaming)).join("")}</p>
+          </div>
+
+          <div class="elenco">
+            <span>Elenco</span>
+            <div class="cont-artistas">
+              ${filmeAleatorio.elenco.map(personagem => `
+              <div class="artista">
+                <div class="img-elenco">
+                  <img src="${personagem.foto}" alt="${personagem.nome}">
+                </div>
+                <p>${personagem.nome}</p>
+                <p>${personagem.personagem}</p>
+              </div>
+            `).join('')}
+            </div>
+          </div>
+
+          <div class="direcao">
+            <span>Direção</span>
+            <p>${filmeAleatorio.direcao}</p>
+          </div>
+
+          <div class="classificacao">
+            <span>Classificacao</span>
+            <div class=${converterClassificacao(filmeAleatorio.classificacao)}</div>
+          </div>
+
+          <div class="bilheteria">
+            <span>Bilheteria</span>
+            <p>${filmeAleatorio.bilheteria}</p>
+          </div>
+
+          <div class="sinopse">
+            <span>Sinopse</span>
+            <p>${filmeAleatorio.sinopse}</p>
+          </div>
+            
+          ${filmeAleatorio.opiniao ? 
+            ` <div class="opiniao">
+                ${filmeAleatorio.opiniao.map(avaliador => `
+                  <div class="avaliador">
+                      <div class="autor">
+                        <p><span>Avaliação • </span>${avaliador.especialista}</p>
+                      </div>
+                      <p>${avaliador.texto}</p>
+                  </div>
+                `).join('')}
+            </div>` : ''}
+
+      </div>
+    `;
+  };
+
+  fetch("https://caiogbdesign.github.io/flick/flick-api.json")
     .then(response => response.json())
     .then(data => {
-      const randomMovie = data[Math.floor(Math.random() * data.length)];
-      exibirFilme(randomMovie);
+      const filmes = Object.values(data).filter(filme => filme.id.startsWith("FR"));
+      sugerirFilme(filmes);
     })
-    .catch(error => {
-      console.error(error);
-    });
-}
+    .catch(error => console.error(error));
 
-document
-  .getElementById("btn-suggest-movie")
-  .addEventListener("click", function () {
-    sugerirFilme();
+  buttonSugerir.addEventListener("click", () => {
+    fetch("https://caiogbdesign.github.io/flick/flick-api.json")
+      .then(response => response.json())
+      .then(data => {
+        const filmes = Object.values(data).filter(filme => filme.id.startsWith("FR"));
+        sugerirFilme(filmes);
+      })
+      .catch(error => console.error(error));
   });
 
-  function atualizarFilme() {
-    sugerirFilme();
-  }
-  
-  function getServiceImage(serviceName) {
-    const serviceImages = {
-      "HBO Max": "https://caiogbdesign.github.io/finder/hbo-max.svg",
-      "Prime Video": "https://caiogbdesign.github.io/finder/prime-video.svg",
-      "Apple TV": "https://caiogbdesign.github.io/finder/apple-tv.svg",
-      "YouTube": "https://caiogbdesign.github.io/finder/youtube.svg",
-      "Netflix": "https://caiogbdesign.github.io/finder/netflix.svg",
-      "Star+": "https://caiogbdesign.github.io/finder/star+.svg",
-      "Disney+": "https://caiogbdesign.github.io/finder/disney+.svg",
-      "Paramount+": "https://caiogbdesign.github.io/finder/paramount.svg"
-    };
-  
-    if (serviceImages.hasOwnProperty(serviceName)) {
-      return `<img src="${serviceImages[serviceName]}" alt="${serviceName}">`;
-    }
-  
-    return serviceName;
-  }
+  buttonFiltrar.addEventListener("click", () => {
+    const genero = document.querySelector('input[name=generos]:checked').value;
+    const classificacao = document.querySelector('input[name=classificacao]:checked').value;
+    const streaming = document.querySelector('input[name=servicos]:checked').value;
+    const notas = document.querySelector('input[name=notas]:checked').value;
+    const opinioes = document.querySelector('input[name=opinioes]:checked').value;
+    const disponivelCinema = document.querySelector('input[name=cinema]:checked').value;
 
-  function abrirPopup() {
-    var popup = document.querySelector(".botao-sugestao");
-    var fecharFiltros = document.querySelector(".fechar-filtros");
-    var fecharFiltrosBotao = document.querySelector(".filtros");
-    var abrirFiltrosBotao = document.querySelector(".abrir-filtros");
-    var GrupoFiltrosBotoes = document.querySelector(".grupo-botoes");
-    
-    if (popup.classList.contains("aberto")) {
-      popup.classList.remove("aberto");
-      fecharFiltros.style.opacity = "0";
-      abrirFiltrosBotao.style.opacity = "1";
-      fecharFiltrosBotao.style.bottom = "0px";
-      fecharFiltrosBotao.style.background = "#FEDC33";
-      GrupoFiltrosBotoes.style.top = "0px";
+    fetch("https://caiogbdesign.github.io/flick/flick-api.json")
+      .then(response => response.json())
+      .then(data => {
+        const filmes = Object.values(data).filter(filme => filme.id.startsWith("FR"));
+        const filmesFiltrados = filmes.filter(filme => {
+          if (genero && genero !== "" && (!filme.generos || !filme.generos.find(g => g.nome === genero))) {
+            return false;
+          }
+          if (classificacao && classificacao !== "" && filme.classificacao !== classificacao) {
+            return false;
+          }
+          if (streaming && streaming !== "" && (!filme.servicos || !filme.servicos.find(s => s.streaming === streaming))) {
+            return false;
+          }
+          if (notas === "notaSim" && (!filme.Flick || !filme.Flick.length)) {
+            return false;
+          }
+          if (opinioes === "opiniaoSim" && (!filme.opiniao || !filme.opiniao.length)) {
+            return false;
+          }
+          if (disponivelCinema && disponivelCinema !== "" && (!filme.cinema || !filme.cinema.find(c => c.disponibilidade === disponivelCinema))) {
+            return false;
+          }
+          return true;
+        });
 
-    } else {
-      popup.classList.add("aberto");
-      fecharFiltros.style.opacity = "1";
-      abrirFiltrosBotao.style.opacity = "0";
-      fecharFiltrosBotao.style.bottom = "20px";
-      fecharFiltrosBotao.style.background = "#ffffff";
-      GrupoFiltrosBotoes.style.top = "-100px";
-    }
+        if (filmesFiltrados.length > 0) {
+          const filmeAleatorio = filmesFiltrados[Math.floor(Math.random() * filmesFiltrados.length)];
+          const generos = filmeAleatorio.generos ? filmeAleatorio.generos.map(genero => converterGenero(genero.nome)) : [];
+          filmeSugerido.innerHTML = `
+          
+          <div class="sugestao">
+            <div class="folder-filme">
+              <img src="${filmeAleatorio.imagem}" alt="${filmeAleatorio.titulo}">
+            </div>
+
+            <div class="titulo-filme">
+              <h2>${filmeAleatorio.titulo}</h2>
+            </div>
+
+            <div class="genero-duracao">
+              <p>${generos.join(' /  ')}</p>
+              <p>${filmeAleatorio.duracao}</p>
+            </div>
+
+            <div class="pontuacoes">
+              <div class="imdb">
+                <p>${filmeAleatorio.pontuacao.IMDB}</p>
+                <span>IMDB</span>
+              </div>
+
+              <div class="rottenCriticos">
+                <p>${filmeAleatorio.pontuacao.RottenCriticos}</p>
+                <span>Rotten Tomato</span>
+              </div>
+              
+              <div class="metacritic">
+                <p>${filmeAleatorio.pontuacao.Metacritic}</p>
+                <span>Metacritic</span>
+              </div>
+              
+              <div class="letterboxd">
+                <p>${filmeAleatorio.pontuacao.Letterboxd}</p>
+                <span>Letterboxd</span>
+              </div>
+            </div>
+              
+            ${filmeAleatorio.Flick ?
+              ` <div class="avaliacoes">
+                  <span>Notas Flick</span>
+                  ${filmeAleatorio.Flick.map(avaliador => `
+                      <div class="avaliador">
+                        <div class="avaliador-foto">
+                          <img src="${avaliador.foto}" alt="${avaliador.especialista}">
+                        </div>
+                        <p>${avaliador.especialista}</p>
+                        <p>${avaliador.avaliacao}/<span>5</span></p>
+                      </div>
+                  `).join('')}
+                </div>` : ''}
+
+            <div class="servicos">
+              <span>Onde assistir</span>
+              <p>${filmeAleatorio.servicos.map(servico => converterServicoStreaming(servico.streaming)).join("")}</p>
+            </div>
+
+            <div class="elenco">
+              <span>Elenco</span>
+              <div class="cont-artistas">
+                ${filmeAleatorio.elenco.map(personagem => `
+                <div class="artista">
+                  <div class="img-elenco">
+                    <img src="${personagem.foto}" alt="${personagem.nome}">
+                  </div>
+                  <p>${personagem.nome}</p>
+                  <p>${personagem.personagem}</p>
+                </div>
+              `).join('')}
+              </div>
+            </div>
+
+            <div class="direcao">
+              <span>Direção</span>
+              <p>${filmeAleatorio.direcao}</p>
+            </div>
+
+            <div class="classificacao">
+              <span>Classificacao</span>
+              <div class=${converterClassificacao(filmeAleatorio.classificacao)}</div>
+            </div>
+
+            <div class="bilheteria">
+              <span>Bilheteria</span>
+              <p>${filmeAleatorio.bilheteria}</p>
+            </div>
+
+            <div class="sinopse">
+              <span>Sinopse</span>
+              <p>${filmeAleatorio.sinopse}</p>
+            </div>
+              
+            ${filmeAleatorio.opiniao ? 
+              ` <div class="opiniao">
+                  ${filmeAleatorio.opiniao.map(avaliador => `
+                    <div class="avaliador">
+                        <div class="autor">
+                          <p><span>Avaliação • </span>${avaliador.especialista}</p>
+                        </div>
+                        <p>${avaliador.texto}</p>
+                    </div>
+                  `).join('')}
+              </div>` : ''}
+
+          </div>
+          `;
+        } else {
+          console.log("Nenhum filme encontrado com os filtros selecionados.");
+          filmeSugerido.innerHTML = "Não foi possível encontrar um filme com os filtros selecionados.";
+        }
+      })
+      .catch(error => console.error(error));
+  });
+
+  // sugere um filme ao carregar a página
+  buttonSugerir.click();
+});
+
+// Popup filtros
+const meuPopup = document.getElementById('meu-popup');
+const btnFiltros = document.getElementById('btn-filtros');
+const fecharPopup = document.getElementById('fechar-popup');
+
+function mostrarPopup() {
+  meuPopup.classList.add('mostrar');
+}
+
+function ocultarPopup() {
+  meuPopup.classList.remove('mostrar');
+}
+
+btnFiltros.addEventListener('click', mostrarPopup);
+fecharPopup.addEventListener('click', ocultarPopup);
+meuPopup.addEventListener('click', function(event) {
+  event.stopPropagation();
+});
+window.addEventListener('click', function(event) {
+  if (event.target !== meuPopup && event.target !== btnFiltros) {
+    ocultarPopup();
   }
+});
