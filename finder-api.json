@@ -96,6 +96,11 @@
          {
             "streaming":"s10"
          }
+      ],
+      "cinema":[
+         {
+            "disponibilidade":"cinemaSim"
+         }
       ]
    },
    {
