@@ -73,6 +73,18 @@ function converterClassificacao(idade) {
   }
 }
 
+function exibirAvaliacao(avaliacao) {
+  var estrelas = "";
+  for (var i = 0; i < 5; i++) {
+    if (i < avaliacao) {
+      estrelas += "<img src='https://caiogbdesign.github.io/flick/estrela-preenchida.svg' alt='Estrela preenchida'>";
+    } else {
+      estrelas += "<img src='https://caiogbdesign.github.io/flick/estrela-vazia.svg' alt='Estrela vazia'>";
+    }
+  }
+  return estrelas;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const buttonSugerir = document.getElementById("sugerir-filme");
   const buttonFiltrar = document.getElementById("aplicar-filtros");
@@ -124,18 +136,18 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
               
           ${filmeAleatorio.Flick ?
-            ` <div class="avaliacoes">
-                <span>Notas Flick</span>
-                ${filmeAleatorio.Flick.map(avaliador => `
-                    <div class="avaliador">
-                      <div class="avaliador-foto">
-                        <img src="${avaliador.foto}" alt="${avaliador.especialista}">
-                      </div>
-                      <p>${avaliador.especialista}</p>
-                      <p>${avaliador.avaliacao}/<span>5</span></p>
+          ` <div class="avaliacoes">
+              <span>Notas Flick</span>
+              ${filmeAleatorio.Flick.map(avaliador => `
+                  <div class="avaliador">
+                    <div class="avaliador-foto">
+                      <img src="${avaliador.foto}" alt="${avaliador.especialista}">
                     </div>
-                `).join('')}
-              </div>` : ''}
+                    <p>${avaliador.especialista}</p>
+                    <div class="estrelas">${exibirAvaliacao(avaliador.avaliacao)}</div>
+                  </div>
+              `).join('')}
+            </div>` : ''}                  
 
           <div class="servicos">
             <span>Onde assistir</span>
@@ -287,18 +299,18 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
               
             ${filmeAleatorio.Flick ?
-              ` <div class="avaliacoes">
-                  <span>Notas Flick</span>
-                  ${filmeAleatorio.Flick.map(avaliador => `
-                      <div class="avaliador">
-                        <div class="avaliador-foto">
-                          <img src="${avaliador.foto}" alt="${avaliador.especialista}">
-                        </div>
-                        <p>${avaliador.especialista}</p>
-                        <p>${avaliador.avaliacao}/<span>5</span></p>
+            ` <div class="avaliacoes">
+                <span>Notas Flick</span>
+                ${filmeAleatorio.Flick.map(avaliador => `
+                    <div class="avaliador">
+                      <div class="avaliador-foto">
+                        <img src="${avaliador.foto}" alt="${avaliador.especialista}">
                       </div>
-                  `).join('')}
-                </div>` : ''}
+                      <p>${avaliador.especialista}</p>
+                      <div class="estrelas">${exibirAvaliacao(avaliador.avaliacao)}</div>
+                    </div>
+                `).join('')}
+              </div>` : ''}            
 
             <div class="servicos">
               <span>Onde assistir</span>
