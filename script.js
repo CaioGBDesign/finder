@@ -401,3 +401,18 @@ window.addEventListener('click', function(event) {
     ocultarPopup();
   }
 });
+
+
+// Voltar para o topo ao sugerir novo filme
+const botaoSugerirFilme = document.getElementById("sugerir-filme");
+const botaoFiltro = document.getElementById("aplicar-filtros");
+
+botaoSugerirFilme.addEventListener("click", function() {
+  // Role para o topo da página
+  window.scrollTo(0, 0);
+});
+
+botaoFiltro.addEventListener("click", function() {
+  // Role para o topo da página
+  window.scrollTo(0, 0);
+});
