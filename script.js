@@ -22,6 +22,8 @@ function converterGenero(genero) {
       return "Faroeste";
     case "g11":
       return "Filme épico";
+      case "g12":
+        return "Biografia";
     default:
       return genero;
   }
@@ -48,7 +50,7 @@ function converterServicoStreaming(servico) {
     case "s9":
       return "Somente nos cinemas";
     case "s10":
-      return "Indisponível para streaming";
+      return "Indisponível para streaming :'(";
     default:
       return servico;
   }
@@ -402,6 +404,13 @@ window.addEventListener('click', function(event) {
   }
 });
 
+// exemplo de JavaScript
+const botao = document.querySelector('#aplicar-filtros');
+const popup = document.querySelector('#meu-popup');
+
+botao.addEventListener('click', function() {
+  popup.classList.remove('mostrar');
+});
 
 // Voltar para o topo ao sugerir novo filme
 const botaoSugerirFilme = document.getElementById("sugerir-filme");
