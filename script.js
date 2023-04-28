@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
 
         <div class="classificacao">
-        <span>Classificacao</span>
+        <span>Classificação</span>
         <div class=${converterClassificacao(filmeAleatorio.classificacao)}</div>
         </div>
 
@@ -346,7 +346,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
 
             <div class="classificacao">
-            <span>Classificacao</span>
+            <span>Classificação</span>
             <div class=${converterClassificacao(filmeAleatorio.classificacao)}</div>
             </div>
 
