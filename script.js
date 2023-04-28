@@ -101,109 +101,113 @@ document.addEventListener("DOMContentLoaded", () => {
 
     filmeSugerido.innerHTML = `
       
-      <div class="sugestao">
-          <div class="folder-filme">
+    <div class="sugestao">
+        <div class="folder-filme">
             <img src="${filmeAleatorio.imagem}" alt="${filmeAleatorio.titulo}">
-          </div>
+        </div>
 
-          <div class="titulo-filme">
-            <h2>${filmeAleatorio.titulo}</h2>
-          </div>
+        <div class="cont-conteudo">
+        <div class="conteudo-completo">
+        <div class="titulo-filme">
+        <h2>${filmeAleatorio.titulo}</h2>
+        </div>
 
-          <div class="genero-duracao">
-            <p>${generos.join(' /  ')}</p>
-            <p>${filmeAleatorio.duracao}</p>
-          </div>
+        <div class="genero-duracao">
+        <p>${generos.join(' /  ')}</p>
+        <p>${filmeAleatorio.duracao}</p>
+        </div>
 
-          <div class="pontuacoes">
-            <div class="imdb">
-              <p>${filmeAleatorio.pontuacao.IMDB}</p>
-              <span>IMDB</span>
-            </div>
+        <div class="pontuacoes">
+        <div class="imdb">
+            <p>${filmeAleatorio.pontuacao.IMDB}</p>
+            <span>IMDB</span>
+        </div>
 
-            <div class="rottenCriticos">
-              <p>${filmeAleatorio.pontuacao.RottenCriticos}<span>%</span></p>
-              <span>Rotten Tomato</span>
-            </div>
-            
-            <div class="metacritic">
-              <p>${filmeAleatorio.pontuacao.Metacritic}<span>%</span></p>
-              <span>Metacritic</span>
-            </div>
-            
-            <div class="letterboxd">
-              <p>${filmeAleatorio.pontuacao.Letterboxd}</p>
-              <span>Letterboxd</span>
-            </div>
-          </div>
-              
-          ${filmeAleatorio.Flick ?
-          ` <div class="avaliacoes">
-              <span>Notas Flick</span>
-              ${filmeAleatorio.Flick.map(avaliador => `
-                  <div class="avaliador">
-                    <div class="avaliador-foto">
-                      <img src="${avaliador.foto}" alt="${avaliador.especialista}">
-                    </div>
-                    <p>${avaliador.especialista}</p>
-                    <div class="estrelas">${exibirAvaliacao(avaliador.avaliacao)}</div>
-                  </div>
-              `).join('')}
-            </div>` : ''}                  
-
-          <div class="servicos">
-            <span>Onde assistir</span>
-            <p>${filmeAleatorio.servicos.map(servico => converterServicoStreaming(servico.streaming)).join("")}</p>
-          </div>
-
-          <div class="elenco">
-            <span>Elenco</span>
-            <div class="cont-artistas">
-              ${filmeAleatorio.elenco.map(personagem => `
-              <div class="artista">
-                <div class="img-elenco">
-                  <img src="${personagem.foto}" alt="${personagem.nome}">
+        <div class="rottenCriticos">
+            <p>${filmeAleatorio.pontuacao.RottenCriticos}</p>
+            <span>Rotten Tomato</span>
+        </div>
+        
+        <div class="metacritic">
+            <p>${filmeAleatorio.pontuacao.Metacritic}</p>
+            <span>Metacritic</span>
+        </div>
+        
+        <div class="letterboxd">
+            <p>${filmeAleatorio.pontuacao.Letterboxd}</p>
+            <span>Letterboxd</span>
+        </div>
+        </div>
+        
+        ${filmeAleatorio.Flick ?
+        ` <div class="avaliacoes">
+            <span>Notas Flick</span>
+            ${filmeAleatorio.Flick.map(avaliador => `
+                <div class="avaliador">
+                <div class="avaliador-foto">
+                    <img src="${avaliador.foto}" alt="${avaliador.especialista}">
                 </div>
-                <p>${personagem.nome}</p>
-                <p>${personagem.personagem}</p>
-              </div>
+                <p>${avaliador.especialista}</p>
+                <div class="estrelas">${exibirAvaliacao(avaliador.avaliacao)}</div>
+                </div>
             `).join('')}
+        </div>` : ''}            
+
+        <div class="servicos">
+        <span>Onde assistir</span>
+        <p>${filmeAleatorio.servicos.map(servico => converterServicoStreaming(servico.streaming)).join("")}</p>
+        </div>
+
+        <div class="elenco">
+        <span>Elenco</span>
+        <div class="cont-artistas">
+            ${filmeAleatorio.elenco.map(personagem => `
+            <div class="artista">
+            <div class="img-elenco">
+                <img src="${personagem.foto}" alt="${personagem.nome}">
             </div>
-          </div>
+            <p>${personagem.nome}</p>
+            <p>${personagem.personagem}</p>
+            </div>
+        `).join('')}
+        </div>
+        </div>
 
-          <div class="direcao">
-            <span>Direção</span>
-            <p>${filmeAleatorio.direcao}</p>
-          </div>
+        <div class="direcao">
+        <span>Direção</span>
+        <p>${filmeAleatorio.direcao}</p>
+        </div>
 
-          <div class="classificacao">
-            <span>Classificacao</span>
-            <div class=${converterClassificacao(filmeAleatorio.classificacao)}</div>
-          </div>
+        <div class="classificacao">
+        <span>Classificacao</span>
+        <div class=${converterClassificacao(filmeAleatorio.classificacao)}</div>
+        </div>
 
-          <div class="bilheteria">
-            <span>Bilheteria</span>
-            <p>${filmeAleatorio.bilheteria}</p>
-          </div>
+        <div class="bilheteria">
+        <span>Bilheteria</span>
+        <p>${filmeAleatorio.bilheteria}</p>
+        </div>
 
-          <div class="sinopse">
-            <span>Sinopse</span>
-            <p>${filmeAleatorio.sinopse}</p>
-          </div>
-            
-          ${filmeAleatorio.opiniao ? 
-            ` <div class="opiniao">
-                ${filmeAleatorio.opiniao.map(avaliador => `
-                  <div class="avaliador">
-                      <div class="autor">
-                        <p><span>Avaliação • </span>${avaliador.especialista}</p>
-                      </div>
-                      <p>${avaliador.texto}</p>
-                  </div>
-                `).join('')}
-            </div>` : ''}
+        <div class="sinopse">
+        <span>Sinopse</span>
+        <p>${filmeAleatorio.sinopse}</p>
+        </div>
+        
+        ${filmeAleatorio.opiniao ? 
+        ` <div class="opiniao">
+            ${filmeAleatorio.opiniao.map(avaliador => `
+                <div class="avaliador">
+                    <div class="autor">
+                    <p><span>Avaliação • </span>${avaliador.especialista}</p>
+                    </div>
+                    <p>${avaliador.texto}</p>
+                </div>
+            `).join('')}
+        </div>` : ''}
+        </div>
+        </div>
 
-      </div>
+    </div>
     `;
   };
 
@@ -266,107 +270,111 @@ document.addEventListener("DOMContentLoaded", () => {
           
           <div class="sugestao">
             <div class="folder-filme">
-              <img src="${filmeAleatorio.imagem}" alt="${filmeAleatorio.titulo}">
+                <img src="${filmeAleatorio.imagem}" alt="${filmeAleatorio.titulo}">
             </div>
 
+            <div class="cont-conteudo">
+            <div class="conteudo-completo">
             <div class="titulo-filme">
-              <h2>${filmeAleatorio.titulo}</h2>
+            <h2>${filmeAleatorio.titulo}</h2>
             </div>
 
             <div class="genero-duracao">
-              <p>${generos.join(' /  ')}</p>
-              <p>${filmeAleatorio.duracao}</p>
+            <p>${generos.join(' /  ')}</p>
+            <p>${filmeAleatorio.duracao}</p>
             </div>
 
             <div class="pontuacoes">
-              <div class="imdb">
+            <div class="imdb">
                 <p>${filmeAleatorio.pontuacao.IMDB}</p>
                 <span>IMDB</span>
-              </div>
+            </div>
 
-              <div class="rottenCriticos">
+            <div class="rottenCriticos">
                 <p>${filmeAleatorio.pontuacao.RottenCriticos}</p>
                 <span>Rotten Tomato</span>
-              </div>
-              
-              <div class="metacritic">
+            </div>
+            
+            <div class="metacritic">
                 <p>${filmeAleatorio.pontuacao.Metacritic}</p>
                 <span>Metacritic</span>
-              </div>
-              
-              <div class="letterboxd">
+            </div>
+            
+            <div class="letterboxd">
                 <p>${filmeAleatorio.pontuacao.Letterboxd}</p>
                 <span>Letterboxd</span>
-              </div>
             </div>
-              
+            </div>
+            
             ${filmeAleatorio.Flick ?
             ` <div class="avaliacoes">
                 <span>Notas Flick</span>
                 ${filmeAleatorio.Flick.map(avaliador => `
                     <div class="avaliador">
-                      <div class="avaliador-foto">
+                    <div class="avaliador-foto">
                         <img src="${avaliador.foto}" alt="${avaliador.especialista}">
-                      </div>
-                      <p>${avaliador.especialista}</p>
-                      <div class="estrelas">${exibirAvaliacao(avaliador.avaliacao)}</div>
+                    </div>
+                    <p>${avaliador.especialista}</p>
+                    <div class="estrelas">${exibirAvaliacao(avaliador.avaliacao)}</div>
                     </div>
                 `).join('')}
-              </div>` : ''}            
+            </div>` : ''}            
 
             <div class="servicos">
-              <span>Onde assistir</span>
-              <p>${filmeAleatorio.servicos.map(servico => converterServicoStreaming(servico.streaming)).join("")}</p>
+            <span>Onde assistir</span>
+            <p>${filmeAleatorio.servicos.map(servico => converterServicoStreaming(servico.streaming)).join("")}</p>
             </div>
 
             <div class="elenco">
-              <span>Elenco</span>
-              <div class="cont-artistas">
+            <span>Elenco</span>
+            <div class="cont-artistas">
                 ${filmeAleatorio.elenco.map(personagem => `
                 <div class="artista">
-                  <div class="img-elenco">
+                <div class="img-elenco">
                     <img src="${personagem.foto}" alt="${personagem.nome}">
-                  </div>
-                  <p>${personagem.nome}</p>
-                  <p>${personagem.personagem}</p>
                 </div>
-              `).join('')}
-              </div>
+                <p>${personagem.nome}</p>
+                <p>${personagem.personagem}</p>
+                </div>
+            `).join('')}
+            </div>
             </div>
 
             <div class="direcao">
-              <span>Direção</span>
-              <p>${filmeAleatorio.direcao}</p>
+            <span>Direção</span>
+            <p>${filmeAleatorio.direcao}</p>
             </div>
 
             <div class="classificacao">
-              <span>Classificacao</span>
-              <div class=${converterClassificacao(filmeAleatorio.classificacao)}</div>
+            <span>Classificacao</span>
+            <div class=${converterClassificacao(filmeAleatorio.classificacao)}</div>
             </div>
 
             <div class="bilheteria">
-              <span>Bilheteria</span>
-              <p>${filmeAleatorio.bilheteria}</p>
+            <span>Bilheteria</span>
+            <p>${filmeAleatorio.bilheteria}</p>
             </div>
 
             <div class="sinopse">
-              <span>Sinopse</span>
-              <p>${filmeAleatorio.sinopse}</p>
+            <span>Sinopse</span>
+            <p>${filmeAleatorio.sinopse}</p>
             </div>
-              
+            
             ${filmeAleatorio.opiniao ? 
-              ` <div class="opiniao">
-                  ${filmeAleatorio.opiniao.map(avaliador => `
+            ` <div class="opiniao">
+                ${filmeAleatorio.opiniao.map(avaliador => `
                     <div class="avaliador">
                         <div class="autor">
-                          <p><span>Avaliação • </span>${avaliador.especialista}</p>
+                        <p><span>Avaliação • </span>${avaliador.especialista}</p>
                         </div>
                         <p>${avaliador.texto}</p>
                     </div>
-                  `).join('')}
-              </div>` : ''}
+                `).join('')}
+            </div>` : ''}
+            </div>
+            </div>
 
-          </div>
+        </div>
           `;
         } else {
           console.log("Nenhum filme encontrado com os filtros selecionados.");
@@ -384,13 +392,16 @@ document.addEventListener("DOMContentLoaded", () => {
 const meuPopup = document.getElementById('meu-popup');
 const btnFiltros = document.getElementById('btn-filtros');
 const fecharPopup = document.getElementById('fechar-popup');
+const backgroundPopup = document.getElementById('popup-aberto')
 
 function mostrarPopup() {
   meuPopup.classList.add('mostrar');
+  backgroundPopup.classList.add('popup-aberto');
 }
 
 function ocultarPopup() {
   meuPopup.classList.remove('mostrar');
+  backgroundPopup.classList.remove('popup-aberto');
 }
 
 btnFiltros.addEventListener('click', mostrarPopup);
@@ -404,12 +415,12 @@ window.addEventListener('click', function(event) {
   }
 });
 
-// exemplo de JavaScript
 const botao = document.querySelector('#aplicar-filtros');
 const popup = document.querySelector('#meu-popup');
 
 botao.addEventListener('click', function() {
   popup.classList.remove('mostrar');
+  backgroundPopup.classList.remove('popup-aberto');
 });
 
 // Voltar para o topo ao sugerir novo filme
