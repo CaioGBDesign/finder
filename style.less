@@ -1,1178 +1,427 @@
-body
-{
-    margin: 0px;
-    padding: 0px;
-
-    background: #250D2F;
-
-    color: #ffffff;
-
-    font-family: 'Quicksand', sans-serif;
-
-    .sugestao-completa
-    {
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        margin-bottom: 250px;
-
-        #filme-sugerido
-        {
-            width: 100%;
-
-            display: flex;
-            justify-content: center;
-            gap: 50px;
-
-            .sugestao
-            {
-                width: 100%;
-
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 35px;
-
-                .folder-filme
-                {
-                    width: 100%;
-
-                    position: relative;
-
-                    img
-                    {
-                        width: 100%;
-                    }
-
-                    &::after
-                    {
-                        content: '';
-
-                        width: 100%;
-                        height: 950px;
-
-                        background: linear-gradient(180deg, rgba(37, 13, 47, 0) 0%, #250D2F 83.12%);
-
-                        position: absolute;
-                        bottom: 0px;
-                        left: 0px;
-                    }
-                }
-
-                .titulo-filme
-                {
-                    width: 100%;
-
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    margin-top: -430px;
-                    position: relative;
-
-                    h2
-                    {
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 50px;
-                        line-height: 50px;
-
-                        text-align: center;
-
-                        color: #FFFFFF;
-
-                        width: 80%;
-
-                        margin: 0px;
-                    }
-                }
-
-                .genero-duracao
-                {
-                    width: 100%;
-
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;                    
-                    gap: 50px;
-
-                    position: relative;
-
-                    p
-                    {
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 30px;
-                        line-height: 30px;
-
-                        text-align: center;
-
-                        color: #FFFFFF;
-                        margin: 0px;
-
-                        &:first-child
-                        {
-                            position: relative;
-
-                            &::after
-                            {
-                                content: '•';
-
-                                position: absolute;
-                                top: 0px;
-                                right: -30px;
-
-                                font-size: 34px;
-                                font-weight: bold;
-                                font-style: normal;
-                            }
-                        }
-                    }
-                }
-
-                .pontuacoes
-                {
-                    width: 100%;
-
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 60px;
-
-                    margin-top: 30px;
-
-                    position: relative;
-
-                    .imdb
-                    {
-                        p
-                        {
-                            background: linear-gradient(90deg, #F314FB -428%, #FDF57C 1236%), #FEDC33;
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            background-clip: text;
-                            text-fill-color: transparent;
-                        }
-                    }
-
-                    .rottenCriticos
-                    {
-                        p
-                        {
-                            background: linear-gradient(90deg, #F314FB -316.07%, #FDF57C 785.71%), #FEDC33;
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            background-clip: text;
-                            text-fill-color: transparent;
-                        }
-                    }
-
-                    .metacritic
-                    {
-                        p
-                        {
-                            background: linear-gradient(90deg, #F314FB -680.36%, #FDF57C 423.21%), #FEDC33;
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            background-clip: text;
-                            text-fill-color: transparent;
-                        }
-                    }
-
-                    .letterboxd
-                    {
-                        p
-                        {
-                            background: linear-gradient(90deg, #F314FB -1046.3%, #FDF57C 318.52%), #FEDC33;
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            background-clip: text;
-                            text-fill-color: transparent;
-                        }
-                    }
-
-                    .imdb, .rottenCriticos, .metacritic, .letterboxd
-                    {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 15px;
-
-                        p 
-                        {
-                            font-style: normal;
-                            font-weight: 500;
-                            font-size: 44px;
-                            line-height: 44px;
-
-                            text-align: center;
-
-                            color: #FEDC33;
-
-                            margin: 0px;
-
-                            span
-                            {                   
-                                font-weight: 300;             
-                                font-size: 24px;
-                                line-height: 24px;
-
-                                color: #FEDC33;
-                            }
-                        }
-
-                        span
-                        {
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 30px;
-                            line-height: 30px;
-
-                            text-align: center;
-
-                            color: #FFFFFF;
-
-                            margin: 0px;
-                        }
-                    }
-                }
-
-                .avaliacoes
-                {
-                    width: 90%;
-
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 30px;
-
-                    margin-top: 80px;
-
-                    position: relative;
-
-                    span
-                    {
-                        width: 100%;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 50px;
-                        line-height: 50px;
-
-                        color: #FFFFFF;
-
-                        opacity: 0.3;
-
-                        margin-bottom: 50px;
-                    }
-
-                    .avaliador
-                    {
-                        width: 180px;
-                        
-                        .avaliador-foto
-                        {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-
-                            width: 180px;
-                            height: 180px;
-
-                            border-radius: 35px;
-
-                            overflow: hidden;
-
-                            img
-                            {
-                                width: 130%;
-                            }
-                        }
-
-                        p
-                        {
-                            font-style: normal;
-                            font-weight: 600;
-                            font-size: 28px;
-                            line-height: 28px;
-                            
-                            text-align: center;
-
-                            color: #FFFFFF;
-
-                            &:last-child
-                            {
-                                font-style: normal;
-                                font-weight: 500;
-                                font-size: 44px;
-                                line-height: 44px;
-
-                                text-align: center;
-
-                                color: #FEDC33;
-
-                                margin: 0px;
-
-                                span
-                                {               
-                                    font-style: normal;    
-                                    font-weight: 300;             
-                                    font-size: 24px;
-                                    line-height: 24px;
-    
-                                    color: #FEDC33;
-
-                                    opacity: 1;
-                                }
-                            }
-                        }
-
-                        .estrelas
-                        {
-                            width: 100%;
-
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-
-                            img
-                            {
-                                width: 30px;
-                                height: 30px;
-                            }
-                        }
-                    }
-                }
-
-                .servicos
-                {
-                    width: 90%;
-
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 30px;
-
-                    margin-top: 80px;
-                    
-                    position: relative;
-
-                    span
-                    {
-                        width: 100%;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 50px;
-                        line-height: 50px;
-
-                        color: #FFFFFF;
-
-                        opacity: 0.3;
-                    }
-
-                    p
-                    {
-                        display: flex;
-                        justify-content: center;
-                        gap: 20px;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 30px;
-                        line-height: 30px;
-                        color: #FFFFFF;
-
-                        img
-                        {
-                            width: 150px;
-                            background: #00000025;
-
-                            border-radius: 20px;
-                        }
-                    }
-                }
-
-                .elenco
-                {
-                    width: 90%;
-
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 30px;
-
-                    margin-top: 80px;
-                    
-                    position: relative;
-
-                    span
-                    {
-                        width: 100%;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 50px;
-                        line-height: 50px;
-
-                        color: #FFFFFF;
-
-                        opacity: 0.3;
-
-                        margin-bottom: 40px;
-                    }
-
-                    .cont-artistas
-                    {
-                        display: flex;
-                        align-items: start;
-                        gap: 10px;
-
-                        margin-top: 20px;
-
-                        overflow-x: scroll;
-                        
-                        &::-webkit-scrollbar
-                        {
-                            width: 0px;
-                        }
-                        
-                        &::-webkit-scrollbar-track
-                        {
-                            background: none; 
-                        }
-                        
-                        &::-webkit-scrollbar-thumb
-                        {
-                            background: none; 
-                        }
-
-                        &::-webkit-scrollbar-thumb:hover
-                        {
-                            background: none; 
-                        }
-                        
-                        .artista
-                        {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                            gap: 20px;
-
-                            .img-elenco
-                            {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-
-                                width: 180px;
-                                height: 180px;
-
-                                border-radius: 35px;
-
-                                overflow: hidden;
-
-                                margin-bottom: 10px;
-
-                                img
-                                {
-                                    width: 100%;
-                                }
-                            }
-
-                            p
-                            {
-                                font-style: normal;
-                                font-weight: 600;
-                                font-size: 25px;
-                                line-height: 25px;
-                                
-                                text-align: center;
-    
-                                color: #FFFFFF;
-
-                                margin: 0px;
-
-                                width: 200px;                            
-
-                                &:last-child
-                                {
-                                    font-style: normal;
-                                    font-weight: 400;
-                                    font-size: 28px;
-                                    line-height: 28px;
-                                    
-                                    text-align: center;
-
-                                    color: #FFFFFF;
-
-                                    opacity: 0.6;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .direcao
-                {
-                    width: 90%;
-
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 30px;
-
-                    margin-top: 80px;
-                    
-                    position: relative;
-
-                    span
-                    {
-                        width: 100%;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 50px;
-                        line-height: 50px;
-
-                        color: #FFFFFF;
-
-                        opacity: 0.3;
-                    }
-
-                    p
-                    {
-                        width: 100%;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 30px;
-                        line-height: 30px;
-
-                        color: #FFFFFF;
-                    }
-                }
-
-                .classificacao
-                {
-                    width: 90%;
-
-                    display: flex;
-                    flex-direction: column;
-                    align-items: start;
-                    gap: 30px;
-
-                    margin-top: 80px;
-                    
-                    position: relative;
-
-                    span
-                    {
-                        width: 100%;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 50px;
-                        line-height: 50px;
-
-                        color: #FFFFFF;
-
-                        opacity: 0.3;
-                    }
-
-                    .livre, .DezAnos, .DozeAnos, .QuatorzeAnos, .DezesseisAnos, .DezoitoAnos
-                    {
-                        border-radius: 10px;
-                        padding: 30px;
-
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        width: fit-content;
-
-                        span
-                        {
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 30px;
-                            line-height: 30px;
-                            text-align: center;
-
-                            color: #FFFFFF;
-
-                            margin: 0px;
-
-                            opacity: 1;
-                        }
-                    }
-
-                    .livre
-                    {
-                        background: #24FF0025;
-                    }
-
-                    .DezAnos
-                    {
-                        background: #00C0FF25;
-                    }
-
-                    .DozeAnos
-                    {
-                        background: #FFCB0125;
-                    }
-
-                    .QuatorzeAnos
-                    {
-                        background: #FF5F0125;
-                    }
-
-                    .DezesseisAnos
-                    {
-                        background: #FF010325;
-                    }
-
-                    .DezoitoAnos
-                    {
-                        background: #00000025;
-                    }
-                }
-
-                .bilheteria
-                {
-                    width: 90%;
-
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 30px;
-
-                    margin-top: 80px;
-
-                    span
-                    {
-                        width: 100%;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 50px;
-                        line-height: 50px;
-
-                        color: #FFFFFF;
-
-                        opacity: 0.3;
-                    }
-
-                    p
-                    {
-                        width: 100%;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 30px;
-                        line-height: 30px;
-
-                        color: #FFFFFF;
-
-                        opacity: .5;
-                    }
-                }
-
-                .sinopse
-                {
-                    width: 90%;
-
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 30px;
-
-                    margin-top: 40px;
-
-                    span
-                    {
-                        width: 100%;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 50px;
-                        line-height: 50px;
-
-                        color: #FFFFFF;
-
-                        opacity: 0.3;
-                    }
-
-                    p
-                    {
-                        width: 100%;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 30px;
-                        line-height: 30px;
-
-                        color: #FFFFFF;
-
-                        opacity: .5;
-                    }
-                }
-
-                .opiniao
-                {
-                    width: 90%;
-
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 30px;
-
-                    margin-top: 30px;
-                    margin-bottom: 100px;
-
-                    .avaliador
-                    {
-                        width: 100%;
-
-                        .autor
-                        {
-                            width: 100%;
-
-                            p
-                            {
-                                width: 100%;
-        
-                                font-style: normal;
-                                font-weight: 700;
-                                font-size: 50px;
-                                line-height: 50px;
-        
-                                color: #FFFFFF;
-
-                                padding-left: 20px;
-
-                                position: relative;
-
-                                opacity: .5;
-
-                                &::before
-                                {
-                                    content: '';
-
-                                    position: absolute;
-                                    width: 0px;
-                                    height: 25px;
-                                    left: 0px;
-                                    top: 10px;
-
-                                    border: 3px solid #FEDC33;
-                                }
-                            }
-
-                            span
-                            {        
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 50px;
-                                line-height: 50px;
-        
-                                color: #FFFFFF;
-        
-                                opacity: 0.3;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .container-filtros
-    {
-        width: 100%;
-        height: 340px;
-
-        position: fixed;
-        bottom: 0px;
-        left: 0px;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: center;
-
-        background: linear-gradient(180deg, rgba(37, 13, 47, 0) 0%, #250D2F 77.08%);
-        
-        transition: 0.5s;
-
-        #meu-popup
-        {
-            position: fixed;
-            bottom: 0px;
-            left: 0px;
-
-            background-color: #250D2F;
-
-            width: 100%;
-            height: 0px;
-
-            opacity: 0;
-
-            z-index: 9999;
-
-            overflow: hidden;
-            visibility: hidden;
-
-            transition: all 0.3s ease-in-out;
-
-            display: flex;
-            justify-content: center;
-
-            .todos-os-filtros
-            {
-                width: 83%;
-
-                .scroll-filtros
-                {
-                    width: 100%;
-                    height: 990px;
-
-                    display: flex;
-                    flex-direction: column;
-                    gap: 30px;
-
-                    overflow-y: scroll;
-                        
-                    &::-webkit-scrollbar
-                    {
-                        width: 0px;
-                    }
-                    
-                    &::-webkit-scrollbar-track
-                    {
-                        background: none; 
-                    }
-                    
-                    &::-webkit-scrollbar-thumb
-                    {
-                        background: none; 
-                    }
-
-                    &::-webkit-scrollbar-thumb:hover
-                    {
-                        background: none; 
-                    }
-
-                    .notas-flick, .opinioes-flick, .streaming, .disponivel-cinema, .genero-filtros, .classificacao-filtros
-                    {
-                        width: 100%;
-
-                        display: flex;
-                        flex-wrap: wrap;
-                        gap: 30px;
-
-                        margin-top: 70px;
-
-                        .titulo-filtro
-                        {
-                            width: 100%;
-
-                            margin-bottom: 30px;
-
-                            label
-                            {                                
-                                font-style: normal;
-                                font-weight: 300;
-                                font-size: 44px;
-                                line-height: 44px;
-
-                                color: #FFFFFF;
-
-                                opacity: 0.5;
-                            }
-                        }
-                        
-                        .botao
-                        {
-                            position: relative;
-
-                            height: 140px;
-
-                            border-radius: 55px;
-
-                            overflow: hidden;
-
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-
-                            input
-                            {
-                                position: absolute;
-                                top: 0px;
-                                left: 0px;
-
-                                opacity: 0;
-
-                                &:checked + label
-                                {
-                                    background-color: #FE333350;
-
-                                    color: #ffffff;
-
-                                    font-weight: bold;
-                                }
-                            }
-
-                            label
-                            {
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 44px;
-                                line-height: 44px;                                
-                                
-                                color: #FFFFFF;
-
-                                background: #00000020;
-
-                                padding: 50px;
-
-                                transition: .5s;
-                            }
-                        }
-                    }
-
-                    .streaming
-                    {
-                        .botao
-                        {
-                            width: 180px;
-                            height: 180px;
-
-                            label
-                            {
-                                background: #00000020;
-
-                                padding: 0px;
-
-                                width: 180px;
-                                height: 180px;
-
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-
-                                img
-                                {
-                                    width: 100%;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-
-            .CTA-Aplicar-Filtros
-            {
-                width: 100%;
-                height: 200px;
-    
-                display: flex;
-                justify-content: center;
-                align-items: center;
-    
-                gap: 30px;
-
-                position: absolute;
-                bottom: 0px;
-                left: 0px;
-
-                background: #250D2F;
-
-                .aplicar-filtros
-                {
-                    width: 59%;
-                    height: 100px;
-
-                    background: #ffffff;
-                    border-radius: 35px;
-
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    transition: .2s;
-    
-                    &:active
-                    {
-                        transform: translateY(10px);
-                    }
-
-                    button
-                    {
-                        background: none;
-                        border: none;
-
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 45px;
-                        line-height: 45px;
-                        text-align: center;
-
-                        color: #20232A;
-
-                        width: 100%;
-                        height: 100px;
-                    }
-                }
-
-                .botao-fechar
-                {
-                    width: 200px;
-                    height: 100px;
-
-                    overflow: hidden;
-
-                    background: #ffffff10;
-                    border-radius: 35px;
-
-                    transition: .2s;
-    
-                    &:active
-                    {
-                        transform: translateY(10px);
-                    }
-
-                    button
-                    {
-                        width: 200px;
-                        height: 100px;
-
-                        background: none;
-                        border: none;
-
-                        svg
-                        {
-                            width: 90px;
-                        }
-                    }
-                }
-            }
-        }
-    
-        #meu-popup.mostrar
-        {
-            height: 1200px;
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .CTAs
-        {
-            width: 90%;
-            height: 200px;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            gap: 30px;
-            
-            .cont-sugestao
-            {
-                width: 65%;
-                height: 100px;
-
-                border-radius: 35px;
-
-                overflow: hidden;
-
-                position: relative;
-
-                transition: .2s;
-
-                &:active
-                {
-                    transform: translateY(10px);
-                }
-                
-                .botoes-sugestoes
-                {
-                    width: 100%;
-                    height: 100px;
-
-                    button
-                    {
-                        width: 100%;
-                        height: 100px;
-
-                        background: linear-gradient(270deg, #2BA8E2 0%, #1AF5EB 100%), linear-gradient(270deg, #F5C675 0%, #C92FAC 51.04%, #9F1CFE 100%);                        
-                        border: none;
-
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 45px;
-                        line-height: 45px;
-                        text-align: center;
-
-                        color: #ffffff;
-                    }
-                }
-            }
-
-            .cont-filtros
-            {
-                height: 100px;
-                overflow: hidden;
-
-                background: #ffffff10;
-                border-radius: 35px;
-
-                transition: .2s;
-
-                &:active
-                {
-                    transform: translateY(10px);
-                }
-                
-                .botoes-filtros
-                {
-                    width: 200px;
-                    height: 100px;
-
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-
-                    button
-                    {
-                        background: none;
-                        border: none;
-
-                        z-index: 1;
-
-                        width: 100%;
-                        height: 100px;
-
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        color: #ffffff;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 30px;
-                        line-height: 30px;
-                        text-align: center;
-
-                        img
-                        {
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-        }
-    }
+function converterGenero(genero) {
+  switch(genero) {
+    case "g1":
+      return "Ação";
+    case "g2":
+      return "Aventura";
+    case "g3":
+      return "Comédia";
+    case "g4":
+      return "Ficção Científica";
+    case "g5":
+      return "Drama";
+    case "g6":
+      return "Ficção policial";
+    case "g7":
+      return "Crime";
+    case "g8":
+      return "Fantasia";
+    case "g9":
+      return "Histórico";
+    case "g10":
+      return "Faroeste";
+    case "g11":
+      return "Filme épico";
+      case "g12":
+        return "Biografia";
+    default:
+      return genero;
+  }
 }
+
+function converterServicoStreaming(servico) {
+  switch (servico) {
+    case "s1":
+      return '<img src="https://caiogbdesign.github.io/flick/netflix.svg" alt="Netflix">';
+    case "s2":
+      return '<img src="https://caiogbdesign.github.io/flick/prime-video.svg" alt="Prime Vídeo">';
+    case "s3":
+      return '<img src="https://caiogbdesign.github.io/flick/hbo-max.svg" alt="HBO MAX">';
+    case "s4":
+      return '<img src="https://caiogbdesign.github.io/flick/disney+.svg" alt="Disney+">';
+    case "s5":
+      return '<img src="https://caiogbdesign.github.io/flick/star+.svg" alt="Star+">';
+    case "s6":
+      return '<img src="https://caiogbdesign.github.io/flick/youtube.svg" alt="Youtube">';
+    case "s7":
+      return '<img src="https://caiogbdesign.github.io/flick/apple-tv.svg" alt="Apple TV">';
+    case "s8":
+      return '<img src="https://caiogbdesign.github.io/flick/paramount.svg" alt="Paramount">';
+    case "s9":
+      return "Somente nos cinemas";
+    case "s10":
+      return "Indisponível para streaming :'(";
+    default:
+      return servico;
+  }
+}
+
+function converterClassificacao(idade) {
+  switch (idade) {
+    case "Livre":
+      return '"livre"><span>Livre</span>';
+    case "10-anos":
+      return '"DezAnos"><span>10 anos</span>';
+    case "12-anos":
+      return '"DozeAnos"><span>12 anos</span>';
+    case "14-anos":
+      return '"QuatorzeAnos"><span>14 anos</span>';
+    case "16-anos":
+      return '"DezesseisAnos"><span>16 anos</span>';
+    case "18-anos":
+      return '"DezoitoAnos"><span>18 anos</span>';
+    default:
+      return idade;
+  }
+}
+
+function exibirAvaliacao(avaliacao) {
+  var estrelas = "";
+  for (var i = 0; i < 5; i++) {
+    if (i < avaliacao) {
+      estrelas += "<img src='https://caiogbdesign.github.io/flick/estrela-preenchida.svg' alt='Estrela preenchida'>";
+    } else {
+      estrelas += "<img src='https://caiogbdesign.github.io/flick/estrela-vazia.svg' alt='Estrela vazia'>";
+    }
+  }
+  return estrelas;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttonSugerir = document.getElementById("sugerir-filme");
+  const buttonFiltrar = document.getElementById("aplicar-filtros");
+  const filmeSugerido = document.getElementById("filme-sugerido");
+  let ultimoFilmeSugerido;
+
+  const sugerirFilme = (filmes) => {
+    const filmeAleatorio = filmes[Math.floor(Math.random() * filmes.length)];
+    ultimoFilmeSugerido = filmeAleatorio;
+
+    const generos = filmeAleatorio.generos ? filmeAleatorio.generos.map(genero => converterGenero(genero.nome)) : [];
+
+    filmeSugerido.innerHTML = `
+      
+      <div class="sugestao">
+          <div class="folder-filme">
+            <img src="${filmeAleatorio.imagem}" alt="${filmeAleatorio.titulo}">
+          </div>
+
+          <div class="titulo-filme">
+            <h2>${filmeAleatorio.titulo}</h2>
+          </div>
+
+          <div class="genero-duracao">
+            <p>${generos.join(' /  ')}</p>
+            <p>${filmeAleatorio.duracao}</p>
+          </div>
+
+          <div class="pontuacoes">
+            <div class="imdb">
+              <p>${filmeAleatorio.pontuacao.IMDB}</p>
+              <span>IMDB</span>
+            </div>
+
+            <div class="rottenCriticos">
+              <p>${filmeAleatorio.pontuacao.RottenCriticos}<span>%</span></p>
+              <span>Rotten Tomato</span>
+            </div>
+            
+            <div class="metacritic">
+              <p>${filmeAleatorio.pontuacao.Metacritic}<span>%</span></p>
+              <span>Metacritic</span>
+            </div>
+            
+            <div class="letterboxd">
+              <p>${filmeAleatorio.pontuacao.Letterboxd}</p>
+              <span>Letterboxd</span>
+            </div>
+          </div>
+              
+          ${filmeAleatorio.Flick ?
+          ` <div class="avaliacoes">
+              <span>Notas Flick</span>
+              ${filmeAleatorio.Flick.map(avaliador => `
+                  <div class="avaliador">
+                    <div class="avaliador-foto">
+                      <img src="${avaliador.foto}" alt="${avaliador.especialista}">
+                    </div>
+                    <p>${avaliador.especialista}</p>
+                    <div class="estrelas">${exibirAvaliacao(avaliador.avaliacao)}</div>
+                  </div>
+              `).join('')}
+            </div>` : ''}                  
+
+          <div class="servicos">
+            <span>Onde assistir</span>
+            <p>${filmeAleatorio.servicos.map(servico => converterServicoStreaming(servico.streaming)).join("")}</p>
+          </div>
+
+          <div class="elenco">
+            <span>Elenco</span>
+            <div class="cont-artistas">
+              ${filmeAleatorio.elenco.map(personagem => `
+              <div class="artista">
+                <div class="img-elenco">
+                  <img src="${personagem.foto}" alt="${personagem.nome}">
+                </div>
+                <p>${personagem.nome}</p>
+                <p>${personagem.personagem}</p>
+              </div>
+            `).join('')}
+            </div>
+          </div>
+
+          <div class="direcao">
+            <span>Direção</span>
+            <p>${filmeAleatorio.direcao}</p>
+          </div>
+
+          <div class="classificacao">
+            <span>Classificacao</span>
+            <div class=${converterClassificacao(filmeAleatorio.classificacao)}</div>
+          </div>
+
+          <div class="bilheteria">
+            <span>Bilheteria</span>
+            <p>${filmeAleatorio.bilheteria}</p>
+          </div>
+
+          <div class="sinopse">
+            <span>Sinopse</span>
+            <p>${filmeAleatorio.sinopse}</p>
+          </div>
+            
+          ${filmeAleatorio.opiniao ? 
+            ` <div class="opiniao">
+                ${filmeAleatorio.opiniao.map(avaliador => `
+                  <div class="avaliador">
+                      <div class="autor">
+                        <p><span>Avaliação • </span>${avaliador.especialista}</p>
+                      </div>
+                      <p>${avaliador.texto}</p>
+                  </div>
+                `).join('')}
+            </div>` : ''}
+
+      </div>
+    `;
+  };
+
+  fetch("https://caiogbdesign.github.io/flick/flick-api.json")
+    .then(response => response.json())
+    .then(data => {
+      const filmes = Object.values(data).filter(filme => filme.id.startsWith("FR"));
+      sugerirFilme(filmes);
+    })
+    .catch(error => console.error(error));
+
+  buttonSugerir.addEventListener("click", () => {
+    fetch("https://caiogbdesign.github.io/flick/flick-api.json")
+      .then(response => response.json())
+      .then(data => {
+        const filmes = Object.values(data).filter(filme => filme.id.startsWith("FR"));
+        sugerirFilme(filmes);
+      })
+      .catch(error => console.error(error));
+  });
+
+  buttonFiltrar.addEventListener("click", () => {
+    const genero = document.querySelector('input[name=generos]:checked').value;
+    const classificacao = document.querySelector('input[name=classificacao]:checked').value;
+    const streaming = document.querySelector('input[name=servicos]:checked').value;
+    const notas = document.querySelector('input[name=notas]:checked').value;
+    const opinioes = document.querySelector('input[name=opinioes]:checked').value;
+    const disponivelCinema = document.querySelector('input[name=cinema]:checked').value;
+
+    fetch("https://caiogbdesign.github.io/flick/flick-api.json")
+      .then(response => response.json())
+      .then(data => {
+        const filmes = Object.values(data).filter(filme => filme.id.startsWith("FR"));
+        const filmesFiltrados = filmes.filter(filme => {
+          if (genero && genero !== "" && (!filme.generos || !filme.generos.find(g => g.nome === genero))) {
+            return false;
+          }
+          if (classificacao && classificacao !== "" && filme.classificacao !== classificacao) {
+            return false;
+          }
+          if (streaming && streaming !== "" && (!filme.servicos || !filme.servicos.find(s => s.streaming === streaming))) {
+            return false;
+          }
+          if (notas === "notaSim" && (!filme.Flick || !filme.Flick.length)) {
+            return false;
+          }
+          if (opinioes === "opiniaoSim" && (!filme.opiniao || !filme.opiniao.length)) {
+            return false;
+          }
+          if (disponivelCinema && disponivelCinema !== "" && (!filme.cinema || !filme.cinema.find(c => c.disponibilidade === disponivelCinema))) {
+            return false;
+          }
+          return true;
+        });
+
+        if (filmesFiltrados.length > 0) {
+          const filmeAleatorio = filmesFiltrados[Math.floor(Math.random() * filmesFiltrados.length)];
+          const generos = filmeAleatorio.generos ? filmeAleatorio.generos.map(genero => converterGenero(genero.nome)) : [];
+          filmeSugerido.innerHTML = `
+          
+          <div class="sugestao">
+            <div class="folder-filme">
+              <img src="${filmeAleatorio.imagem}" alt="${filmeAleatorio.titulo}">
+            </div>
+
+            <div class="titulo-filme">
+              <h2>${filmeAleatorio.titulo}</h2>
+            </div>
+
+            <div class="genero-duracao">
+              <p>${generos.join(' /  ')}</p>
+              <p>${filmeAleatorio.duracao}</p>
+            </div>
+
+            <div class="pontuacoes">
+              <div class="imdb">
+                <p>${filmeAleatorio.pontuacao.IMDB}</p>
+                <span>IMDB</span>
+              </div>
+
+              <div class="rottenCriticos">
+                <p>${filmeAleatorio.pontuacao.RottenCriticos}</p>
+                <span>Rotten Tomato</span>
+              </div>
+              
+              <div class="metacritic">
+                <p>${filmeAleatorio.pontuacao.Metacritic}</p>
+                <span>Metacritic</span>
+              </div>
+              
+              <div class="letterboxd">
+                <p>${filmeAleatorio.pontuacao.Letterboxd}</p>
+                <span>Letterboxd</span>
+              </div>
+            </div>
+              
+            ${filmeAleatorio.Flick ?
+            ` <div class="avaliacoes">
+                <span>Notas Flick</span>
+                ${filmeAleatorio.Flick.map(avaliador => `
+                    <div class="avaliador">
+                      <div class="avaliador-foto">
+                        <img src="${avaliador.foto}" alt="${avaliador.especialista}">
+                      </div>
+                      <p>${avaliador.especialista}</p>
+                      <div class="estrelas">${exibirAvaliacao(avaliador.avaliacao)}</div>
+                    </div>
+                `).join('')}
+              </div>` : ''}            
+
+            <div class="servicos">
+              <span>Onde assistir</span>
+              <p>${filmeAleatorio.servicos.map(servico => converterServicoStreaming(servico.streaming)).join("")}</p>
+            </div>
+
+            <div class="elenco">
+              <span>Elenco</span>
+              <div class="cont-artistas">
+                ${filmeAleatorio.elenco.map(personagem => `
+                <div class="artista">
+                  <div class="img-elenco">
+                    <img src="${personagem.foto}" alt="${personagem.nome}">
+                  </div>
+                  <p>${personagem.nome}</p>
+                  <p>${personagem.personagem}</p>
+                </div>
+              `).join('')}
+              </div>
+            </div>
+
+            <div class="direcao">
+              <span>Direção</span>
+              <p>${filmeAleatorio.direcao}</p>
+            </div>
+
+            <div class="classificacao">
+              <span>Classificacao</span>
+              <div class=${converterClassificacao(filmeAleatorio.classificacao)}</div>
+            </div>
+
+            <div class="bilheteria">
+              <span>Bilheteria</span>
+              <p>${filmeAleatorio.bilheteria}</p>
+            </div>
+
+            <div class="sinopse">
+              <span>Sinopse</span>
+              <p>${filmeAleatorio.sinopse}</p>
+            </div>
+              
+            ${filmeAleatorio.opiniao ? 
+              ` <div class="opiniao">
+                  ${filmeAleatorio.opiniao.map(avaliador => `
+                    <div class="avaliador">
+                        <div class="autor">
+                          <p><span>Avaliação • </span>${avaliador.especialista}</p>
+                        </div>
+                        <p>${avaliador.texto}</p>
+                    </div>
+                  `).join('')}
+              </div>` : ''}
+
+          </div>
+          `;
+        } else {
+          console.log("Nenhum filme encontrado com os filtros selecionados.");
+          filmeSugerido.innerHTML = "Não foi possível encontrar um filme com os filtros selecionados.";
+        }
+      })
+      .catch(error => console.error(error));
+  });
+
+  // sugere um filme ao carregar a página
+  buttonSugerir.click();
+});
+
+// Popup filtros
+const meuPopup = document.getElementById('meu-popup');
+const btnFiltros = document.getElementById('btn-filtros');
+const fecharPopup = document.getElementById('fechar-popup');
+
+function mostrarPopup() {
+  meuPopup.classList.add('mostrar');
+}
+
+function ocultarPopup() {
+  meuPopup.classList.remove('mostrar');
+}
+
+btnFiltros.addEventListener('click', mostrarPopup);
+fecharPopup.addEventListener('click', ocultarPopup);
+meuPopup.addEventListener('click', function(event) {
+  event.stopPropagation();
+});
+window.addEventListener('click', function(event) {
+  if (event.target !== meuPopup && event.target !== btnFiltros) {
+    ocultarPopup();
+  }
+});
+
+// exemplo de JavaScript
+const botao = document.querySelector('#aplicar-filtros');
+const popup = document.querySelector('#meu-popup');
+
+botao.addEventListener('click', function() {
+  popup.classList.remove('mostrar');
+});
+
+// Voltar para o topo ao sugerir novo filme
+const botaoSugerirFilme = document.getElementById("sugerir-filme");
+const botaoFiltro = document.getElementById("aplicar-filtros");
+
+botaoSugerirFilme.addEventListener("click", function() {
+  // Role para o topo da página
+  window.scrollTo(0, 0);
+});
+
+botaoFiltro.addEventListener("click", function() {
+  // Role para o topo da página
+  window.scrollTo(0, 0);
+});
