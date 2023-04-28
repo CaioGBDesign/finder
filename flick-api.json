@@ -1526,5 +1526,73 @@
             "streaming":"s6"
          }
       ]
+   },
+   {
+      "id":"FR-21",
+      "titulo":"Um Sonho Possível",
+      "sinopse":"Baseado em uma história real, o filme conta a história de Michael Oher, um jovem sem-teto e com dificuldades de aprendizado, que é acolhido por uma família rica e acaba se tornando um jogador de futebol americano de sucesso. Ao longo do caminho, Michael aprende o valor da família, da determinação e do trabalho duro.",
+      "generos":[
+         {
+            "nome":"g5"
+         },
+         {
+            "nome":"g12"
+         }
+      ],
+      "ano":2009,
+      "duracao":"2h 8m",
+      "bilheteria":"309,2 milhões USD",
+      "direcao":"John Lee Hancock",
+      "classificacao":"12-anos",
+      "elenco":[
+         {
+            "nome":"Sandra Bullock",
+            "foto":"https://br.web.img3.acsta.net/pictures/18/06/22/19/24/3056694.jpg",
+            "personagem":"Leigh Anne Tuohy"
+         },
+         {
+            "nome":"Quinton Aaron",
+            "foto":"https://m.media-amazon.com/images/M/MV5BODQ3Y2JhZGYtY2I3Yy00M2Y3LWE3YzYtYWZiMDI4YjQwMzRmXkEyXkFqcGdeQXVyNDUzNjIxMzg@._V1_.jpg",
+            "personagem":"Michael Oher"
+         },
+         {
+            "nome":"Tim McGraw",
+            "foto":"https://m.media-amazon.com/images/M/MV5BMjcyNTkyOTY4OV5BMl5BanBnXkFtZTcwODI2NzQ5Mg@@._V1_FMjpg_UY2048_.jpg",
+            "personagem":"Sean Tuohy"
+         },
+         {
+            "nome":"Kathy Bates",
+            "foto":"https://upload.wikimedia.org/wikipedia/commons/1/1a/Kathy_Bates_by_Gage_Skidmore.jpg",
+            "personagem":"Miss Sue"
+         },
+         {
+            "nome":"Lily Collins",
+            "foto":"https://br.web.img2.acsta.net/pictures/19/03/08/16/43/0584669.jpg",
+            "personagem":"Collins Tuohy"
+         }
+      ],
+      "pontuacao":{
+         "IMDB":7.6,
+         "RottenCriticos":66,
+         "RottenPublico":85,
+         "Metacritic":53,
+         "Letterboxd":3.7
+      },
+      "Flick":[
+         {
+            "especialista":"Caio Goulart",
+            "foto":"https://caiogbdesign.github.io/flick/caio-goulart-flick.jpg",
+            "avaliacao":"5"
+         }
+      ],
+      "imagem":"https://br.web.img2.acsta.net/medias/nmedia/18/87/31/80/19874256.jpg",
+      "servicos":[
+         {
+            "streaming":"s2"
+         },
+         {
+            "streaming":"s3"
+         }
+      ]
    }
 ]
