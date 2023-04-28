@@ -9,6 +9,25 @@ body
 
     font-family: 'Quicksand', sans-serif;
 
+    .popup-aberto
+    {
+        &::before
+        {
+            content: '';
+
+            width: 100%;
+            height: 100vh;
+
+            background-color: #00000050;
+
+            position: fixed;
+            top: 0px;
+            left: 0px;
+
+            z-index: 2;
+        }
+    }
+
     .sugestao-completa
     {
         width: 100%;
@@ -39,747 +58,792 @@ body
                 .folder-filme
                 {
                     width: 100%;
+                    height: 1054px;
 
-                    position: relative;
+                    position: fixed;
+
+                    top: 0px;
+                    left: 0px;
 
                     img
                     {
                         width: 100%;
                     }
+                }
 
-                    &::after
+                .cont-conteudo
+                {
+                    width: 100%;
+
+                    display: flex;
+                    justify-content: center;
+
+                    position: relative;
+
+                    z-index: 1;
+
+                    padding-top: 1080px;
+
+                    .conteudo-completo
                     {
-                        content: '';
-
                         width: 100%;
-                        height: 950px;
 
-                        background: linear-gradient(180deg, rgba(37, 13, 47, 0) 0%, #250D2F 83.12%);
+                        background: #250D2F;
 
-                        position: absolute;
-                        bottom: 0px;
-                        left: 0px;
-                    }
-                }
+                        position: relative;
 
-                .titulo-filme
-                {
-                    width: 100%;
-
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    margin-top: -430px;
-                    position: relative;
-
-                    h2
-                    {
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 50px;
-                        line-height: 50px;
-
-                        text-align: center;
-
-                        color: #FFFFFF;
-
-                        width: 80%;
-
-                        margin: 0px;
-                    }
-                }
-
-                .genero-duracao
-                {
-                    width: 100%;
-
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;                    
-                    gap: 50px;
-
-                    position: relative;
-
-                    p
-                    {
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 30px;
-                        line-height: 30px;
-
-                        text-align: center;
-
-                        color: #FFFFFF;
-                        margin: 0px;
-
-                        &:first-child
-                        {
-                            position: relative;
-
-                            &::after
-                            {
-                                content: '•';
-
-                                position: absolute;
-                                top: 0px;
-                                right: -30px;
-
-                                font-size: 34px;
-                                font-weight: bold;
-                                font-style: normal;
-                            }
-                        }
-                    }
-                }
-
-                .pontuacoes
-                {
-                    width: 100%;
-
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 60px;
-
-                    margin-top: 30px;
-
-                    position: relative;
-
-                    .imdb
-                    {
-                        p
-                        {
-                            background: linear-gradient(90deg, #F314FB -428%, #FDF57C 1236%), #FEDC33;
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            background-clip: text;
-                            text-fill-color: transparent;
-                        }
-                    }
-
-                    .rottenCriticos
-                    {
-                        p
-                        {
-                            background: linear-gradient(90deg, #F314FB -316.07%, #FDF57C 785.71%), #FEDC33;
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            background-clip: text;
-                            text-fill-color: transparent;
-                        }
-                    }
-
-                    .metacritic
-                    {
-                        p
-                        {
-                            background: linear-gradient(90deg, #F314FB -680.36%, #FDF57C 423.21%), #FEDC33;
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            background-clip: text;
-                            text-fill-color: transparent;
-                        }
-                    }
-
-                    .letterboxd
-                    {
-                        p
-                        {
-                            background: linear-gradient(90deg, #F314FB -1046.3%, #FDF57C 318.52%), #FEDC33;
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            background-clip: text;
-                            text-fill-color: transparent;
-                        }
-                    }
-
-                    .imdb, .rottenCriticos, .metacritic, .letterboxd
-                    {
                         display: flex;
                         flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 15px;
-
-                        p 
-                        {
-                            font-style: normal;
-                            font-weight: 500;
-                            font-size: 44px;
-                            line-height: 44px;
-
-                            text-align: center;
-
-                            color: #FEDC33;
-
-                            margin: 0px;
-
-                            span
-                            {                   
-                                font-weight: 300;             
-                                font-size: 24px;
-                                line-height: 24px;
-
-                                color: #FEDC33;
-                            }
-                        }
-
-                        span
-                        {
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 30px;
-                            line-height: 30px;
-
-                            text-align: center;
-
-                            color: #FFFFFF;
-
-                            margin: 0px;
-                        }
-                    }
-                }
-
-                .avaliacoes
-                {
-                    width: 90%;
-
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 30px;
-
-                    margin-top: 80px;
-
-                    position: relative;
-
-                    span
-                    {
-                        width: 100%;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 50px;
-                        line-height: 50px;
-
-                        color: #FFFFFF;
-
-                        opacity: 0.3;
-
-                        margin-bottom: 50px;
-                    }
-
-                    .avaliador
-                    {
-                        width: 180px;
-                        
-                        .avaliador-foto
-                        {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-
-                            width: 180px;
-                            height: 180px;
-
-                            border-radius: 35px;
-
-                            overflow: hidden;
-
-                            img
-                            {
-                                width: 130%;
-                            }
-                        }
-
-                        p
-                        {
-                            font-style: normal;
-                            font-weight: 600;
-                            font-size: 28px;
-                            line-height: 28px;
-                            
-                            text-align: center;
-
-                            color: #FFFFFF;
-
-                            &:last-child
-                            {
-                                font-style: normal;
-                                font-weight: 500;
-                                font-size: 44px;
-                                line-height: 44px;
-
-                                text-align: center;
-
-                                color: #FEDC33;
-
-                                margin: 0px;
-
-                                span
-                                {               
-                                    font-style: normal;    
-                                    font-weight: 300;             
-                                    font-size: 24px;
-                                    line-height: 24px;
-    
-                                    color: #FEDC33;
-
-                                    opacity: 1;
-                                }
-                            }
-                        }
-
-                        .estrelas
-                        {
-                            width: 100%;
-
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-
-                            img
-                            {
-                                width: 30px;
-                                height: 30px;
-                            }
-                        }
-                    }
-                }
-
-                .servicos
-                {
-                    width: 90%;
-
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 30px;
-
-                    margin-top: 80px;
-                    
-                    position: relative;
-
-                    span
-                    {
-                        width: 100%;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 50px;
-                        line-height: 50px;
-
-                        color: #FFFFFF;
-
-                        opacity: 0.3;
-                    }
-
-                    p
-                    {
-                        display: flex;
-                        justify-content: center;
-                        gap: 20px;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 30px;
-                        line-height: 30px;
-                        color: #FFFFFF;
-
-                        img
-                        {
-                            width: 150px;
-                            background: #00000025;
-
-                            border-radius: 20px;
-                        }
-                    }
-                }
-
-                .elenco
-                {
-                    width: 90%;
-
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 30px;
-
-                    margin-top: 80px;
-                    
-                    position: relative;
-
-                    span
-                    {
-                        width: 100%;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 50px;
-                        line-height: 50px;
-
-                        color: #FFFFFF;
-
-                        opacity: 0.3;
-
-                        margin-bottom: 40px;
-                    }
-
-                    .cont-artistas
-                    {
-                        display: flex;
-                        align-items: start;
-                        gap: 10px;
-
-                        margin-top: 20px;
-
-                        overflow-x: scroll;
-                        
-                        &::-webkit-scrollbar
-                        {
-                            width: 0px;
-                        }
-                        
-                        &::-webkit-scrollbar-track
-                        {
-                            background: none; 
-                        }
-                        
-                        &::-webkit-scrollbar-thumb
-                        {
-                            background: none; 
-                        }
-
-                        &::-webkit-scrollbar-thumb:hover
-                        {
-                            background: none; 
-                        }
-                        
-                        .artista
-                        {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                            gap: 20px;
-
-                            .img-elenco
-                            {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-
-                                width: 180px;
-                                height: 180px;
-
-                                border-radius: 35px;
-
-                                overflow: hidden;
-
-                                margin-bottom: 10px;
-
-                                img
-                                {
-                                    width: 100%;
-                                }
-                            }
-
-                            p
-                            {
-                                font-style: normal;
-                                font-weight: 600;
-                                font-size: 25px;
-                                line-height: 25px;
-                                
-                                text-align: center;
-    
-                                color: #FFFFFF;
-
-                                margin: 0px;
-
-                                width: 200px;                            
-
-                                &:last-child
-                                {
-                                    font-style: normal;
-                                    font-weight: 400;
-                                    font-size: 28px;
-                                    line-height: 28px;
-                                    
-                                    text-align: center;
-
-                                    color: #FFFFFF;
-
-                                    opacity: 0.6;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .direcao
-                {
-                    width: 90%;
-
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 30px;
-
-                    margin-top: 80px;
-                    
-                    position: relative;
-
-                    span
-                    {
-                        width: 100%;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 50px;
-                        line-height: 50px;
-
-                        color: #FFFFFF;
-
-                        opacity: 0.3;
-                    }
-
-                    p
-                    {
-                        width: 100%;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 30px;
-                        line-height: 30px;
-
-                        color: #FFFFFF;
-                    }
-                }
-
-                .classificacao
-                {
-                    width: 90%;
-
-                    display: flex;
-                    flex-direction: column;
-                    align-items: start;
-                    gap: 30px;
-
-                    margin-top: 80px;
-                    
-                    position: relative;
-
-                    span
-                    {
-                        width: 100%;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 50px;
-                        line-height: 50px;
-
-                        color: #FFFFFF;
-
-                        opacity: 0.3;
-                    }
-
-                    .livre, .DezAnos, .DozeAnos, .QuatorzeAnos, .DezesseisAnos, .DezoitoAnos
-                    {
-                        border-radius: 10px;
-                        padding: 30px;
-
-                        display: flex;
-                        justify-content: center;
                         align-items: center;
 
-                        width: fit-content;
-
-                        span
+                        &::after
                         {
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 30px;
-                            line-height: 30px;
-                            text-align: center;
+                            content: '';
 
-                            color: #FFFFFF;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
 
-                            margin: 0px;
+                            background: linear-gradient(270deg, #FDF57C 0%, #F314FB 100%);
 
-                            opacity: 1;
+                            width: 100%;
+                            height: 5px;
                         }
-                    }
-
-                    .livre
-                    {
-                        background: #24FF0025;
-                    }
-
-                    .DezAnos
-                    {
-                        background: #00C0FF25;
-                    }
-
-                    .DozeAnos
-                    {
-                        background: #FFCB0125;
-                    }
-
-                    .QuatorzeAnos
-                    {
-                        background: #FF5F0125;
-                    }
-
-                    .DezesseisAnos
-                    {
-                        background: #FF010325;
-                    }
-
-                    .DezoitoAnos
-                    {
-                        background: #00000025;
-                    }
-                }
-
-                .bilheteria
-                {
-                    width: 90%;
-
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 30px;
-
-                    margin-top: 80px;
-
-                    span
-                    {
-                        width: 100%;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 50px;
-                        line-height: 50px;
-
-                        color: #FFFFFF;
-
-                        opacity: 0.3;
-                    }
-
-                    p
-                    {
-                        width: 100%;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 30px;
-                        line-height: 30px;
-
-                        color: #FFFFFF;
-
-                        opacity: .5;
-                    }
-                }
-
-                .sinopse
-                {
-                    width: 90%;
-
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 30px;
-
-                    margin-top: 40px;
-
-                    span
-                    {
-                        width: 100%;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 50px;
-                        line-height: 50px;
-
-                        color: #FFFFFF;
-
-                        opacity: 0.3;
-                    }
-
-                    p
-                    {
-                        width: 100%;
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 30px;
-                        line-height: 30px;
-
-                        color: #FFFFFF;
-
-                        opacity: .5;
-                    }
-                }
-
-                .opiniao
-                {
-                    width: 90%;
-
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 30px;
-
-                    margin-top: 30px;
-                    margin-bottom: 100px;
-
-                    .avaliador
-                    {
-                        width: 100%;
-
-                        .autor
+    
+                        .titulo-filme
                         {
                             width: 100%;
-
-                            p
+    
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+    
+                            margin-top: 100px;
+                            position: relative;
+    
+                            h2
                             {
-                                width: 100%;
-        
-                                font-style: normal;
-                                font-weight: 700;
-                                font-size: 50px;
-                                line-height: 50px;
-        
-                                color: #FFFFFF;
-
-                                padding-left: 20px;
-
-                                position: relative;
-
-                                opacity: .5;
-
-                                &::before
-                                {
-                                    content: '';
-
-                                    position: absolute;
-                                    width: 0px;
-                                    height: 25px;
-                                    left: 0px;
-                                    top: 10px;
-
-                                    border: 3px solid #FEDC33;
-                                }
-                            }
-
-                            span
-                            {        
                                 font-style: normal;
                                 font-weight: 400;
                                 font-size: 50px;
                                 line-height: 50px;
-        
+    
+                                text-align: center;
+    
                                 color: #FFFFFF;
-        
-                                opacity: 0.3;
+    
+                                width: 80%;
+    
+                                margin: 0px;
                             }
                         }
-                    }
+    
+                        .genero-duracao
+                        {
+                            width: 100%;
+    
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;                    
+                            gap: 50px;
+    
+                            position: relative;
+
+                            margin-bottom: 60px;
+    
+                            p
+                            {
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 30px;
+                                line-height: 30px;
+    
+                                text-align: center;
+    
+                                color: #FFFFFF;
+                                margin: 0px;
+    
+                                &:first-child
+                                {
+                                    position: relative;
+    
+                                    &::after
+                                    {
+                                        content: '•';
+    
+                                        position: absolute;
+                                        top: 0px;
+                                        right: -30px;
+    
+                                        font-size: 34px;
+                                        font-weight: bold;
+                                        font-style: normal;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .pontuacoes
+                        {
+                            width: 100%;
+    
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 60px;
+    
+                            margin-top: 30px;
+    
+                            position: relative;
+    
+                            .imdb
+                            {
+                                p
+                                {
+                                    background: linear-gradient(90deg, #F314FB -428%, #FDF57C 1236%), #FEDC33;
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                    background-clip: text;
+                                    text-fill-color: transparent;
+                                }
+                            }
+    
+                            .rottenCriticos
+                            {
+                                p
+                                {
+                                    background: linear-gradient(90deg, #F314FB -316.07%, #FDF57C 785.71%), #FEDC33;
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                    background-clip: text;
+                                    text-fill-color: transparent;
+                                }
+                            }
+    
+                            .metacritic
+                            {
+                                p
+                                {
+                                    background: linear-gradient(90deg, #F314FB -680.36%, #FDF57C 423.21%), #FEDC33;
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                    background-clip: text;
+                                    text-fill-color: transparent;
+                                }
+                            }
+    
+                            .letterboxd
+                            {
+                                p
+                                {
+                                    background: linear-gradient(90deg, #F314FB -1046.3%, #FDF57C 318.52%), #FEDC33;
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                    background-clip: text;
+                                    text-fill-color: transparent;
+                                }
+                            }
+    
+                            .imdb, .rottenCriticos, .metacritic, .letterboxd
+                            {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 15px;
+    
+                                p 
+                                {
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 44px;
+                                    line-height: 44px;
+    
+                                    text-align: center;
+    
+                                    color: #FEDC33;
+    
+                                    margin: 0px;
+    
+                                    span
+                                    {                   
+                                        font-weight: 300;             
+                                        font-size: 24px;
+                                        line-height: 24px;
+    
+                                        color: #FEDC33;
+                                    }
+                                }
+    
+                                span
+                                {
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 30px;
+                                    line-height: 30px;
+    
+                                    text-align: center;
+    
+                                    color: #FFFFFF;
+    
+                                    margin: 0px;
+                                }
+                            }
+                        }
+    
+                        .avaliacoes
+                        {
+                            width: 90%;
+    
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 30px;
+    
+                            margin-top: 80px;
+    
+                            position: relative;
+    
+                            span
+                            {
+                                width: 100%;
+    
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 50px;
+                                line-height: 50px;
+    
+                                color: #FFFFFF;
+    
+                                opacity: 0.3;
+    
+                                margin-bottom: 50px;
+                            }
+    
+                            .avaliador
+                            {
+                                width: 180px;
+                                
+                                .avaliador-foto
+                                {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+    
+                                    width: 180px;
+                                    height: 180px;
+    
+                                    border-radius: 35px;
+    
+                                    overflow: hidden;
+    
+                                    img
+                                    {
+                                        width: 130%;
+                                    }
+                                }
+    
+                                p
+                                {
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 28px;
+                                    line-height: 28px;
+                                    
+                                    text-align: center;
+    
+                                    color: #FFFFFF;
+    
+                                    &:last-child
+                                    {
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 44px;
+                                        line-height: 44px;
+    
+                                        text-align: center;
+    
+                                        color: #FEDC33;
+    
+                                        margin: 0px;
+    
+                                        span
+                                        {               
+                                            font-style: normal;    
+                                            font-weight: 300;             
+                                            font-size: 24px;
+                                            line-height: 24px;
+            
+                                            color: #FEDC33;
+    
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+    
+                                .estrelas
+                                {
+                                    width: 100%;
+    
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+    
+                                    img
+                                    {
+                                        width: 30px;
+                                        height: 30px;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .servicos
+                        {
+                            width: 90%;
+    
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 30px;
+    
+                            margin-top: 80px;
+                            
+                            position: relative;
+    
+                            span
+                            {
+                                width: 100%;
+    
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 50px;
+                                line-height: 50px;
+    
+                                color: #FFFFFF;
+    
+                                opacity: 0.3;
+                            }
+    
+                            p
+                            {
+                                display: flex;
+                                justify-content: center;
+                                gap: 20px;
+    
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 30px;
+                                line-height: 30px;
+                                color: #FFFFFF;
+    
+                                img
+                                {
+                                    width: 150px;
+                                    background: #00000025;
+    
+                                    border-radius: 20px;
+                                }
+                            }
+                        }
+    
+                        .elenco
+                        {
+                            width: 90%;
+    
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 30px;
+    
+                            margin-top: 80px;
+                            
+                            position: relative;
+    
+                            span
+                            {
+                                width: 100%;
+    
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 50px;
+                                line-height: 50px;
+    
+                                color: #FFFFFF;
+    
+                                opacity: 0.3;
+    
+                                margin-bottom: 40px;
+                            }
+    
+                            .cont-artistas
+                            {
+                                display: flex;
+                                align-items: start;
+                                gap: 10px;
+    
+                                margin-top: 20px;
+    
+                                overflow-x: scroll;
+                                
+                                &::-webkit-scrollbar
+                                {
+                                    width: 0px;
+                                }
+                                
+                                &::-webkit-scrollbar-track
+                                {
+                                    background: none; 
+                                }
+                                
+                                &::-webkit-scrollbar-thumb
+                                {
+                                    background: none; 
+                                }
+    
+                                &::-webkit-scrollbar-thumb:hover
+                                {
+                                    background: none; 
+                                }
+                                
+                                .artista
+                                {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 20px;
+    
+                                    .img-elenco
+                                    {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+    
+                                        width: 180px;
+                                        height: 180px;
+    
+                                        border-radius: 35px;
+    
+                                        overflow: hidden;
+    
+                                        margin-bottom: 10px;
+    
+                                        img
+                                        {
+                                            width: 100%;
+                                        }
+                                    }
+    
+                                    p
+                                    {
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 25px;
+                                        line-height: 25px;
+                                        
+                                        text-align: center;
+            
+                                        color: #FFFFFF;
+    
+                                        margin: 0px;
+    
+                                        width: 200px;                            
+    
+                                        &:last-child
+                                        {
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 28px;
+                                            line-height: 28px;
+                                            
+                                            text-align: center;
+    
+                                            color: #FFFFFF;
+    
+                                            opacity: 0.6;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+    
+                        .direcao
+                        {
+                            width: 90%;
+    
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 30px;
+    
+                            margin-top: 80px;
+                            
+                            position: relative;
+    
+                            span
+                            {
+                                width: 100%;
+    
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 50px;
+                                line-height: 50px;
+    
+                                color: #FFFFFF;
+    
+                                opacity: 0.3;
+                            }
+    
+                            p
+                            {
+                                width: 100%;
+    
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 30px;
+                                line-height: 30px;
+    
+                                color: #FFFFFF;
+                            }
+                        }
+    
+                        .classificacao
+                        {
+                            width: 90%;
+    
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            gap: 30px;
+    
+                            margin-top: 80px;
+                            
+                            position: relative;
+    
+                            span
+                            {
+                                width: 100%;
+    
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 50px;
+                                line-height: 50px;
+    
+                                color: #FFFFFF;
+    
+                                opacity: 0.3;
+                            }
+    
+                            .livre, .DezAnos, .DozeAnos, .QuatorzeAnos, .DezesseisAnos, .DezoitoAnos
+                            {
+                                border-radius: 10px;
+                                padding: 30px;
+    
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+    
+                                width: fit-content;
+    
+                                span
+                                {
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 30px;
+                                    line-height: 30px;
+                                    text-align: center;
+    
+                                    color: #FFFFFF;
+    
+                                    margin: 0px;
+    
+                                    opacity: 1;
+                                }
+                            }
+    
+                            .livre
+                            {
+                                background: #24FF0025;
+                            }
+    
+                            .DezAnos
+                            {
+                                background: #00C0FF25;
+                            }
+    
+                            .DozeAnos
+                            {
+                                background: #FFCB0125;
+                            }
+    
+                            .QuatorzeAnos
+                            {
+                                background: #FF5F0125;
+                            }
+    
+                            .DezesseisAnos
+                            {
+                                background: #FF010325;
+                            }
+    
+                            .DezoitoAnos
+                            {
+                                background: #00000025;
+                            }
+                        }
+    
+                        .bilheteria
+                        {
+                            width: 90%;
+    
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 30px;
+    
+                            margin-top: 80px;
+    
+                            span
+                            {
+                                width: 100%;
+    
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 50px;
+                                line-height: 50px;
+    
+                                color: #FFFFFF;
+    
+                                opacity: 0.3;
+                            }
+    
+                            p
+                            {
+                                width: 100%;
+    
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 30px;
+                                line-height: 30px;
+    
+                                color: #FFFFFF;
+    
+                                opacity: .5;
+                            }
+                        }
+    
+                        .sinopse
+                        {
+                            width: 90%;
+    
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 30px;
+    
+                            margin-top: 40px;
+    
+                            span
+                            {
+                                width: 100%;
+    
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 50px;
+                                line-height: 50px;
+    
+                                color: #FFFFFF;
+    
+                                opacity: 0.3;
+                            }
+    
+                            p
+                            {
+                                width: 100%;
+    
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 30px;
+                                line-height: 30px;
+    
+                                color: #FFFFFF;
+    
+                                opacity: .5;
+                            }
+                        }
+    
+                        .opiniao
+                        {
+                            width: 90%;
+    
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 30px;
+    
+                            margin-top: 30px;
+                            margin-bottom: 100px;
+    
+                            .avaliador
+                            {
+                                width: 100%;
+    
+                                .autor
+                                {
+                                    width: 100%;
+    
+                                    p
+                                    {
+                                        width: 100%;
+                
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 50px;
+                                        line-height: 50px;
+                
+                                        color: #FFFFFF;
+    
+                                        padding-left: 20px;
+    
+                                        position: relative;
+    
+                                        opacity: 1;
+    
+                                        span
+                                        {        
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 50px;
+                                            line-height: 50px;
+                    
+                                            color: #FFFFFF60;
+                                        }
+    
+                                        &::before
+                                        {
+                                            content: '';
+    
+                                            position: absolute;
+                                            width: 0px;
+                                            height: 25px;
+                                            left: 0px;
+                                            top: 10px;
+    
+                                            border: 3px solid #FEDC33;
+                                        }
+                                    }
+                                }
+    
+                                p
+                                {
+                                    width: 100%;
+        
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 30px;
+                                    line-height: 30px;
+        
+                                    color: #FFFFFF;
+        
+                                    opacity: .5;
+                                }
+                            }
+                        }
+                    }                    
                 }
             }
         }
@@ -802,6 +866,8 @@ body
         background: linear-gradient(180deg, rgba(37, 13, 47, 0) 0%, #250D2F 77.08%);
         
         transition: 0.5s;
+
+        z-index: 2;
 
         #meu-popup
         {
