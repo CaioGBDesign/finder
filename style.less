@@ -3,7 +3,7 @@ body
     margin: 0px;
     padding: 0px;
 
-    background: #20232A;
+    background: #250D2F;
 
     color: #ffffff;
 
@@ -52,9 +52,9 @@ body
                         content: '';
 
                         width: 100%;
-                        height: 1200px;
+                        height: 950px;
 
-                        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #20232A 83.12%);
+                        background: linear-gradient(180deg, rgba(37, 13, 47, 0) 0%, #250D2F 83.12%);
 
                         position: absolute;
                         bottom: 0px;
@@ -146,6 +146,54 @@ body
 
                     position: relative;
 
+                    .imdb
+                    {
+                        p
+                        {
+                            background: linear-gradient(90deg, #F314FB -428%, #FDF57C 1236%), #FEDC33;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            text-fill-color: transparent;
+                        }
+                    }
+
+                    .rottenCriticos
+                    {
+                        p
+                        {
+                            background: linear-gradient(90deg, #F314FB -316.07%, #FDF57C 785.71%), #FEDC33;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            text-fill-color: transparent;
+                        }
+                    }
+
+                    .metacritic
+                    {
+                        p
+                        {
+                            background: linear-gradient(90deg, #F314FB -680.36%, #FDF57C 423.21%), #FEDC33;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            text-fill-color: transparent;
+                        }
+                    }
+
+                    .letterboxd
+                    {
+                        p
+                        {
+                            background: linear-gradient(90deg, #F314FB -1046.3%, #FDF57C 318.52%), #FEDC33;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            text-fill-color: transparent;
+                        }
+                    }
+
                     .imdb, .rottenCriticos, .metacritic, .letterboxd
                     {
                         display: flex;
@@ -234,7 +282,7 @@ body
                             width: 180px;
                             height: 180px;
 
-                            border-radius: 15px;
+                            border-radius: 35px;
 
                             overflow: hidden;
 
@@ -422,7 +470,7 @@ body
                                 width: 180px;
                                 height: 180px;
 
-                                border-radius: 15px;
+                                border-radius: 35px;
 
                                 overflow: hidden;
 
@@ -626,7 +674,7 @@ body
 
                         color: #FFFFFF;
 
-                        opacity: .8;
+                        opacity: .5;
                     }
                 }
 
@@ -665,7 +713,7 @@ body
 
                         color: #FFFFFF;
 
-                        opacity: .8;
+                        opacity: .5;
                     }
                 }
 
@@ -702,6 +750,8 @@ body
                                 padding-left: 20px;
 
                                 position: relative;
+
+                                opacity: .5;
 
                                 &::before
                                 {
@@ -749,7 +799,7 @@ body
         justify-content: end;
         align-items: center;
 
-        background: linear-gradient(180deg, rgba(26, 28, 34, 0) 0%, #1A1C22 77.08%);
+        background: linear-gradient(180deg, rgba(37, 13, 47, 0) 0%, #250D2F 77.08%);
         
         transition: 0.5s;
 
@@ -759,7 +809,7 @@ body
             bottom: 0px;
             left: 0px;
 
-            background-color: #1A1C22;
+            background-color: #250D2F;
 
             width: 100%;
             height: 0px;
@@ -846,7 +896,7 @@ body
 
                             height: 140px;
 
-                            border-radius: 20px;
+                            border-radius: 55px;
 
                             overflow: hidden;
 
@@ -864,9 +914,9 @@ body
 
                                 &:checked + label
                                 {
-                                    background-color: #FEDC33;
+                                    background-color: #FE333350;
 
-                                    color: #20232A;
+                                    color: #ffffff;
 
                                     font-weight: bold;
                                 }
@@ -886,36 +936,6 @@ body
                                 padding: 50px;
 
                                 transition: .5s;
-                            }
-
-                            .livre
-                            {
-                                background: #24FF0025;
-                            }
-        
-                            .DezAnos
-                            {
-                                background: #00C0FF25;
-                            }
-        
-                            .DozeAnos
-                            {
-                                background: #FFCB0125;
-                            }
-        
-                            .QuatorzeAnos
-                            {
-                                background: #FF5F0125;
-                            }
-        
-                            .DezesseisAnos
-                            {
-                                background: #FF010325;
-                            }
-        
-                            .DezoitoAnos
-                            {
-                                background: #00000025;
                             }
                         }
                     }
@@ -966,7 +986,7 @@ body
                 bottom: 0px;
                 left: 0px;
 
-                background: #1A1C22;
+                background: #250D2F;
 
                 .aplicar-filtros
                 {
@@ -974,11 +994,18 @@ body
                     height: 100px;
 
                     background: #ffffff;
-                    border-radius: 20px;
+                    border-radius: 35px;
 
                     display: flex;
                     justify-content: center;
-                    align-items: center;                
+                    align-items: center;
+
+                    transition: .2s;
+    
+                    &:active
+                    {
+                        transform: translateY(10px);
+                    }
 
                     button
                     {
@@ -1005,8 +1032,15 @@ body
 
                     overflow: hidden;
 
-                    background: #25272D;
-                    border-radius: 20px;
+                    background: #ffffff10;
+                    border-radius: 35px;
+
+                    transition: .2s;
+    
+                    &:active
+                    {
+                        transform: translateY(10px);
+                    }
 
                     button
                     {
@@ -1018,7 +1052,7 @@ body
 
                         svg
                         {
-                            width: 60px;
+                            width: 90px;
                         }
                     }
                 }
@@ -1048,11 +1082,18 @@ body
                 width: 65%;
                 height: 100px;
 
-                border-radius: 20px;
+                border-radius: 35px;
 
                 overflow: hidden;
 
                 position: relative;
+
+                transition: .2s;
+
+                &:active
+                {
+                    transform: translateY(10px);
+                }
                 
                 .botoes-sugestoes
                 {
@@ -1064,28 +1105,34 @@ body
                         width: 100%;
                         height: 100px;
 
-                        background: #FEDC33;                        
+                        background: linear-gradient(270deg, #2BA8E2 0%, #1AF5EB 100%), linear-gradient(270deg, #F5C675 0%, #C92FAC 51.04%, #9F1CFE 100%);                        
                         border: none;
 
                         font-style: normal;
-                        font-weight: 600;
+                        font-weight: 700;
                         font-size: 45px;
                         line-height: 45px;
                         text-align: center;
 
-                        color: #20232A;
+                        color: #ffffff;
                     }
                 }
             }
 
             .cont-filtros
             {
-                width: 200px;
                 height: 100px;
                 overflow: hidden;
 
-                background: #25272D;
-                border-radius: 20px;
+                background: #ffffff10;
+                border-radius: 35px;
+
+                transition: .2s;
+
+                &:active
+                {
+                    transform: translateY(10px);
+                }
                 
                 .botoes-filtros
                 {
@@ -1114,7 +1161,7 @@ body
                         color: #ffffff;
 
                         font-style: normal;
-                        font-weight: 600;
+                        font-weight: 400;
                         font-size: 30px;
                         line-height: 30px;
                         text-align: center;
