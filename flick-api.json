@@ -1561,14 +1561,19 @@
             "personagem":"Sean Tuohy"
          },
          {
+            "nome":"Lily Collins",
+            "foto":"https://br.web.img2.acsta.net/pictures/19/03/08/16/43/0584669.jpg",
+            "personagem":"Collins Tuohy"
+         },
+         {
             "nome":"Kathy Bates",
             "foto":"https://upload.wikimedia.org/wikipedia/commons/1/1a/Kathy_Bates_by_Gage_Skidmore.jpg",
             "personagem":"Miss Sue"
          },
          {
-            "nome":"Lily Collins",
-            "foto":"https://br.web.img2.acsta.net/pictures/19/03/08/16/43/0584669.jpg",
-            "personagem":"Collins Tuohy"
+            "nome":"Jae Head",
+            "foto":"https://images.mubicdn.net/images/cast_member/118455/cache-323874-1521932747/image-w856.jpg",
+            "personagem":"S.J Tuohy"
          }
       ],
       "pontuacao":{
