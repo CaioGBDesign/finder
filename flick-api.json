@@ -1599,5 +1599,351 @@
             "streaming":"s3"
          }
       ]
+   },
+   {
+      "id":"FR-22",
+      "titulo":"Escola do bem e do mal",
+      "sinopse":"As melhores amigas Sophie e Agatha se encontram em lados opostos de uma batalha épica quando são levadas para uma escola encantada onde aspirantes a heróis e vilões são treinados.",
+      "generos":[
+         {
+            "nome":"g2"
+         },
+         {
+            "nome":"g7"
+         }
+      ],
+      "ano":2022,
+      "duracao":"2h 27m",
+      "direcao":"Paul Feig",
+      "classificacao":"14-anos",
+      "elenco":[
+         {
+            "nome":"Sofia Wylie",
+            "foto":"https://br.web.img2.acsta.net/pictures/19/12/26/21/20/2686220.jpg",
+            "personagem":"Agatha"
+         },
+         {
+            "nome":"Sophia Anne Caruso",
+            "foto":"https://upload.wikimedia.org/wikipedia/commons/3/3f/SophiaAnneCaruso.jpg",
+            "personagem":"Sophie"
+         },
+         {
+            "nome":"Charlize Theron",
+            "foto":"https://s2-quem.glbimg.com/cXk7Mh8osUYJj_i0dYX-H3i7PdQ=/1080x1920/top/smart/https://i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2023/7/l/Xs0jdWTSWlJBBzGzOpDg/charlize-theron-tapete-vermelho-mad-max-cannes-2015-getty-images.jpg",
+            "personagem":"Lady Lesso"
+         },
+         {
+            "nome":"Kerry Washington",
+            "foto":"https://static01.nyt.com/images/2023/09/24/multimedia/24KERRYWASHINGTON-06-zmgq/24KERRYWASHINGTON-06-zmgq-mediumSquareAt3X-v2.jpg",
+            "personagem":"Professor Dovey"
+         },
+         {
+            "nome":"Laurence Fishburne",
+            "foto":"https://images.mubicdn.net/images/cast_member/23689/cache-612517-1632507833/image-w856.jpg?size=800x",
+            "personagem":"The Schoolmaster"
+         },
+         {
+            "nome":"Kit Young",
+            "foto":"https://m.media-amazon.com/images/M/MV5BMmRiODJjZjAtMGIyNy00ZGZlLTgwN2YtMTBiYzY1YTY0MzA2XkEyXkFqcGdeQXVyODg2OTM2MDc@._V1_.jpg",
+            "personagem":"Rafal"
+         }
+      ],
+      "pontuacao":{
+         "IMDB":5.9,
+         "RottenCriticos":37,
+         "RottenPublico":66,
+         "Metacritic":30,
+         "Letterboxd":2.5
+      },
+      "Flick":[
+         {
+            "especialista":"Caio Goulart",
+            "foto":"https://caiogbdesign.github.io/flick/caio-goulart-flick.jpg",
+            "avaliacao":"3"
+         }
+      ],
+      "imagem":"https://cinepop.com.br/wp-content/uploads/2022/06/a-escola-do-bem-e-do-mal.jpg",
+      "servicos":[
+         {
+            "streaming":"s1"
+         }
+      ]
+   },
+   {
+      "id":"FR-23",
+      "titulo":"A Freira",
+      "sinopse":"Presa em um convento na Romênia, uma freira comete suicídio. Para investigar o caso, o Vaticano envia um padre assombrado e uma noviça prestes a se tornar freira. Arriscando suas vidas, a fé e até suas almas, os dois descobrem um segredo profano e se confrontam com uma força do mal que toma a forma de uma freira demoníaca e transforma o convento em um campo de batalha.",
+      "generos":[
+         {
+            "nome":"g14"
+         },
+         {
+            "nome":"g13"
+         }
+      ],
+      "ano":2018,
+      "duracao":"1h 36m",
+      "direcao":"Corin Hardy",
+      "classificacao":"14-anos",
+      "elenco":[
+         {
+            "nome":"Taissa Farmiga",
+            "foto":"https://pm1.aminoapps.com/6361/06df6e13f339d1352728a9338a6d0ccc755881fe_hq.jpg",
+            "personagem":"Irmã Irene"
+         },
+         {
+            "nome":"Bonnie Aarons",
+            "foto":"https://br.web.img3.acsta.net/pictures/18/06/13/15/12/4248937.jpg",
+            "personagem":"A Freira"
+         },
+         {
+            "nome":"Jonas Bloquet",
+            "foto":"https://i.pinimg.com/736x/54/03/f7/5403f79c0b3d9014a9f91e8daaf50a5c.jpg",
+            "personagem":"Frenchie"
+         },
+         {
+            "nome":"Vera Farmiga",
+            "foto":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Vera_Farmiga_by_Gage_Skidmore.jpg/330px-Vera_Farmiga_by_Gage_Skidmore.jpg",
+            "personagem":"Lorraine Warren"
+         },
+         {
+            "nome":"Patrick Wilson",
+            "foto":"https://f.i.uol.com.br/fotografia/2022/02/10/1644524261620572e50784e_1644524261_3x4_md.jpg",
+            "personagem":"Ed Warren"
+         },
+         {
+            "nome":"Ingrid Bisu",
+            "foto":"https://m.media-amazon.com/images/M/MV5BYzRlMWZkNDItZTk3YS00MDM2LWIwMzYtOTkwMTY0YWEzYzM2XkEyXkFqcGdeQXVyOTIzMzc2NQ@@._V1_FMjpg_UX1000_.jpg",
+            "personagem":"Irmã Oana"
+         }
+      ],
+      "pontuacao":{
+         "IMDB":5.3,
+         "RottenCriticos":24,
+         "RottenPublico":35,
+         "Metacritic":46,
+         "Letterboxd":2.1
+      },
+      "Flick":[
+         {
+            "especialista":"Caio Goulart",
+            "foto":"https://caiogbdesign.github.io/flick/caio-goulart-flick.jpg",
+            "avaliacao":"3"
+         }
+      ],
+      "imagem":"https://assets.cinebelasartes.com.br/wp-content/uploads/2018/09/a-freira-cartaz-min.jpg",
+      "servicos":[
+         {
+            "streaming":"s3"
+         },
+         {
+            "streaming":"s6"
+         }
+      ]
+   },
+   {
+      "id":"FR-24",
+      "titulo":"A Freira 2",
+      "sinopse":"Em 1956, na França, um padre é assassinado e parece que um mal está se espalhando. Determinada a deter o maligno, irmã Irene mais uma vez fica cara a cara com uma força demoníaca.",
+      "generos":[
+         {
+            "nome":"g14"
+         },
+         {
+            "nome":"g13"
+         }
+      ],
+      "ano":2023,
+      "duracao":"1h 50m",
+      "direcao":"Michael Chaves",
+      "classificacao":"16-anos",
+      "elenco":[
+         {
+            "nome":"Taissa Farmiga",
+            "foto":"https://pm1.aminoapps.com/6361/06df6e13f339d1352728a9338a6d0ccc755881fe_hq.jpg",
+            "personagem":"Irmã Irene"
+         },
+         {
+            "nome":"Bonnie Aarons",
+            "foto":"https://br.web.img3.acsta.net/pictures/18/06/13/15/12/4248937.jpg",
+            "personagem":"A Freira"
+         },
+         {
+            "nome":"Jonas Bloquet",
+            "foto":"https://i.pinimg.com/736x/54/03/f7/5403f79c0b3d9014a9f91e8daaf50a5c.jpg",
+            "personagem":"Frenchie"
+         },
+         {
+            "nome":"Vera Farmiga",
+            "foto":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Vera_Farmiga_by_Gage_Skidmore.jpg/330px-Vera_Farmiga_by_Gage_Skidmore.jpg",
+            "personagem":"Lorraine Warren"
+         },
+         {
+            "nome":"Patrick Wilson",
+            "foto":"https://f.i.uol.com.br/fotografia/2022/02/10/1644524261620572e50784e_1644524261_3x4_md.jpg",
+            "personagem":"Ed Warren"
+         },
+         {
+            "nome":"Anna Popplewell",
+            "foto":"https://i.pinimg.com/736x/26/ec/54/26ec545072d33571ea05f7a49c8c95a8.jpg",
+            "personagem":"Kate"
+         },
+         {
+            "nome":"Storm Reid",
+            "foto":"https://www.beautycrew.com.au/media/49572/storm-reid-p.jpg",
+            "personagem":"Debra"
+         }
+      ],
+      "pontuacao":{
+         "IMDB":5.6,
+         "RottenCriticos":52,
+         "RottenPublico":73,
+         "Metacritic":47,
+         "Letterboxd":2.3
+      },
+      "Flick":[
+         {
+            "especialista":"Caio Goulart",
+            "foto":"https://caiogbdesign.github.io/flick/caio-goulart-flick.jpg",
+            "avaliacao":"3"
+         }
+      ],
+      "imagem":"https://ucicinemas.com.br/Content/Upload/Filmes/Posters/11330/filme_11330.jpg",
+      "servicos":[
+         {
+            "streaming":"s3"
+         },
+         {
+            "streaming":"s6"
+         },
+         {
+            "streaming":"s2"
+         }
+      ]
+   },
+   {
+      "id":"FR-25",
+      "titulo":"As Marvels",
+      "sinopse":"Carol Danvers, vulgo Capitã Marvel, recuperou sua identidade da tirania dos Kree e se vingou da Inteligência Suprema. No entanto, consequências não intencionais fazem com que Carol assuma o fardo de um universo desestabilizado. Quando suas obrigações levam Carol até uma fenda espacial anômala ligada a um revolucionário Kree, seus poderes se entrelaçam aos de Kamala Khan, uma super fã de Jersey City, vulgo Ms. Marvel, e aos da sobrinha de Carol, atual astronauta da S.A.B.E.R., a Capitã Monica Rambeau. Juntas, esse trio improvável precisará se unir e aprender a trabalhar em conjunto para salvar o universo como As Marvels.",
+      "generos":[
+         {
+            "nome":"g1"
+         },
+         {
+            "nome":"g2"
+         }
+      ],
+      "ano":2023,
+      "duracao":"1h 45m",
+      "direcao":"Nia DaCosta",
+      "classificacao":"Livre",
+      "elenco":[
+         {
+            "nome":"Brie Larson",
+            "foto":"https://m.media-amazon.com/images/M/MV5BNDE4ZWY1ZTUtYjNhMy00MTQyLWFmMjktNTkyYTFjOGRlNDk0XkEyXkFqcGdeQXVyMTE1MTYxNDAw._V1_.jpg",
+            "personagem":"Carol Danvers"
+         },
+         {
+            "nome":"Iman Vellani",
+            "foto":"https://hips.hearstapps.com/hmg-prod/images/gettyimages-1399436575.jpg",
+            "personagem":"Kamala Khan"
+         },
+         {
+            "nome":"Teyonah Parris",
+            "foto":"https://br.web.img3.acsta.net/pictures/16/07/14/21/31/325074.jpg",
+            "personagem":"Monica Rambeau"
+         },
+         {
+            "nome":"Zawe Ashton",
+            "foto":"https://upload.wikimedia.org/wikipedia/commons/7/72/Zawe_ashton_2021_1.jpg",
+            "personagem":"Dar-Benn"
+         },
+         {
+            "nome":"samuel L. Jackson",
+            "foto":"https://s2.glbimg.com/9ttodPHQNotM1IlqpijsyTthZQM=/0x0:400x400/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e7c91519bbbb4fadb4e509085746275d/internal_photos/bs/2023/c/6/e8TZMyStqGAlvG034WjA/c0ec2mtu-400x400.jpg",
+            "personagem":"Nick Fury"
+         }
+      ],
+      "pontuacao":{
+         "IMDB":6,
+         "RottenCriticos":62,
+         "RottenPublico":82,
+         "Metacritic":50,
+         "Letterboxd":2.9
+      },
+      "Flick":[
+         {
+            "especialista":"Caio Goulart",
+            "foto":"https://caiogbdesign.github.io/flick/caio-goulart-flick.jpg",
+            "avaliacao":"3"
+         }
+      ],
+      "imagem":"https://versus.com.br/wp-content/uploads/2023/09/image-812.png",
+      "servicos":[
+         {
+            "streaming":"s9"
+         }
+      ]
+   },
+   {
+      "id":"FR-26",
+      "titulo":"Trocados",
+      "sinopse":"Com Jennifer Garner e Ed Helms no elenco, a trama segue uma família que, no dia mais importante de suas vidas, acabam trocando de corpo um com o outro. Com um pouco mais de uma hora e meia de duração, o longa-metragem é uma produção original da Netflix com o roteiro assinado por Adam Sztykiel e Victoria Strouse.",
+      "generos":[
+         {
+            "nome":"g3"
+         }
+      ],
+      "ano":2023,
+      "duracao":"1h 45m",
+      "direcao":"McG",
+      "classificacao":"Livre",
+      "elenco":[
+         {
+            "nome":"Jennifer Garner",
+            "foto":"https://br.web.img3.acsta.net/pictures/18/09/24/21/59/3858181.jpg",
+            "personagem":"Jess Walker"
+         },
+         {
+            "nome":"Ed Helms",
+            "foto":"https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/274723_v9_bb.jpg",
+            "personagem":"Bill Walker"
+         },
+         {
+            "nome":"Emma Myers",
+            "foto":"https://br.web.img3.acsta.net/pictures/22/11/29/19/54/5215983.jpg",
+            "personagem":"CC"
+         },
+         {
+            "nome":"Brady Noon",
+            "foto":"https://image.tmdb.org/t/p/w500/mbgwWA1uVXQ09T7jxs2D333O2JN.jpg",
+            "personagem":"Wyatt"
+         },
+         {
+            "nome":"Matthias Schweighöfer",
+            "foto":"https://m.media-amazon.com/images/M/MV5BMTA5ODI2NDEwNzleQTJeQWpwZ15BbWU4MDQxMjU1NzAy._V1_.jpg",
+            "personagem":"Rolf"
+         }
+      ],
+      "pontuacao":{
+         "IMDB":5.7,
+         "RottenCriticos":45,
+         "RottenPublico":60,
+         "Metacritic":37,
+         "Letterboxd":2.6
+      },
+      "Flick":[
+         {
+            "especialista":"Caio Goulart",
+            "foto":"https://caiogbdesign.github.io/flick/caio-goulart-flick.jpg",
+            "avaliacao":"3"
+         }
+      ],
+      "imagem":"https://m.media-amazon.com/images/M/MV5BZTRkZjMyMDktNDAyMi00NWI1LWFmMGUtOGY4OWQxODZiOTk5XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1000_.jpg",
+      "servicos":[
+         {
+            "streaming":"s1"
+         }
+      ]
    }
 ]
