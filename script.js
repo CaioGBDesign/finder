@@ -24,6 +24,10 @@ function converterGenero(genero) {
       return "Filme épico";
       case "g12":
         return "Biografia";
+      case "g13":
+        return "Mistério";
+      case "g14":
+        return "Terror";
     default:
       return genero;
   }
