@@ -1945,5 +1945,75 @@
             "streaming":"s1"
          }
       ]
+   },
+   {
+      "id":"FR-27",
+      "titulo":"De Repente Uma Família",
+      "sinopse":"Com Jennifer Garner e Ed Helms no elenco, a trama segue uma família que, no dia mais importante de suas vidas, acabam trocando de corpo um com o outro. Com um pouco mais de uma hora e meia de duração, o longa-metragem é uma produção original da Netflix com o roteiro assinado por Adam Sztykiel e Victoria Strouse.",
+      "generos":[
+         {
+            "nome":"g3"
+         },
+         {
+            "nome":"g5"
+         }
+      ],
+      "ano":2018,
+      "duracao":"1h 59m",
+      "direcao":"Sean Anders",
+      "classificacao":"12-anos",
+      "elenco":[
+         {
+            "nome":"Rose Byrne",
+            "foto":"https://images.mubicdn.net/images/cast_member/16198/cache-4103-1611519826/image-w856.jpg",
+            "personagem":"Ellie Wagner"
+         },
+         {
+            "nome":"Mark Wahlberg",
+            "foto":"https://m.media-amazon.com/images/M/MV5BMTU0MTQ4OTMyMV5BMl5BanBnXkFtZTcwMTQxOTY1NA@@._V1_FMjpg_UX1000_.jpg",
+            "personagem":"Pete Wagner"
+         },
+         {
+            "nome":"Isabela Merced",
+            "foto":"https://br.web.img3.acsta.net/pictures/19/11/12/22/21/1026716.jpg",
+            "personagem":"Lizzy Viara"
+         },
+         {
+            "nome":"Octavia Spencer",
+            "foto":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Octavia_Spencer_2016.jpg/1200px-Octavia_Spencer_2016.jpg",
+            "personagem":"Karen"
+         },
+         {
+            "nome":"Tig Notaro",
+            "foto":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Tig_Notaro_by_Gage_Skidmore.jpg/1200px-Tig_Notaro_by_Gage_Skidmore.jpg",
+            "personagem":"Sharon"
+         }
+      ],
+      "pontuacao":{
+         "IMDB":7.3,
+         "RottenCriticos":82,
+         "RottenPublico":83,
+         "Metacritic":57,
+         "Letterboxd":3.4
+      },
+      "Flick":[
+         {
+            "especialista":"Caio Goulart",
+            "foto":"https://caiogbdesign.github.io/flick/caio-goulart-flick.jpg",
+            "avaliacao":"4"
+         }
+      ],
+      "imagem":"https://br.web.img3.acsta.net/pictures/18/10/05/18/29/2308941.jpg",
+      "servicos":[
+         {
+            "streaming":"s1"
+         },
+         {
+            "streaming":"s2"
+         },
+         {
+            "streaming":"s7"
+         }
+      ]
    }
 ]
