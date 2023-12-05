@@ -2015,5 +2015,206 @@
             "streaming":"s7"
          }
       ]
+   },
+   {
+      "id":"FR-28",
+      "titulo":"Oppenheimer",
+      "sinopse":"O físico J. Robert Oppenheimer trabalha com uma equipe de cientistas durante o Projeto Manhattan, levando ao desenvolvimento da bomba atômica.",
+      "generos":[
+         {
+            "nome":"g15"
+         },
+         {
+            "nome":"g16"
+         }
+      ],
+      "ano":2023,
+      "duracao":"3 horas",
+      "direcao":"Christopher Nolan",
+      "classificacao":"16-anos",
+      "elenco":[
+         {
+            "nome":"Cillian Murphy",
+            "foto":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Cillian_Murphy-2014.jpg/1200px-Cillian_Murphy-2014.jpg",
+            "personagem":"J. Robert Oppenheimer"
+         },
+         {
+            "nome":"Florence Pugh",
+            "foto":"https://cdn.britannica.com/20/217320-050-181C95DC/English-actor-Florence-Pugh-2019.jpg",
+            "personagem":"Jean Tatlock"
+         },
+         {
+            "nome":"Robert Downey Jr.",
+            "foto":"https://static.wikia.nocookie.net/universo-616-marvel/images/a/a5/Robert_Downey_Jr.jpg/revision/latest?cb=20140503165144&path-prefix=pt-br",
+            "personagem":"Lewis Strauss"
+         },
+         {
+            "nome":"Emily Blunt",
+            "foto":"https://br.web.img3.acsta.net/pictures/18/08/14/17/03/0092037.jpg",
+            "personagem":"Katherine Oppenheimer"
+         },
+         {
+            "nome":"Matt Damon",
+            "foto":"https://m.media-amazon.com/images/M/MV5BMTM0NzYzNDgxMl5BMl5BanBnXkFtZTcwMDg2MTMyMw@@._V1_FMjpg_UX1000_.jpg",
+            "personagem":"Leslie Groves"
+         }
+      ],
+      "pontuacao":{
+         "IMDB":8.4,
+         "RottenCriticos":93,
+         "RottenPublico":91,
+         "Metacritic":88,
+         "Letterboxd":4.3
+      },
+      "Flick":[
+         {
+            "especialista":"Caio Goulart",
+            "foto":"https://caiogbdesign.github.io/flick/caio-goulart-flick.jpg",
+            "avaliacao":"4"
+         }
+      ],
+      "imagem":"https://br.web.img3.acsta.net/pictures/18/10/05/18/29/2308941.jpg",
+      "servicos":[
+         {
+            "streaming":"s6"
+         }
+      ]
+   },
+   {
+      "id":"FR-29",
+      "titulo":"Sobrenatural: A Porta Vermelha",
+      "sinopse":"Josh Lambert segue para o leste para deixar seu filho, Dalton, na faculdade. Mas demônios reprimidos do passado voltam repentinamente para assombrar os dois.",
+      "generos":[
+         {
+            "nome":"g14"
+         },
+         {
+            "nome":"g13"
+         }
+      ],
+      "ano":2023,
+      "duracao":"1h 47m",
+      "direcao":"Patrick Wilson",
+      "classificacao":"12-anos",
+      "elenco":[
+         {
+            "nome":"Patrick Wilson",
+            "foto":"https://f.i.uol.com.br/fotografia/2022/02/10/1644524261620572e50784e_1644524261_3x4_md.jpg",
+            "personagem":"Josh Lambert"
+         },
+         {
+            "nome":"Ty Simpkins",
+            "foto":"https://pbs.twimg.com/media/Fa28pnAXwAACD4Z?format=jpg",
+            "personagem":"Dalton Lambert"
+         },
+         {
+            "nome":"Rose Byrne",
+            "foto":"https://images.mubicdn.net/images/cast_member/16198/cache-4103-1611519826/image-w856.jpg",
+            "personagem":"Renai Lambert"
+         },
+         {
+            "nome":"Lin Shaye",
+            "foto":"https://images.mubicdn.net/images/cast_member/30194/cache-199860-1486958079/image-w856.jpg",
+            "personagem":"Elise"
+         },
+         {
+            "nome":"Sinclair Daniel",
+            "foto":"https://m.media-amazon.com/images/M/MV5BMTM0NzYzNDgxMl5BMl5BanBnXkFtZTcwMDg2MTMyMw@@._V1_FMjpg_UX1000_.jpg",
+            "personagem":"Chris Winslow"
+         }
+      ],
+      "pontuacao":{
+         "IMDB":5.5,
+         "RottenCriticos":37,
+         "RottenPublico":70,
+         "Metacritic":45,
+         "Letterboxd":2.4
+      },
+      "Flick":[
+         {
+            "especialista":"Caio Goulart",
+            "foto":"https://caiogbdesign.github.io/flick/caio-goulart-flick.jpg",
+            "avaliacao":"3"
+         }
+      ],
+      "imagem":"https://uploads.jovemnerd.com.br/wp-content/uploads/2023/06/sobrenatural_a_porta_vermelha_poster__v6eo60-760x1126.png",
+      "servicos":[
+         {
+            "streaming":"s2"
+         },
+         {
+            "streaming":"s6"
+         },
+         {
+            "streaming":"s3"
+         }
+      ]
+   },
+   {
+      "id":"FR-30",
+      "titulo":"The Flash",
+      "sinopse":"Os mundos colidem quando Flash viaja no tempo para mudar os eventos do passado. No entanto, quando sua tentativa de salvar sua família altera o futuro, ele fica preso em uma realidade na qual o General Zod voltou, ameaçando a aniquilação.",
+      "generos":[
+         {
+            "nome":"g1"
+         },
+         {
+            "nome":"g8"
+         }
+      ],
+      "ano":2023,
+      "duracao":"2h 24m",
+      "direcao":"Andy Muschietti",
+      "classificacao":"14-anos",
+      "elenco":[
+         {
+            "nome":"Ezra Miller",
+            "foto":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Ezra_Miller_by_Gage_Skidmore_2.jpg/800px-Ezra_Miller_by_Gage_Skidmore_2.jpg",
+            "personagem":"Barry Allen"
+         },
+         {
+            "nome":"Michael Keaton",
+            "foto":"https://static.wikia.nocookie.net/disney/images/1/1c/Michael_Keaton.jpg",
+            "personagem":"Batman"
+         },
+         {
+            "nome":"Ben Affleck",
+            "foto":"https://m.media-amazon.com/images/M/MV5BMzczNzNiMDAtMmUzZS00MTkwLWIwOTYtNmYyNjg3MTVkNThhXkEyXkFqcGdeQXVyMjA4MjI5MTA@._V1_FMjpg_UX1000_.jpg",
+            "personagem":"Batman"
+         },
+         {
+            "nome":"Sasha Calle",
+            "foto":"https://br.web.img2.acsta.net/pictures/21/02/19/23/45/3616016.jpg",
+            "personagem":"Supergirl"
+         },
+         {
+            "nome":"Kiersey Clemons",
+            "foto":"https://static.wikia.nocookie.net/dublagempedia/images/2/2d/Kiersey_Clemons.jpg/revision/latest?cb=20210307005432&path-prefix=pt-br",
+            "personagem":"Iris Allen"
+         }
+      ],
+      "pontuacao":{
+         "IMDB":6.7,
+         "RottenCriticos":63,
+         "RottenPublico":83,
+         "Metacritic":55,
+         "Letterboxd":2.7
+      },
+      "Flick":[
+         {
+            "especialista":"Caio Goulart",
+            "foto":"https://caiogbdesign.github.io/flick/caio-goulart-flick.jpg",
+            "avaliacao":"2"
+         }
+      ],
+      "imagem":"https://www.europanet.com.br/upload/id_produto/45_____/4500101g.jpg",
+      "servicos":[
+         {
+            "streaming":"s2"
+         },
+         {
+            "streaming":"s6"
+         }
+      ]
    }
 ]
