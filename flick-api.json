@@ -43,7 +43,7 @@
          {
             "nome":"seth Rogen",
             "foto":"https://upload.wikimedia.org/wikipedia/commons/1/19/Seth_Rogen_by_Gage_Skidmore_2.jpg",
-            "personagem":"Toad"
+            "personagem":"Donkey Kong"
          },
          {
             "nome":"Keegan-Michael Key",
@@ -54,6 +54,38 @@
             "nome":"Charles Martinet",
             "foto":"https://static.jojowiki.com/images/2/2f/latest/20220127081216/Charles_Martinet_Infobox.png",
             "personagem":"Giuseppe, Mario's Dad"
+         }
+      ],
+      "dublagem":[
+         {
+            "nome":"Márcio Dondi",
+            "foto":"https://static.wikia.nocookie.net/dublagem/images/5/56/M%C3%A1rcio_Dondi_%28Dublador%29.jpg/revision/latest?cb=20211025224218&path-prefix=pt-br",
+            "personagem":"Bowser"
+         },
+         {
+            "nome":"Raphael Rossatto",
+            "foto":"https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2018/12/04/raphael01.JPG",
+            "personagem":"Mario"
+         },
+         {
+            "nome":"Manolo Rey",
+            "foto":"https://br.web.img2.acsta.net/c_310_420/pictures/14/06/20/20/50/505372.jpg",
+            "personagem":"Luigi"
+         },
+         {
+            "nome":"Carina Eiras",
+            "foto":"https://br.web.img3.acsta.net/pictures/22/11/30/17/29/4454170.png",
+            "personagem":"Peach"
+         },
+         {
+            "nome":"Pedro Azevedo",
+            "foto":"https://static.wikia.nocookie.net/dublagem/images/3/3a/Pedro_Azevedo.jpg/revision/latest?cb=20220312034709&path-prefix=pt-br",
+            "personagem":"Donkey Kong"
+         },
+         {
+            "nome":"Eduardo Drummond",
+            "foto":"https://static.wikia.nocookie.net/dublagem/images/6/65/Eduardo_Drummond.jpg/revision/latest?cb=20230704174406&path-prefix=pt-br",
+            "personagem":"Toad"
          }
       ],
       "pontuacao":{
@@ -92,7 +124,13 @@
       "imagem":"https://leiturafilmica.com.br/wp-content/uploads/2023/04/super-mario-bros-o-filme-poster.jpg",
       "servicos":[
          {
-            "streaming":"s9"
+            "streaming":"s2"
+         },
+         {
+            "streaming":"s6"
+         },
+         {
+            "streaming":"s7"
          }
       ],
       "cinema":[
