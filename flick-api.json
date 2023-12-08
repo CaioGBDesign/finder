@@ -2216,5 +2216,96 @@
             "streaming":"s6"
          }
       ]
+   },
+   {
+      "id":"FR-31",
+      "titulo":"Jogos Vorazes",
+      "sinopse":"Na região antigamente conhecida como América do Norte, a Capital de Panem controla 12 distritos e os força a escolher um garoto e uma garota, conhecidos como tributos, para competir em um evento anual televisionado. Todos os cidadãos assistem aos temidos jogos, no qual os jovens lutam até a morte, de modo que apenas um saia vitorioso. A jovem Katniss Everdeen, do Distrito 12, confia na habilidade de caça e na destreza com o arco, além dos instintos aguçados, nesta competição mortal.   ",
+      "generos":[
+         {
+            "nome":"g1"
+         },
+         {
+            "nome":"g4"
+         }
+      ],
+      "ano":2012,
+      "duracao":"2h 22m",
+      "direcao":"Gary Ross",
+      "classificacao":"14-anos",
+      "elenco":[
+         {
+            "nome":"Jennifer Lawrence",
+            "foto":"https://f.i.uol.com.br/fotografia/2022/11/10/1668115418636d6bda507ce_1668115418_3x2_md.jpg",
+            "personagem":"Katniss Everdeen"
+         },
+         {
+            "nome":"Josh Hutcherson",
+            "foto":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Josh_Hutcherson_SDCC_2015.jpg/1200px-Josh_Hutcherson_SDCC_2015.jpg",
+            "personagem":"Peeta Mellark"
+         },
+         {
+            "nome":"Liam Hemsworth",
+            "foto":"https://br.web.img2.acsta.net/c_310_420/pictures/19/03/08/22/08/0890523.jpg",
+            "personagem":"Gale Hawthorne"
+         },
+         {
+            "nome":"Elizabeth Banks",
+            "foto":"https://br.web.img3.acsta.net/pictures/19/09/05/00/04/0846887.jpg",
+            "personagem":"Effie Trinket"
+         },
+         {
+            "nome":"Woody Harrelson",
+            "foto":"https://cdn.britannica.com/28/221828-050-D5F314EE/American-actor-Woody-Harrelson-2018.jpg",
+            "personagem":"Haymitch Abernathy"
+         },
+         {
+            "nome":"Lenny Kravitz",
+            "foto":"https://images.squarespace-cdn.com/content/v1/57dd78a2b8a79bb3c4494a94/1526921592224-GX0RR3S4LVNHTMMN9SF5/Lenny_Kravitz_by_Gage_Skidmore.jpg",
+            "personagem":"Cinna"
+         },
+         {
+            "nome":"Donald Sutherland",
+            "foto":"https://cdn.britannica.com/82/212282-050-8D836E10/Donald-Sutherland-Canadian-actor-2014.jpg",
+            "personagem":"Presidente Snow"
+         },
+         {
+            "nome":"Alexander Ludwig",
+            "foto":"https://ntvb.tmsimg.com/assets/assets/503860_v9_bc.jpg",
+            "personagem":"Cato"
+         }
+      ],
+      "pontuacao":{
+         "IMDB":7.2,
+         "RottenCriticos":84,
+         "RottenPublico":81,
+         "Metacritic":68,
+         "Letterboxd":3.6
+      },
+      "Flick":[
+         {
+            "especialista":"Caio Goulart",
+            "foto":"https://caiogbdesign.github.io/flick/caio-goulart-flick.jpg",
+            "avaliacao":"4"
+         }
+      ],
+      "imagem":"https://2.bp.blogspot.com/-WaSgDven-ik/UkrxXYMviVI/AAAAAAAAcgE/-rivRdc5uFE/s1600/Jogos-vorazes-em-chamas-poster.jpg",
+      "servicos":[
+         {
+            "streaming":"s1"
+         },
+         {
+            "streaming":"s2"
+         },
+         {
+            "streaming":"s3"
+         },
+         {
+            "streaming":"s6"
+         },
+         {
+            "streaming":"s7"
+         }
+      ]
    }
 ]
